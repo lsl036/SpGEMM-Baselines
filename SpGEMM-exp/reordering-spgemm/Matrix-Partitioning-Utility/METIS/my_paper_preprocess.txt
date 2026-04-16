@@ -1,0 +1,90 @@
+~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: cant>~~~~~~~~~~~~~~~~~~~~~~~~~
+Dataset: cant PartitionTime: 0.267 seconds.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: pwtk>~~~~~~~~~~~~~~~~~~~~~~~~~
+Dataset: pwtk PartitionTime: 0.403 seconds.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: offshore>~~~~~~~~~~~~~~~~~~~~~~~~~
+Dataset: offshore PartitionTime: 0.403 seconds.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: cage12>~~~~~~~~~~~~~~~~~~~~~~~~~
+Dataset: cage12 PartitionTime: 0.461 seconds.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: scircuit>~~~~~~~~~~~~~~~~~~~~~~~~~
+Dataset: scircuit PartitionTime: 0.125 seconds.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: wiki-Vote>~~~~~~~~~~~~~~~~~~~~~~~~~
+Dataset: wiki-Vote PartitionTime: 0.19 seconds.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: patents_main>~~~~~~~~~~~~~~~~~~~~~~~~~
+Dataset: patents_main PartitionTime: 0.733 seconds.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: poisson3Da>~~~~~~~~~~~~~~~~~~~~~~~~~
+Dataset: poisson3Da PartitionTime: 0.109 seconds.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: pdb1HYS>~~~~~~~~~~~~~~~~~~~~~~~~~
+Dataset: pdb1HYS PartitionTime: 0.29 seconds.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: rma10>~~~~~~~~~~~~~~~~~~~~~~~~~
+Dataset: rma10 PartitionTime: 0.108 seconds.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: shipsec1>~~~~~~~~~~~~~~~~~~~~~~~~~
+Dataset: shipsec1 PartitionTime: 0.33 seconds.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: consph>~~~~~~~~~~~~~~~~~~~~~~~~~
+Dataset: consph PartitionTime: 0.41 seconds.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: filter3D>~~~~~~~~~~~~~~~~~~~~~~~~~
+Dataset: filter3D PartitionTime: 0.192 seconds.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: mac_econ_fwd500>~~~~~~~~~~~~~~~~~~~~~~~~~
+Dataset: mac_econ_fwd500 PartitionTime: 0.283 seconds.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: asia_osm>~~~~~~~~~~~~~~~~~~~~~~~~~
+Dataset: asia_osm PartitionTime: 7.885 seconds.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: af_shell10>~~~~~~~~~~~~~~~~~~~~~~~~~
+Dataset: af_shell10 PartitionTime: 1.838 seconds.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: hood>~~~~~~~~~~~~~~~~~~~~~~~~~
+Dataset: hood PartitionTime: 0.384 seconds.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: case39>~~~~~~~~~~~~~~~~~~~~~~~~~
+Dataset: case39 PartitionTime: 0.167 seconds.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: gupta3>~~~~~~~~~~~~~~~~~~~~~~~~~
+Dataset: gupta3 PartitionTime: 1.76 seconds.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: TSOPF_FS_b300_c2>~~~~~~~~~~~~~~~~~~~~~~~~~
+Dataset: TSOPF_FS_b300_c2 PartitionTime: 1.427 seconds.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: delaunay_n24>~~~~~~~~~~~~~~~~~~~~~~~~~
+Dataset: delaunay_n24 PartitionTime: 15.949 seconds.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: webbase-1M>~~~~~~~~~~~~~~~~~~~~~~~~~
+Dataset: webbase-1M PartitionTime: 0.993 seconds.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: AS365>~~~~~~~~~~~~~~~~~~~~~~~~~
+Dataset: AS365 PartitionTime: 12.414 seconds.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: com-LiveJournal>~~~~~~~~~~~~~~~~~~~~~~~~~
+Dataset: com-LiveJournal PartitionTime: 62.703 seconds.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: europe_osm>~~~~~~~~~~~~~~~~~~~~~~~~~
+Dataset: europe_osm PartitionTime: 40.402 seconds.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: GAP-road>~~~~~~~~~~~~~~~~~~~~~~~~~
+Dataset: GAP-road PartitionTime: 23.843 seconds.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: kkt_power>~~~~~~~~~~~~~~~~~~~~~~~~~
+Dataset: kkt_power PartitionTime: 3.791 seconds.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: M6>~~~~~~~~~~~~~~~~~~~~~~~~~
+Dataset: M6 PartitionTime: 12.506 seconds.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: NLR>~~~~~~~~~~~~~~~~~~~~~~~~~
+Dataset: NLR PartitionTime: 13.44 seconds.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: wikipedia-20070206>~~~~~~~~~~~~~~~~~~~~~~~~~
+Dataset: wikipedia-20070206 PartitionTime: 89.46 seconds.
+

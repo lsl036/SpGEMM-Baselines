@@ -1,0 +1,333 @@
+Using DATA_PATH = /data/suitesparse_collection
+Using CLOSE_PAIR_DATA_PATH = /data/linshengle_data/SpGEMM-Reordering/close_pairs
+Reading dataset list from /data/lsl/SpGEMM/SpGEMM-exp/clusterwise-spgemm-main/scripts/h_clusterwise/casedata.txt
+
+~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: cant>~~~~~~~~~~~~~~~~~~~~~~~~~
+reading input matrices in text (ascii)... 
+Matrix is symmetric
+Converting matrix data from ASCII to COO format: 0.6842625178396702 seconds
+Input Matrix: Rows = 62451, Columns= 62451, nnz = 4007383, cluster_sz = 8
+Converting to csc ... 
+
+Matrix is symmetric
+Converting matrix data from ASCII to COO format: 0.6856215000152588 seconds
+Input Matrix: Rows = 62451, Columns= 62451, nnz = 4007383, cluster_sz = 8
+Converting to csc ... 
+
+Total number of floating-point operations including addition and multiplication in SpGEMM (A * B): 538972946
+
+Evaluation of HashSpGEMMCluster
+HashSpGEMMVLCluster with 128 threads computes C = A * B in 8.268644 [milli seconds] (65182.752551 [MFLOPS])
+
+~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: pwtk>~~~~~~~~~~~~~~~~~~~~~~~~~
+reading input matrices in text (ascii)... 
+Matrix is symmetric
+Converting matrix data from ASCII to COO format: 1.898803796619177 seconds
+Input Matrix: Rows = 217918, Columns= 217918, nnz = 11634424, cluster_sz = 8
+Converting to csc ... 
+
+Matrix is symmetric
+Converting matrix data from ASCII to COO format: 1.940786521881819 seconds
+Input Matrix: Rows = 217918, Columns= 217918, nnz = 11634424, cluster_sz = 8
+Converting to csc ... 
+
+Total number of floating-point operations including addition and multiplication in SpGEMM (A * B): 1252108804
+
+Evaluation of HashSpGEMMCluster
+HashSpGEMMVLCluster with 128 threads computes C = A * B in 12.988244 [milli seconds] (96403.242824 [MFLOPS])
+
+~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: offshore>~~~~~~~~~~~~~~~~~~~~~~~~~
+reading input matrices in text (ascii)... 
+Matrix is symmetric
+Converting matrix data from ASCII to COO format: 0.75901023671031 seconds
+Input Matrix: Rows = 259789, Columns= 259789, nnz = 4242673, cluster_sz = 8
+Converting to csc ... 
+
+Matrix is symmetric
+Converting matrix data from ASCII to COO format: 0.7840113937854767 seconds
+Input Matrix: Rows = 259789, Columns= 259789, nnz = 4242673, cluster_sz = 8
+Converting to csc ... 
+
+Total number of floating-point operations including addition and multiplication in SpGEMM (A * B): 142685030
+
+Evaluation of HashSpGEMMCluster
+HashSpGEMMVLCluster with 128 threads computes C = A * B in 11.981578 [milli seconds] (11908.701208 [MFLOPS])
+
+~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: cage12>~~~~~~~~~~~~~~~~~~~~~~~~~
+reading input matrices in text (ascii)... 
+Converting matrix data from ASCII to COO format: 0.5763052627444267 seconds
+Input Matrix: Rows = 130228, Columns= 130228, nnz = 2032536, cluster_sz = 8
+Converting to csc ... 
+
+Converting matrix data from ASCII to COO format: 0.5896880850195885 seconds
+Input Matrix: Rows = 130228, Columns= 130228, nnz = 2032536, cluster_sz = 8
+Converting to csc ... 
+
+Total number of floating-point operations including addition and multiplication in SpGEMM (A * B): 69221652
+
+Evaluation of HashSpGEMMCluster
+HashSpGEMMVLCluster with 128 threads computes C = A * B in 10.190427 [milli seconds] (6792.812019 [MFLOPS])
+
+~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: scircuit>~~~~~~~~~~~~~~~~~~~~~~~~~
+reading input matrices in text (ascii)... 
+Converting matrix data from ASCII to COO format: 0.3157228194177151 seconds
+Input Matrix: Rows = 170998, Columns= 170998, nnz = 958936, cluster_sz = 8
+Converting to csc ... 
+
+Converting matrix data from ASCII to COO format: 0.3234413228929043 seconds
+Input Matrix: Rows = 170998, Columns= 170998, nnz = 958936, cluster_sz = 8
+Converting to csc ... 
+
+Total number of floating-point operations including addition and multiplication in SpGEMM (A * B): 17352626
+
+Evaluation of HashSpGEMMCluster
+HashSpGEMMVLCluster with 128 threads computes C = A * B in 3.042131 [milli seconds] (5704.102312 [MFLOPS])
+
+~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: wiki-Vote>~~~~~~~~~~~~~~~~~~~~~~~~~
+reading input matrices in text (ascii)... 
+Converting matrix data from ASCII to COO format: 0.01104200258851051 seconds
+Input Matrix: Rows = 8297, Columns= 8297, nnz = 103689, cluster_sz = 8
+Converting to csc ... 
+
+Converting matrix data from ASCII to COO format: 0.01295553147792816 seconds
+Input Matrix: Rows = 8297, Columns= 8297, nnz = 103689, cluster_sz = 8
+Converting to csc ... 
+
+Total number of floating-point operations including addition and multiplication in SpGEMM (A * B): 9085610
+
+Evaluation of HashSpGEMMCluster
+HashSpGEMMVLCluster with 128 threads computes C = A * B in 2.069011 [milli seconds] (4391.281721 [MFLOPS])
+
+~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: poisson3Da>~~~~~~~~~~~~~~~~~~~~~~~~~
+reading input matrices in text (ascii)... 
+Converting matrix data from ASCII to COO format: 0.1179076246917248 seconds
+Input Matrix: Rows = 13514, Columns= 13514, nnz = 352762, cluster_sz = 8
+Converting to csc ... 
+
+Converting matrix data from ASCII to COO format: 0.1219012551009655 seconds
+Input Matrix: Rows = 13514, Columns= 13514, nnz = 352762, cluster_sz = 8
+Converting to csc ... 
+
+Total number of floating-point operations including addition and multiplication in SpGEMM (A * B): 23537356
+
+Evaluation of HashSpGEMMCluster
+HashSpGEMMVLCluster with 128 threads computes C = A * B in 2.071965 [milli seconds] (11359.921111 [MFLOPS])
+
+~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: pdb1HYS>~~~~~~~~~~~~~~~~~~~~~~~~~
+reading input matrices in text (ascii)... 
+Matrix is symmetric
+Converting matrix data from ASCII to COO format: 0.6840077340602875 seconds
+Input Matrix: Rows = 36417, Columns= 36417, nnz = 4344765, cluster_sz = 8
+Converting to csc ... 
+
+Matrix is symmetric
+Converting matrix data from ASCII to COO format: 0.7019547261297703 seconds
+Input Matrix: Rows = 36417, Columns= 36417, nnz = 4344765, cluster_sz = 8
+Converting to csc ... 
+
+Total number of floating-point operations including addition and multiplication in SpGEMM (A * B): 1110645318
+
+Evaluation of HashSpGEMMCluster
+HashSpGEMMVLCluster with 128 threads computes C = A * B in 13.034883 [milli seconds] (85205.621404 [MFLOPS])
+
+~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: rma10>~~~~~~~~~~~~~~~~~~~~~~~~~
+reading input matrices in text (ascii)... 
+Converting matrix data from ASCII to COO format: 0.7276071608066559 seconds
+Input Matrix: Rows = 46835, Columns= 46835, nnz = 2374001, cluster_sz = 8
+Converting to csc ... 
+
+Converting matrix data from ASCII to COO format: 0.7515976391732693 seconds
+Input Matrix: Rows = 46835, Columns= 46835, nnz = 2374001, cluster_sz = 8
+Converting to csc ... 
+
+Total number of floating-point operations including addition and multiplication in SpGEMM (A * B): 312960518
+
+Evaluation of HashSpGEMMCluster
+HashSpGEMMVLCluster with 128 threads computes C = A * B in 6.021941 [milli seconds] (51970.039860 [MFLOPS])
+
+~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: shipsec1>~~~~~~~~~~~~~~~~~~~~~~~~~
+reading input matrices in text (ascii)... 
+Matrix is symmetric
+Converting matrix data from ASCII to COO format: 1.008551582694054 seconds
+Input Matrix: Rows = 140874, Columns= 140874, nnz = 7813404, cluster_sz = 8
+Converting to csc ... 
+
+Matrix is symmetric
+Converting matrix data from ASCII to COO format: 1.043863359838724 seconds
+Input Matrix: Rows = 140874, Columns= 140874, nnz = 7813404, cluster_sz = 8
+Converting to csc ... 
+
+Total number of floating-point operations including addition and multiplication in SpGEMM (A * B): 901278576
+
+Evaluation of HashSpGEMMCluster
+HashSpGEMMVLCluster with 128 threads computes C = A * B in 11.262661 [milli seconds] (80023.591966 [MFLOPS])
+
+~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: consph>~~~~~~~~~~~~~~~~~~~~~~~~~
+reading input matrices in text (ascii)... 
+Matrix is symmetric
+Converting matrix data from ASCII to COO format: 0.9841455481946468 seconds
+Input Matrix: Rows = 83334, Columns= 83334, nnz = 6010480, cluster_sz = 8
+Converting to csc ... 
+
+Matrix is symmetric
+Converting matrix data from ASCII to COO format: 1.019916117191315 seconds
+Input Matrix: Rows = 83334, Columns= 83334, nnz = 6010480, cluster_sz = 8
+Converting to csc ... 
+
+Total number of floating-point operations including addition and multiplication in SpGEMM (A * B): 927690060
+
+Evaluation of HashSpGEMMCluster
+HashSpGEMMVLCluster with 128 threads computes C = A * B in 13.168869 [milli seconds] (70445.688859 [MFLOPS])
+
+~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: filter3D>~~~~~~~~~~~~~~~~~~~~~~~~~
+reading input matrices in text (ascii)... 
+Matrix is symmetric
+Converting matrix data from ASCII to COO format: 0.5236045345664024 seconds
+Input Matrix: Rows = 106437, Columns= 106437, nnz = 2707179, cluster_sz = 8
+Converting to csc ... 
+
+Matrix is symmetric
+Converting matrix data from ASCII to COO format: 0.5337802842259407 seconds
+Input Matrix: Rows = 106437, Columns= 106437, nnz = 2707179, cluster_sz = 8
+Converting to csc ... 
+
+Total number of floating-point operations including addition and multiplication in SpGEMM (A * B): 171914370
+
+Evaluation of HashSpGEMMCluster
+HashSpGEMMVLCluster with 128 threads computes C = A * B in 9.522299 [milli seconds] (18053.872809 [MFLOPS])
+
+~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: mac_econ_fwd500>~~~~~~~~~~~~~~~~~~~~~~~~~
+reading input matrices in text (ascii)... 
+Converting matrix data from ASCII to COO format: 0.398230392485857 seconds
+Input Matrix: Rows = 206500, Columns= 206500, nnz = 1273389, cluster_sz = 8
+Converting to csc ... 
+
+Converting matrix data from ASCII to COO format: 0.4073948301374912 seconds
+Input Matrix: Rows = 206500, Columns= 206500, nnz = 1273389, cluster_sz = 8
+Converting to csc ... 
+
+Total number of floating-point operations including addition and multiplication in SpGEMM (A * B): 15113794
+
+Evaluation of HashSpGEMMCluster
+HashSpGEMMVLCluster with 128 threads computes C = A * B in 3.197340 [milli seconds] (4726.989500 [MFLOPS])
+
+~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: af_shell10>~~~~~~~~~~~~~~~~~~~~~~~~~
+reading input matrices in text (ascii)... 
+Matrix is symmetric
+Converting matrix data from ASCII to COO format: 8.261205535382032 seconds
+Input Matrix: Rows = 1508065, Columns= 1508065, nnz = 52672325, cluster_sz = 8
+Converting to csc ... 
+
+Matrix is symmetric
+Converting matrix data from ASCII to COO format: 8.598301790654659 seconds
+Input Matrix: Rows = 1508065, Columns= 1508065, nnz = 52672325, cluster_sz = 8
+Converting to csc ... 
+
+Total number of floating-point operations including addition and multiplication in SpGEMM (A * B): 3681833750
+
+Evaluation of HashSpGEMMCluster
+HashSpGEMMVLCluster with 128 threads computes C = A * B in 148.807814 [milli seconds] (24742.207153 [MFLOPS])
+
+~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: hood>~~~~~~~~~~~~~~~~~~~~~~~~~
+reading input matrices in text (ascii)... 
+Matrix is symmetric
+Converting matrix data from ASCII to COO format: 1.639423545449972 seconds
+Input Matrix: Rows = 220542, Columns= 220542, nnz = 10768436, cluster_sz = 8
+Converting to csc ... 
+
+Matrix is symmetric
+Converting matrix data from ASCII to COO format: 1.702360507100821 seconds
+Input Matrix: Rows = 220542, Columns= 220542, nnz = 10768436, cluster_sz = 8
+Converting to csc ... 
+
+Total number of floating-point operations including addition and multiplication in SpGEMM (A * B): 1124056276
+
+Evaluation of HashSpGEMMCluster
+HashSpGEMMVLCluster with 128 threads computes C = A * B in 28.161875 [milli seconds] (39914.113834 [MFLOPS])
+
+~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: case39>~~~~~~~~~~~~~~~~~~~~~~~~~
+reading input matrices in text (ascii)... 
+Matrix is symmetric
+Matrix is symmetric
+Converting matrix data from ASCII to COO format: 0.1740116104483604 seconds
+Input Matrix: Rows = 40216, Columns= 40216, nnz = 1042160, cluster_sz = 8
+Converting to csc ... 
+
+Matrix is symmetric
+Matrix is symmetric
+Converting matrix data from ASCII to COO format: 0.1815002001821995 seconds
+Input Matrix: Rows = 40216, Columns= 40216, nnz = 1042160, cluster_sz = 8
+Converting to csc ... 
+
+Total number of floating-point operations including addition and multiplication in SpGEMM (A * B): 8097139548
+
+Evaluation of HashSpGEMMCluster
+HashSpGEMMVLCluster with 128 threads computes C = A * B in 144.314033 [milli seconds] (56107.776703 [MFLOPS])
+
+~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: gupta3>~~~~~~~~~~~~~~~~~~~~~~~~~
+reading input matrices in text (ascii)... 
+Matrix is symmetric
+Converting matrix data from ASCII to COO format: 0.5174946263432503 seconds
+Input Matrix: Rows = 16783, Columns= 16783, nnz = 9323427, cluster_sz = 8
+Converting to csc ... 
+
+Matrix is symmetric
+Converting matrix data from ASCII to COO format: 0.5445984415709972 seconds
+Input Matrix: Rows = 16783, Columns= 16783, nnz = 9323427, cluster_sz = 8
+Converting to csc ... 
+
+Total number of floating-point operations including addition and multiplication in SpGEMM (A * B): 61431943634
+
+Evaluation of HashSpGEMMCluster
+HashSpGEMMVLCluster with 128 threads computes C = A * B in 769.407644 [milli seconds] (79843.167758 [MFLOPS])
+
+~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: TSOPF_FS_b300_c2>~~~~~~~~~~~~~~~~~~~~~~~~~
+reading input matrices in text (ascii)... 
+Matrix is symmetric
+Matrix is symmetric
+Converting matrix data from ASCII to COO format: 1.537522420287132 seconds
+Input Matrix: Rows = 56814, Columns= 56814, nnz = 8767466, cluster_sz = 8
+Converting to csc ... 
+
+Matrix is symmetric
+Matrix is symmetric
+Converting matrix data from ASCII to COO format: 1.571051340550184 seconds
+Input Matrix: Rows = 56814, Columns= 56814, nnz = 8767466, cluster_sz = 8
+Converting to csc ... 
+
+Total number of floating-point operations including addition and multiplication in SpGEMM (A * B): 107894274940
+
+Evaluation of HashSpGEMMCluster
+HashSpGEMMVLCluster with 128 threads computes C = A * B in 2735.548783 [milli seconds] (39441.546655 [MFLOPS])
+
+~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: com-LiveJournal>~~~~~~~~~~~~~~~~~~~~~~~~~
+reading input matrices in text (ascii)... 
+Matrix is symmetric
+Converting matrix data from ASCII to COO format: 4.014460429549217 seconds
+Input Matrix: Rows = 3997962, Columns= 3997962, nnz = 69362378, cluster_sz = 8
+Converting to csc ... 
+
+Matrix is symmetric
+Converting matrix data from ASCII to COO format: 4.153641473501921 seconds
+Input Matrix: Rows = 3997962, Columns= 3997962, nnz = 69362378, cluster_sz = 8
+Converting to csc ... 
+
+Total number of floating-point operations including addition and multiplication in SpGEMM (A * B): 17161797536
+
+Evaluation of HashSpGEMMCluster
+HashSpGEMMVLCluster with 128 threads computes C = A * B in 5067.376960 [milli seconds] (3386.722099 [MFLOPS])
+
+~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: wikipedia-20070206>~~~~~~~~~~~~~~~~~~~~~~~~~
+reading input matrices in text (ascii)... 
+Converting matrix data from ASCII to COO format: 5.054512679576874 seconds
+Input Matrix: Rows = 3566907, Columns= 3566907, nnz = 45030389, cluster_sz = 8
+Converting to csc ... 
+
+Converting matrix data from ASCII to COO format: 5.25809570401907 seconds
+Input Matrix: Rows = 3566907, Columns= 3566907, nnz = 45030389, cluster_sz = 8
+Converting to csc ... 
+
+Total number of floating-point operations including addition and multiplication in SpGEMM (A * B): 12796037822
+
+Couldn't open file /data/linshengle_data/SpGEMM-Reordering/close_pairs/wikipedia-20070206.mtx
+

@@ -1,0 +1,234 @@
+~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: poisson3Da-HPOrder>~~~~~~~~~~~~~~~~~~~~~~~~~
+Normal usage: ./spgemm {gen|binary|text} {rmat|er|matrix1.txt} {shuffle.txt} <max_cluster_size> <numthreads>
+Running on 1, 16, 32, 64 threads
+max_cluster_size: 8
+reading input matrices in text (ascii)... 
+Converting matrix data from ASCII to COO format: 0.1184401959180832 seconds
+Input Matrix: Rows = 13514, Columns= 13514, nnz = 352762, cluster_sz = 8
+Converting to csc ... 
+
+Total number of floating-point operations including addition and multiplication in SpGEMM (A * B): 23537356
+
+# of clusters: 12390
+max_cluster_size for SpGEMM: 4
+Evaluation of HashSpGEMMVLCluster
+HashSpGEMMVLCluster with  64 threads computes C = A * B in 3.317148 [milli seconds] (7095.659979 [MFLOPS])
+
+~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: pdb1HYS-HPOrder>~~~~~~~~~~~~~~~~~~~~~~~~~
+Normal usage: ./spgemm {gen|binary|text} {rmat|er|matrix1.txt} {shuffle.txt} <max_cluster_size> <numthreads>
+Running on 1, 16, 32, 64 threads
+max_cluster_size: 8
+reading input matrices in text (ascii)... 
+Matrix is symmetric
+Converting matrix data from ASCII to COO format: 0.6801845207810402 seconds
+Input Matrix: Rows = 36417, Columns= 36417, nnz = 4344765, cluster_sz = 8
+Converting to csc ... 
+
+Total number of floating-point operations including addition and multiplication in SpGEMM (A * B): 1110645318
+
+# of clusters: 5209
+max_cluster_size for SpGEMM: 8
+Evaluation of HashSpGEMMVLCluster
+HashSpGEMMVLCluster with  64 threads computes C = A * B in 20.932643 [milli seconds] (53058.054440 [MFLOPS])
+
+~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: rma10-HPOrder>~~~~~~~~~~~~~~~~~~~~~~~~~
+Normal usage: ./spgemm {gen|binary|text} {rmat|er|matrix1.txt} {shuffle.txt} <max_cluster_size> <numthreads>
+Running on 1, 16, 32, 64 threads
+max_cluster_size: 8
+reading input matrices in text (ascii)... 
+Converting matrix data from ASCII to COO format: 0.7251598425209522 seconds
+Input Matrix: Rows = 46835, Columns= 46835, nnz = 2374001, cluster_sz = 8
+Converting to csc ... 
+
+Total number of floating-point operations including addition and multiplication in SpGEMM (A * B): 312960518
+
+# of clusters: 7806
+max_cluster_size for SpGEMM: 8
+Evaluation of HashSpGEMMVLCluster
+HashSpGEMMVLCluster with  64 threads computes C = A * B in 6.887319 [milli seconds] (45440.108230 [MFLOPS])
+
+~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: shipsec1-HPOrder>~~~~~~~~~~~~~~~~~~~~~~~~~
+Normal usage: ./spgemm {gen|binary|text} {rmat|er|matrix1.txt} {shuffle.txt} <max_cluster_size> <numthreads>
+Running on 1, 16, 32, 64 threads
+max_cluster_size: 8
+reading input matrices in text (ascii)... 
+Matrix is symmetric
+Converting matrix data from ASCII to COO format: 1.013940867036581 seconds
+Input Matrix: Rows = 140874, Columns= 140874, nnz = 7813404, cluster_sz = 8
+Converting to csc ... 
+
+Total number of floating-point operations including addition and multiplication in SpGEMM (A * B): 901278576
+
+# of clusters: 22612
+max_cluster_size for SpGEMM: 8
+Evaluation of HashSpGEMMVLCluster
+HashSpGEMMVLCluster with  64 threads computes C = A * B in 17.459909 [milli seconds] (51619.891134 [MFLOPS])
+
+~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: consph-HPOrder>~~~~~~~~~~~~~~~~~~~~~~~~~
+Normal usage: ./spgemm {gen|binary|text} {rmat|er|matrix1.txt} {shuffle.txt} <max_cluster_size> <numthreads>
+Running on 1, 16, 32, 64 threads
+max_cluster_size: 8
+reading input matrices in text (ascii)... 
+Matrix is symmetric
+Converting matrix data from ASCII to COO format: 0.9793313406407833 seconds
+Input Matrix: Rows = 83334, Columns= 83334, nnz = 6010480, cluster_sz = 8
+Converting to csc ... 
+
+Total number of floating-point operations including addition and multiplication in SpGEMM (A * B): 927690060
+
+# of clusters: 18584
+max_cluster_size for SpGEMM: 8
+Evaluation of HashSpGEMMVLCluster
+HashSpGEMMVLCluster with  64 threads computes C = A * B in 18.918550 [milli seconds] (49036.002193 [MFLOPS])
+
+~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: filter3D-HPOrder>~~~~~~~~~~~~~~~~~~~~~~~~~
+Normal usage: ./spgemm {gen|binary|text} {rmat|er|matrix1.txt} {shuffle.txt} <max_cluster_size> <numthreads>
+Running on 1, 16, 32, 64 threads
+max_cluster_size: 8
+reading input matrices in text (ascii)... 
+Matrix is symmetric
+Converting matrix data from ASCII to COO format: 0.5128957852721214 seconds
+Input Matrix: Rows = 106437, Columns= 106437, nnz = 2707179, cluster_sz = 8
+Converting to csc ... 
+
+Total number of floating-point operations including addition and multiplication in SpGEMM (A * B): 171914370
+
+# of clusters: 58975
+max_cluster_size for SpGEMM: 8
+Evaluation of HashSpGEMMVLCluster
+HashSpGEMMVLCluster with  64 threads computes C = A * B in 18.635641 [milli seconds] (9225.031015 [MFLOPS])
+
+~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: mac_econ_fwd500-HPOrder>~~~~~~~~~~~~~~~~~~~~~~~~~
+Normal usage: ./spgemm {gen|binary|text} {rmat|er|matrix1.txt} {shuffle.txt} <max_cluster_size> <numthreads>
+Running on 1, 16, 32, 64 threads
+max_cluster_size: 8
+reading input matrices in text (ascii)... 
+Converting matrix data from ASCII to COO format: 0.3862385489046574 seconds
+Input Matrix: Rows = 206500, Columns= 206500, nnz = 1273389, cluster_sz = 8
+Converting to csc ... 
+
+Total number of floating-point operations including addition and multiplication in SpGEMM (A * B): 15113794
+
+# of clusters: 181878
+max_cluster_size for SpGEMM: 3
+Evaluation of HashSpGEMMVLCluster
+
+~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: af_shell10-HPOrder>~~~~~~~~~~~~~~~~~~~~~~~~~
+Normal usage: ./spgemm {gen|binary|text} {rmat|er|matrix1.txt} {shuffle.txt} <max_cluster_size> <numthreads>
+Running on 1, 16, 32, 64 threads
+max_cluster_size: 8
+reading input matrices in text (ascii)... 
+Matrix is symmetric
+Converting matrix data from ASCII to COO format: 8.26426837220788 seconds
+Input Matrix: Rows = 1508065, Columns= 1508065, nnz = 52672325, cluster_sz = 8
+Converting to csc ... 
+
+Total number of floating-point operations including addition and multiplication in SpGEMM (A * B): 3681833750
+
+# of clusters: 203142
+max_cluster_size for SpGEMM: 8
+Evaluation of HashSpGEMMVLCluster
+HashSpGEMMVLCluster with  64 threads computes C = A * B in 101.315109 [milli seconds] (36340.421193 [MFLOPS])
+
+~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: hood-HPOrder>~~~~~~~~~~~~~~~~~~~~~~~~~
+Normal usage: ./spgemm {gen|binary|text} {rmat|er|matrix1.txt} {shuffle.txt} <max_cluster_size> <numthreads>
+Running on 1, 16, 32, 64 threads
+max_cluster_size: 8
+reading input matrices in text (ascii)... 
+Matrix is symmetric
+Converting matrix data from ASCII to COO format: 1.633418250828981 seconds
+Input Matrix: Rows = 220542, Columns= 220542, nnz = 10768436, cluster_sz = 8
+Converting to csc ... 
+
+Total number of floating-point operations including addition and multiplication in SpGEMM (A * B): 1124056276
+
+# of clusters: 33666
+max_cluster_size for SpGEMM: 8
+Evaluation of HashSpGEMMVLCluster
+HashSpGEMMVLCluster with  64 threads computes C = A * B in 19.315469 [milli seconds] (58194.615013 [MFLOPS])
+
+~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: case39-HPOrder>~~~~~~~~~~~~~~~~~~~~~~~~~
+Normal usage: ./spgemm {gen|binary|text} {rmat|er|matrix1.txt} {shuffle.txt} <max_cluster_size> <numthreads>
+Running on 1, 16, 32, 64 threads
+max_cluster_size: 8
+reading input matrices in text (ascii)... 
+Matrix is symmetric
+Matrix is symmetric
+Converting matrix data from ASCII to COO format: 0.1718806326389313 seconds
+Input Matrix: Rows = 40216, Columns= 40216, nnz = 1042160, cluster_sz = 8
+Converting to csc ... 
+
+Total number of floating-point operations including addition and multiplication in SpGEMM (A * B): 8097139548
+
+# of clusters: 22132
+max_cluster_size for SpGEMM: 8
+Evaluation of HashSpGEMMVLCluster
+HashSpGEMMVLCluster with  64 threads computes C = A * B in 225.015315 [milli seconds] (35984.837446 [MFLOPS])
+
+~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: gupta3-HPOrder>~~~~~~~~~~~~~~~~~~~~~~~~~
+Normal usage: ./spgemm {gen|binary|text} {rmat|er|matrix1.txt} {shuffle.txt} <max_cluster_size> <numthreads>
+Running on 1, 16, 32, 64 threads
+max_cluster_size: 8
+reading input matrices in text (ascii)... 
+Matrix is symmetric
+Converting matrix data from ASCII to COO format: 0.4909858927130699 seconds
+Input Matrix: Rows = 16783, Columns= 16783, nnz = 9323427, cluster_sz = 8
+Converting to csc ... 
+
+Total number of floating-point operations including addition and multiplication in SpGEMM (A * B): 61431943634
+
+# of clusters: 6916
+max_cluster_size for SpGEMM: 8
+Evaluation of HashSpGEMMVLCluster
+
+~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: TSOPF_FS_b300_c2-HPOrder>~~~~~~~~~~~~~~~~~~~~~~~~~
+Normal usage: ./spgemm {gen|binary|text} {rmat|er|matrix1.txt} {shuffle.txt} <max_cluster_size> <numthreads>
+Running on 1, 16, 32, 64 threads
+max_cluster_size: 8
+reading input matrices in text (ascii)... 
+Matrix is symmetric
+Matrix is symmetric
+Converting matrix data from ASCII to COO format: 1.51424827799201 seconds
+Input Matrix: Rows = 56814, Columns= 56814, nnz = 8767466, cluster_sz = 8
+Converting to csc ... 
+
+Total number of floating-point operations including addition and multiplication in SpGEMM (A * B): 107894274940
+
+# of clusters: 32749
+max_cluster_size for SpGEMM: 8
+Evaluation of HashSpGEMMVLCluster
+HashSpGEMMVLCluster with  64 threads computes C = A * B in 1895.901659 [milli seconds] (56909.214895 [MFLOPS])
+
+~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: com-LiveJournal-HPOrder>~~~~~~~~~~~~~~~~~~~~~~~~~
+Normal usage: ./spgemm {gen|binary|text} {rmat|er|matrix1.txt} {shuffle.txt} <max_cluster_size> <numthreads>
+Running on 1, 16, 32, 64 threads
+max_cluster_size: 8
+reading input matrices in text (ascii)... 
+Matrix is symmetric
+Converting matrix data from ASCII to COO format: 3.993551168590784 seconds
+Input Matrix: Rows = 3997962, Columns= 3997962, nnz = 69362378, cluster_sz = 8
+Converting to csc ... 
+
+Total number of floating-point operations including addition and multiplication in SpGEMM (A * B): 17161797536
+
+# of clusters: 3517391
+max_cluster_size for SpGEMM: 8
+Evaluation of HashSpGEMMVLCluster
+HashSpGEMMVLCluster with  64 threads computes C = A * B in 6401.308675 [milli seconds] (2680.982657 [MFLOPS])
+
+~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: wikipedia-20070206-HPOrder>~~~~~~~~~~~~~~~~~~~~~~~~~
+Normal usage: ./spgemm {gen|binary|text} {rmat|er|matrix1.txt} {shuffle.txt} <max_cluster_size> <numthreads>
+Running on 1, 16, 32, 64 threads
+max_cluster_size: 8
+reading input matrices in text (ascii)... 
+Converting matrix data from ASCII to COO format: 5.08535385876894 seconds
+Input Matrix: Rows = 3566907, Columns= 3566907, nnz = 45030389, cluster_sz = 8
+Converting to csc ... 
+
+Total number of floating-point operations including addition and multiplication in SpGEMM (A * B): 12796037822
+
+# of clusters: 3264729
+max_cluster_size for SpGEMM: 8
+Evaluation of HashSpGEMMVLCluster
+HashSpGEMMVLCluster with  64 threads computes C = A * B in 4326.356760 [milli seconds] (2957.693628 [MFLOPS])
+

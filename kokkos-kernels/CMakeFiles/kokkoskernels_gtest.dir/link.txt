@@ -1,0 +1,2 @@
+/usr/bin/ar qc libkokkoskernels_gtest.a "CMakeFiles/kokkoskernels_gtest.dir/tpls/gtest/gtest/gtest-all.cc.o"
+/usr/bin/ranlib libkokkoskernels_gtest.a

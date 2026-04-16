@@ -1,0 +1,165 @@
+#include <iostream>
+#include <set>
+#include <chrono>
+
+#include "sparsebase/bases/iobase.h"
+#include "sparsebase/bases/reorder_base.h"
+#include "sparsebase/format/csr.h"
+#include "sparsebase/format/format.h"
+#include "sparsebase/format/format_order_one.h"
+#include "sparsebase/format/format_order_two.h"
+#include "sparsebase/object/object.h"
+#include "sparsebase/permute/permuter.h"
+#include "sparsebase/reorder/degree_reorder.h"
+
+using namespace std;
+using namespace sparsebase;
+using namespace io;
+using namespace bases;
+using namespace format;
+using namespace reorder;
+
+using vertex_type = int64_t;
+using edge_type = int64_t;
+using value_type = double;
+
+int main(int argc, char *argv[]) {
+  if (argc < 2) {
+    cout << "Usage: ./degree_order <matrix_market_file> <reorder_output_file> <save_to_file>\n";
+    cout
+        << "Hint: You can use the matrix-market-file: examples/data/com-dblp.mtx\n";
+    return 1;
+  }
+  cout << "F t re  s sp r e!" << endl;
+  string file_name = argv[1];
+  string out_file_name = argv[2];
+  bool save_to_file = false;
+  if(argc == 4) save_to_file = (atoi(argv[3]) == 0) ? false : true;
+  context::CPUContext cpu_context;
+
+  cout << "********************************" << endl;
+
+  cout << "Reading graph from " << file_name << "..." << endl;
+  auto csr =
+      sparsebase::bases::IOBase::ReadMTXToCSR<vertex_type, edge_type,
+                                              value_type>(file_name, true);
+  cout << "Number of vertices: " << csr->get_dimensions()[0] << endl;
+  cout << "Number of edges: " << csr->get_num_nnz() << endl;
+
+  cout << "********************************" << endl;
+
+  cout << "Sorting the vertices according to degree (degree ordering)..."
+       << endl;
+
+  chrono::high_resolution_clock::time_point start = chrono::high_resolution_clock::now();
+  reorder::DegreeReorder<vertex_type, edge_type, value_type> orderer(1);
+  vertex_type *permutation = orderer.GetReorder(csr, {&cpu_context}, false);
+  chrono::high_resolution_clock::time_point end = chrono::high_resolution_clock::now();
+  chrono::duration<float> elapsed_time = chrono::duration_cast<chrono::duration<float>>(end - start);
+  std::cout << "Reordering takes: " << elapsed_time.count() << " seconds" << std::endl;
+
+  vertex_type n = csr->get_dimensions()[0];
+  auto row_ptr = csr->get_row_ptr();
+  auto col = csr->get_col();
+  cout << "According to degree order: " << endl;
+  cout << "First vertex, ID: " << permutation[0]
+       << ", Degree: " << row_ptr[permutation[0] + 1] - row_ptr[permutation[0]]
+       << endl;
+  cout << "Last vertex, ID: " << permutation[n - 1] << ", Degree: "
+       << row_ptr[permutation[n - 1] + 1] - row_ptr[permutation[n - 1]] << endl;
+
+  cout << "********************************" << endl;
+
+  cout << "Checking the correctness of the ordering..." << endl;
+  // We can easily get the inverse of our permutation (to reverse the ordering)
+  auto inv_permutation = bases::ReorderBase::InversePermutation(permutation, n);
+  bool order_is_correct = true;
+  set<vertex_type> check;
+  for (vertex_type new_u = 0; new_u < n - 1 && order_is_correct; new_u++) {
+    vertex_type u = inv_permutation[new_u];
+    if (check.find(u) == check.end()) {
+      check.insert(u);
+    } else {
+      order_is_correct = false;
+    }
+    vertex_type v = inv_permutation[new_u + 1];
+    if (row_ptr[u + 1] - row_ptr[u] > row_ptr[v + 1] - row_ptr[v]) {
+      cout << "Degree Order is incorrect!" << endl;
+      order_is_correct = false;
+      return 1;
+    }
+  }
+  vertex_type v = inv_permutation[n - 1];
+  if (check.find(v) == check.end()) {
+    check.insert(v);
+  } else {
+    order_is_correct = false;
+  }
+  if (order_is_correct) {
+    cout << "Order is correct." << endl;
+  }
+  /// skipping transformation
+//  permute::PermuteOrderTwo<vertex_type, edge_type, value_type> transformer(
+//      permutation, permutation);
+//  format::Format *perm_csr =
+//      transformer.GetPermutation(csr, {&cpu_context}, true);
+//  auto *n_row_ptr =
+//      perm_csr->AsAbsolute<format::CSR<vertex_type, edge_type, value_type>>()
+//          ->get_row_ptr();
+//  auto *n_col =
+//      perm_csr->AsAbsolute<format::CSR<vertex_type, edge_type, value_type>>()
+//          ->get_col();
+//  cout << "Checking the correctness of the transformation..." << endl;
+//  bool transform_is_correct = true;
+//  for (vertex_type i = 0; i < n - 1 && transform_is_correct; i++) {
+//    if (n_row_ptr[i + 2] - n_row_ptr[i + 1] < n_row_ptr[i + 1] - n_row_ptr[i]) {
+//      cout << "Transformation is incorrect!" << endl;
+//      transform_is_correct = false;
+//      return 1;
+//    }
+//  }
+//  if (transform_is_correct) {
+//    cout << "Transformation is correct." << endl;
+//  }
+//  // We can reverse the ordering easily
+//  permute::PermuteOrderTwo<vertex_type, edge_type, value_type> inv_trans(
+//      inv_permutation, inv_permutation);
+//  auto perm_then_inv_perm_csr =
+//      inv_trans.GetPermutation(perm_csr, {&cpu_context}, true)
+//          ->As<format::CSR>();
+////  auto orig_csr =
+////      con->AsAbsolute<format::CSR<vertex_type, edge_type, value_type>>();
+//  for (vertex_type i = 0; i < n; i++) {
+//    for (edge_type e = perm_then_inv_perm_csr->get_row_ptr()[i];
+//         e < perm_then_inv_perm_csr->get_row_ptr()[i + 1]; e++) {
+//      if (csr->get_col()[e] != perm_then_inv_perm_csr->get_col()[e]) {
+//        cout << "Bad inverse reordering!\n";
+//        return 1;
+//      }
+//    }
+//  }
+//  cout << "Inversion is correct\n";
+
+  if(save_to_file) {
+    // Save the result in file
+    std::ofstream degree_order_file(out_file_name.c_str());
+    assert(degree_order_file.is_open() &&
+           "Degree order output file is not open!");
+    std::copy(&permutation[0], &permutation[n],
+              std::ostream_iterator<vertex_type>(degree_order_file, "\n"));
+    degree_order_file.close();
+
+    // Save the result in file
+    auto inv_out_file_name = out_file_name + "_inv";
+    std::ofstream inv_degree_order_file(inv_out_file_name.c_str());
+    assert(inv_degree_order_file.is_open() &&
+           "Degree order output file is not open!");
+    std::copy(&inv_permutation[0], &inv_permutation[n],
+              std::ostream_iterator<vertex_type>(inv_degree_order_file, "\n"));
+    inv_degree_order_file.close();
+  }
+
+  delete[] permutation;
+  delete[] inv_permutation;
+  return 0;
+}

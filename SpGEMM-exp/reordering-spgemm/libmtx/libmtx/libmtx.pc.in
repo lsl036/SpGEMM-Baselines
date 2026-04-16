@@ -1,0 +1,10 @@
+prefix=@prefix@
+exec_prefix=@exec_prefix@
+libdir=@libdir@
+includedir=@includedir@
+
+Name: libmtx
+Description: C library and utility programs for Matrix Market files
+Version: @PACKAGE_VERSION@
+Libs: -L${libdir} -lmtx
+Cflags: -I${includedir} @libmtx_CPPFLAGS@

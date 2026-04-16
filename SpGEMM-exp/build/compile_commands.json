@@ -1,0 +1,397 @@
+[
+{
+  "directory": "/data/lsl/SpGEMM/SpGEMM-exp/build",
+  "command": "/usr/bin/clang++ -I/data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src -I/data/lsl/SpGEMM/SpGEMM-exp/build/src -I/data/lsl/SpGEMM/SpGEMM-exp/build -g -fopenmp=libomp -std=gnu++17 -o src/CMakeFiles/sparsebase.dir/sparsebase/context/cpu_context.cc.o -c /data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src/sparsebase/context/cpu_context.cc",
+  "file": "/data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src/sparsebase/context/cpu_context.cc"
+},
+{
+  "directory": "/data/lsl/SpGEMM/SpGEMM-exp/build",
+  "command": "/usr/bin/clang++ -I/data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src -I/data/lsl/SpGEMM/SpGEMM-exp/build/src -I/data/lsl/SpGEMM/SpGEMM-exp/build -g -fopenmp=libomp -std=gnu++17 -o src/CMakeFiles/sparsebase.dir/sparsebase/converter/converter.cc.o -c /data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src/sparsebase/converter/converter.cc",
+  "file": "/data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src/sparsebase/converter/converter.cc"
+},
+{
+  "directory": "/data/lsl/SpGEMM/SpGEMM-exp/build",
+  "command": "/usr/bin/clang++ -I/data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src -I/data/lsl/SpGEMM/SpGEMM-exp/build/src -I/data/lsl/SpGEMM/SpGEMM-exp/build -g -fopenmp=libomp -std=gnu++17 -o src/CMakeFiles/sparsebase.dir/sparsebase/converter/converter_order_one.cc.o -c /data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src/sparsebase/converter/converter_order_one.cc",
+  "file": "/data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src/sparsebase/converter/converter_order_one.cc"
+},
+{
+  "directory": "/data/lsl/SpGEMM/SpGEMM-exp/build",
+  "command": "/usr/bin/clang++ -I/data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src -I/data/lsl/SpGEMM/SpGEMM-exp/build/src -I/data/lsl/SpGEMM/SpGEMM-exp/build -g -fopenmp=libomp -std=gnu++17 -o src/CMakeFiles/sparsebase.dir/sparsebase/converter/converter_order_two.cc.o -c /data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src/sparsebase/converter/converter_order_two.cc",
+  "file": "/data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src/sparsebase/converter/converter_order_two.cc"
+},
+{
+  "directory": "/data/lsl/SpGEMM/SpGEMM-exp/build",
+  "command": "/usr/bin/clang++ -I/data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src -I/data/lsl/SpGEMM/SpGEMM-exp/build/src -I/data/lsl/SpGEMM/SpGEMM-exp/build -g -fopenmp=libomp -std=gnu++17 -o src/CMakeFiles/sparsebase.dir/sparsebase/converter/converter_store.cc.o -c /data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src/sparsebase/converter/converter_store.cc",
+  "file": "/data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src/sparsebase/converter/converter_store.cc"
+},
+{
+  "directory": "/data/lsl/SpGEMM/SpGEMM-exp/build",
+  "command": "/usr/bin/clang++ -I/data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src -I/data/lsl/SpGEMM/SpGEMM-exp/build/src -I/data/lsl/SpGEMM/SpGEMM-exp/build -g -fopenmp=libomp -std=gnu++17 -o src/CMakeFiles/sparsebase.dir/sparsebase/experiment/concrete_experiment.cc.o -c /data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src/sparsebase/experiment/concrete_experiment.cc",
+  "file": "/data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src/sparsebase/experiment/concrete_experiment.cc"
+},
+{
+  "directory": "/data/lsl/SpGEMM/SpGEMM-exp/build",
+  "command": "/usr/bin/clang++ -I/data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src -I/data/lsl/SpGEMM/SpGEMM-exp/build/src -I/data/lsl/SpGEMM/SpGEMM-exp/build -g -fopenmp=libomp -std=gnu++17 -o src/CMakeFiles/sparsebase.dir/sparsebase/feature/avg_degree.cc.o -c /data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src/sparsebase/feature/avg_degree.cc",
+  "file": "/data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src/sparsebase/feature/avg_degree.cc"
+},
+{
+  "directory": "/data/lsl/SpGEMM/SpGEMM-exp/build",
+  "command": "/usr/bin/clang++ -I/data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src -I/data/lsl/SpGEMM/SpGEMM-exp/build/src -I/data/lsl/SpGEMM/SpGEMM-exp/build -g -fopenmp=libomp -std=gnu++17 -o src/CMakeFiles/sparsebase.dir/sparsebase/feature/bandwidth.cc.o -c /data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src/sparsebase/feature/bandwidth.cc",
+  "file": "/data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src/sparsebase/feature/bandwidth.cc"
+},
+{
+  "directory": "/data/lsl/SpGEMM/SpGEMM-exp/build",
+  "command": "/usr/bin/clang++ -I/data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src -I/data/lsl/SpGEMM/SpGEMM-exp/build/src -I/data/lsl/SpGEMM/SpGEMM-exp/build -g -fopenmp=libomp -std=gnu++17 -o src/CMakeFiles/sparsebase.dir/sparsebase/feature/degree_distribution.cc.o -c /data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src/sparsebase/feature/degree_distribution.cc",
+  "file": "/data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src/sparsebase/feature/degree_distribution.cc"
+},
+{
+  "directory": "/data/lsl/SpGEMM/SpGEMM-exp/build",
+  "command": "/usr/bin/clang++ -I/data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src -I/data/lsl/SpGEMM/SpGEMM-exp/build/src -I/data/lsl/SpGEMM/SpGEMM-exp/build -g -fopenmp=libomp -std=gnu++17 -o src/CMakeFiles/sparsebase.dir/sparsebase/feature/degrees.cc.o -c /data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src/sparsebase/feature/degrees.cc",
+  "file": "/data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src/sparsebase/feature/degrees.cc"
+},
+{
+  "directory": "/data/lsl/SpGEMM/SpGEMM-exp/build",
+  "command": "/usr/bin/clang++ -I/data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src -I/data/lsl/SpGEMM/SpGEMM-exp/build/src -I/data/lsl/SpGEMM/SpGEMM-exp/build -g -fopenmp=libomp -std=gnu++17 -o src/CMakeFiles/sparsebase.dir/sparsebase/feature/degrees_degree_distribution.cc.o -c /data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src/sparsebase/feature/degrees_degree_distribution.cc",
+  "file": "/data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src/sparsebase/feature/degrees_degree_distribution.cc"
+},
+{
+  "directory": "/data/lsl/SpGEMM/SpGEMM-exp/build",
+  "command": "/usr/bin/clang++ -I/data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src -I/data/lsl/SpGEMM/SpGEMM-exp/build/src -I/data/lsl/SpGEMM/SpGEMM-exp/build -g -fopenmp=libomp -std=gnu++17 -o src/CMakeFiles/sparsebase.dir/sparsebase/feature/extractor.cc.o -c /data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src/sparsebase/feature/extractor.cc",
+  "file": "/data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src/sparsebase/feature/extractor.cc"
+},
+{
+  "directory": "/data/lsl/SpGEMM/SpGEMM-exp/build",
+  "command": "/usr/bin/clang++ -I/data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src -I/data/lsl/SpGEMM/SpGEMM-exp/build/src -I/data/lsl/SpGEMM/SpGEMM-exp/build -g -fopenmp=libomp -std=gnu++17 -o src/CMakeFiles/sparsebase.dir/sparsebase/feature/feature_extractor.cc.o -c /data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src/sparsebase/feature/feature_extractor.cc",
+  "file": "/data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src/sparsebase/feature/feature_extractor.cc"
+},
+{
+  "directory": "/data/lsl/SpGEMM/SpGEMM-exp/build",
+  "command": "/usr/bin/clang++ -I/data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src -I/data/lsl/SpGEMM/SpGEMM-exp/build/src -I/data/lsl/SpGEMM/SpGEMM-exp/build -g -fopenmp=libomp -std=gnu++17 -o src/CMakeFiles/sparsebase.dir/sparsebase/feature/feature_preprocess_type.cc.o -c /data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src/sparsebase/feature/feature_preprocess_type.cc",
+  "file": "/data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src/sparsebase/feature/feature_preprocess_type.cc"
+},
+{
+  "directory": "/data/lsl/SpGEMM/SpGEMM-exp/build",
+  "command": "/usr/bin/clang++ -I/data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src -I/data/lsl/SpGEMM/SpGEMM-exp/build/src -I/data/lsl/SpGEMM/SpGEMM-exp/build -g -fopenmp=libomp -std=gnu++17 -o src/CMakeFiles/sparsebase.dir/sparsebase/feature/jaccard_weights.cc.o -c /data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src/sparsebase/feature/jaccard_weights.cc",
+  "file": "/data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src/sparsebase/feature/jaccard_weights.cc"
+},
+{
+  "directory": "/data/lsl/SpGEMM/SpGEMM-exp/build",
+  "command": "/usr/bin/clang++ -I/data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src -I/data/lsl/SpGEMM/SpGEMM-exp/build/src -I/data/lsl/SpGEMM/SpGEMM-exp/build -g -fopenmp=libomp -std=gnu++17 -o src/CMakeFiles/sparsebase.dir/sparsebase/feature/max_degree.cc.o -c /data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src/sparsebase/feature/max_degree.cc",
+  "file": "/data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src/sparsebase/feature/max_degree.cc"
+},
+{
+  "directory": "/data/lsl/SpGEMM/SpGEMM-exp/build",
+  "command": "/usr/bin/clang++ -I/data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src -I/data/lsl/SpGEMM/SpGEMM-exp/build/src -I/data/lsl/SpGEMM/SpGEMM-exp/build -g -fopenmp=libomp -std=gnu++17 -o src/CMakeFiles/sparsebase.dir/sparsebase/feature/min_degree.cc.o -c /data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src/sparsebase/feature/min_degree.cc",
+  "file": "/data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src/sparsebase/feature/min_degree.cc"
+},
+{
+  "directory": "/data/lsl/SpGEMM/SpGEMM-exp/build",
+  "command": "/usr/bin/clang++ -I/data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src -I/data/lsl/SpGEMM/SpGEMM-exp/build/src -I/data/lsl/SpGEMM/SpGEMM-exp/build -g -fopenmp=libomp -std=gnu++17 -o src/CMakeFiles/sparsebase.dir/sparsebase/feature/min_max_avg_degree.cc.o -c /data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src/sparsebase/feature/min_max_avg_degree.cc",
+  "file": "/data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src/sparsebase/feature/min_max_avg_degree.cc"
+},
+{
+  "directory": "/data/lsl/SpGEMM/SpGEMM-exp/build",
+  "command": "/usr/bin/clang++ -I/data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src -I/data/lsl/SpGEMM/SpGEMM-exp/build/src -I/data/lsl/SpGEMM/SpGEMM-exp/build -g -fopenmp=libomp -std=gnu++17 -o src/CMakeFiles/sparsebase.dir/sparsebase/feature/off_diag_block_nnz.cc.o -c /data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src/sparsebase/feature/off_diag_block_nnz.cc",
+  "file": "/data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src/sparsebase/feature/off_diag_block_nnz.cc"
+},
+{
+  "directory": "/data/lsl/SpGEMM/SpGEMM-exp/build",
+  "command": "/usr/bin/clang++ -I/data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src -I/data/lsl/SpGEMM/SpGEMM-exp/build/src -I/data/lsl/SpGEMM/SpGEMM-exp/build -g -fopenmp=libomp -std=gnu++17 -o src/CMakeFiles/sparsebase.dir/sparsebase/feature/profile.cc.o -c /data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src/sparsebase/feature/profile.cc",
+  "file": "/data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src/sparsebase/feature/profile.cc"
+},
+{
+  "directory": "/data/lsl/SpGEMM/SpGEMM-exp/build",
+  "command": "/usr/bin/clang++ -I/data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src -I/data/lsl/SpGEMM/SpGEMM-exp/build/src -I/data/lsl/SpGEMM/SpGEMM-exp/build -g -fopenmp=libomp -std=gnu++17 -o src/CMakeFiles/sparsebase.dir/sparsebase/feature/triangle_count.cc.o -c /data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src/sparsebase/feature/triangle_count.cc",
+  "file": "/data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src/sparsebase/feature/triangle_count.cc"
+},
+{
+  "directory": "/data/lsl/SpGEMM/SpGEMM-exp/build",
+  "command": "/usr/bin/clang++ -I/data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src -I/data/lsl/SpGEMM/SpGEMM-exp/build/src -I/data/lsl/SpGEMM/SpGEMM-exp/build -g -fopenmp=libomp -std=gnu++17 -o src/CMakeFiles/sparsebase.dir/sparsebase/format/array.cc.o -c /data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src/sparsebase/format/array.cc",
+  "file": "/data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src/sparsebase/format/array.cc"
+},
+{
+  "directory": "/data/lsl/SpGEMM/SpGEMM-exp/build",
+  "command": "/usr/bin/clang++ -I/data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src -I/data/lsl/SpGEMM/SpGEMM-exp/build/src -I/data/lsl/SpGEMM/SpGEMM-exp/build -g -fopenmp=libomp -std=gnu++17 -o src/CMakeFiles/sparsebase.dir/sparsebase/format/coo.cc.o -c /data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src/sparsebase/format/coo.cc",
+  "file": "/data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src/sparsebase/format/coo.cc"
+},
+{
+  "directory": "/data/lsl/SpGEMM/SpGEMM-exp/build",
+  "command": "/usr/bin/clang++ -I/data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src -I/data/lsl/SpGEMM/SpGEMM-exp/build/src -I/data/lsl/SpGEMM/SpGEMM-exp/build -g -fopenmp=libomp -std=gnu++17 -o src/CMakeFiles/sparsebase.dir/sparsebase/format/csc.cc.o -c /data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src/sparsebase/format/csc.cc",
+  "file": "/data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src/sparsebase/format/csc.cc"
+},
+{
+  "directory": "/data/lsl/SpGEMM/SpGEMM-exp/build",
+  "command": "/usr/bin/clang++ -I/data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src -I/data/lsl/SpGEMM/SpGEMM-exp/build/src -I/data/lsl/SpGEMM/SpGEMM-exp/build -g -fopenmp=libomp -std=gnu++17 -o src/CMakeFiles/sparsebase.dir/sparsebase/format/csr.cc.o -c /data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src/sparsebase/format/csr.cc",
+  "file": "/data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src/sparsebase/format/csr.cc"
+},
+{
+  "directory": "/data/lsl/SpGEMM/SpGEMM-exp/build",
+  "command": "/usr/bin/clang++ -I/data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src -I/data/lsl/SpGEMM/SpGEMM-exp/build/src -I/data/lsl/SpGEMM/SpGEMM-exp/build -g -fopenmp=libomp -std=gnu++17 -o src/CMakeFiles/sparsebase.dir/sparsebase/format/format_order_one.cc.o -c /data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src/sparsebase/format/format_order_one.cc",
+  "file": "/data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src/sparsebase/format/format_order_one.cc"
+},
+{
+  "directory": "/data/lsl/SpGEMM/SpGEMM-exp/build",
+  "command": "/usr/bin/clang++ -I/data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src -I/data/lsl/SpGEMM/SpGEMM-exp/build/src -I/data/lsl/SpGEMM/SpGEMM-exp/build -g -fopenmp=libomp -std=gnu++17 -o src/CMakeFiles/sparsebase.dir/sparsebase/format/format_order_two.cc.o -c /data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src/sparsebase/format/format_order_two.cc",
+  "file": "/data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src/sparsebase/format/format_order_two.cc"
+},
+{
+  "directory": "/data/lsl/SpGEMM/SpGEMM-exp/build",
+  "command": "/usr/bin/clang++ -I/data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src -I/data/lsl/SpGEMM/SpGEMM-exp/build/src -I/data/lsl/SpGEMM/SpGEMM-exp/build -g -fopenmp=libomp -std=gnu++17 -o src/CMakeFiles/sparsebase.dir/sparsebase/io/binary_reader_order_one.cc.o -c /data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src/sparsebase/io/binary_reader_order_one.cc",
+  "file": "/data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src/sparsebase/io/binary_reader_order_one.cc"
+},
+{
+  "directory": "/data/lsl/SpGEMM/SpGEMM-exp/build",
+  "command": "/usr/bin/clang++ -I/data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src -I/data/lsl/SpGEMM/SpGEMM-exp/build/src -I/data/lsl/SpGEMM/SpGEMM-exp/build -g -fopenmp=libomp -std=gnu++17 -o src/CMakeFiles/sparsebase.dir/sparsebase/io/binary_reader_order_two.cc.o -c /data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src/sparsebase/io/binary_reader_order_two.cc",
+  "file": "/data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src/sparsebase/io/binary_reader_order_two.cc"
+},
+{
+  "directory": "/data/lsl/SpGEMM/SpGEMM-exp/build",
+  "command": "/usr/bin/clang++ -I/data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src -I/data/lsl/SpGEMM/SpGEMM-exp/build/src -I/data/lsl/SpGEMM/SpGEMM-exp/build -g -fopenmp=libomp -std=gnu++17 -o src/CMakeFiles/sparsebase.dir/sparsebase/io/binary_writer_order_one.cc.o -c /data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src/sparsebase/io/binary_writer_order_one.cc",
+  "file": "/data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src/sparsebase/io/binary_writer_order_one.cc"
+},
+{
+  "directory": "/data/lsl/SpGEMM/SpGEMM-exp/build",
+  "command": "/usr/bin/clang++ -I/data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src -I/data/lsl/SpGEMM/SpGEMM-exp/build/src -I/data/lsl/SpGEMM/SpGEMM-exp/build -g -fopenmp=libomp -std=gnu++17 -o src/CMakeFiles/sparsebase.dir/sparsebase/io/binary_writer_order_two.cc.o -c /data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src/sparsebase/io/binary_writer_order_two.cc",
+  "file": "/data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src/sparsebase/io/binary_writer_order_two.cc"
+},
+{
+  "directory": "/data/lsl/SpGEMM/SpGEMM-exp/build",
+  "command": "/usr/bin/clang++ -I/data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src -I/data/lsl/SpGEMM/SpGEMM-exp/build/src -I/data/lsl/SpGEMM/SpGEMM-exp/build -g -fopenmp=libomp -std=gnu++17 -o src/CMakeFiles/sparsebase.dir/sparsebase/io/edge_list_reader.cc.o -c /data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src/sparsebase/io/edge_list_reader.cc",
+  "file": "/data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src/sparsebase/io/edge_list_reader.cc"
+},
+{
+  "directory": "/data/lsl/SpGEMM/SpGEMM-exp/build",
+  "command": "/usr/bin/clang++ -I/data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src -I/data/lsl/SpGEMM/SpGEMM-exp/build/src -I/data/lsl/SpGEMM/SpGEMM-exp/build -g -fopenmp=libomp -std=gnu++17 -o src/CMakeFiles/sparsebase.dir/sparsebase/io/edge_list_writer.cc.o -c /data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src/sparsebase/io/edge_list_writer.cc",
+  "file": "/data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src/sparsebase/io/edge_list_writer.cc"
+},
+{
+  "directory": "/data/lsl/SpGEMM/SpGEMM-exp/build",
+  "command": "/usr/bin/clang++ -I/data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src -I/data/lsl/SpGEMM/SpGEMM-exp/build/src -I/data/lsl/SpGEMM/SpGEMM-exp/build -g -fopenmp=libomp -std=gnu++17 -o src/CMakeFiles/sparsebase.dir/sparsebase/io/metis_graph_reader.cc.o -c /data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src/sparsebase/io/metis_graph_reader.cc",
+  "file": "/data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src/sparsebase/io/metis_graph_reader.cc"
+},
+{
+  "directory": "/data/lsl/SpGEMM/SpGEMM-exp/build",
+  "command": "/usr/bin/clang++ -I/data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src -I/data/lsl/SpGEMM/SpGEMM-exp/build/src -I/data/lsl/SpGEMM/SpGEMM-exp/build -g -fopenmp=libomp -std=gnu++17 -o src/CMakeFiles/sparsebase.dir/sparsebase/io/metis_graph_writer.cc.o -c /data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src/sparsebase/io/metis_graph_writer.cc",
+  "file": "/data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src/sparsebase/io/metis_graph_writer.cc"
+},
+{
+  "directory": "/data/lsl/SpGEMM/SpGEMM-exp/build",
+  "command": "/usr/bin/clang++ -I/data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src -I/data/lsl/SpGEMM/SpGEMM-exp/build/src -I/data/lsl/SpGEMM/SpGEMM-exp/build -g -fopenmp=libomp -std=gnu++17 -o src/CMakeFiles/sparsebase.dir/sparsebase/io/mtx_reader.cc.o -c /data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src/sparsebase/io/mtx_reader.cc",
+  "file": "/data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src/sparsebase/io/mtx_reader.cc"
+},
+{
+  "directory": "/data/lsl/SpGEMM/SpGEMM-exp/build",
+  "command": "/usr/bin/clang++ -I/data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src -I/data/lsl/SpGEMM/SpGEMM-exp/build/src -I/data/lsl/SpGEMM/SpGEMM-exp/build -g -fopenmp=libomp -std=gnu++17 -o src/CMakeFiles/sparsebase.dir/sparsebase/io/mtx_writer.cc.o -c /data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src/sparsebase/io/mtx_writer.cc",
+  "file": "/data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src/sparsebase/io/mtx_writer.cc"
+},
+{
+  "directory": "/data/lsl/SpGEMM/SpGEMM-exp/build",
+  "command": "/usr/bin/clang++ -I/data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src -I/data/lsl/SpGEMM/SpGEMM-exp/build/src -I/data/lsl/SpGEMM/SpGEMM-exp/build -g -fopenmp=libomp -std=gnu++17 -o src/CMakeFiles/sparsebase.dir/sparsebase/io/patoh_reader.cc.o -c /data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src/sparsebase/io/patoh_reader.cc",
+  "file": "/data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src/sparsebase/io/patoh_reader.cc"
+},
+{
+  "directory": "/data/lsl/SpGEMM/SpGEMM-exp/build",
+  "command": "/usr/bin/clang++ -I/data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src -I/data/lsl/SpGEMM/SpGEMM-exp/build/src -I/data/lsl/SpGEMM/SpGEMM-exp/build -g -fopenmp=libomp -std=gnu++17 -o src/CMakeFiles/sparsebase.dir/sparsebase/io/patoh_writer.cc.o -c /data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src/sparsebase/io/patoh_writer.cc",
+  "file": "/data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src/sparsebase/io/patoh_writer.cc"
+},
+{
+  "directory": "/data/lsl/SpGEMM/SpGEMM-exp/build",
+  "command": "/usr/bin/clang++ -I/data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src -I/data/lsl/SpGEMM/SpGEMM-exp/build/src -I/data/lsl/SpGEMM/SpGEMM-exp/build -g -fopenmp=libomp -std=gnu++17 -o src/CMakeFiles/sparsebase.dir/sparsebase/io/pigo_edge_list_reader.cc.o -c /data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src/sparsebase/io/pigo_edge_list_reader.cc",
+  "file": "/data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src/sparsebase/io/pigo_edge_list_reader.cc"
+},
+{
+  "directory": "/data/lsl/SpGEMM/SpGEMM-exp/build",
+  "command": "/usr/bin/clang++ -I/data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src -I/data/lsl/SpGEMM/SpGEMM-exp/build/src -I/data/lsl/SpGEMM/SpGEMM-exp/build -g -fopenmp=libomp -std=gnu++17 -o src/CMakeFiles/sparsebase.dir/sparsebase/io/pigo_mtx_reader.cc.o -c /data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src/sparsebase/io/pigo_mtx_reader.cc",
+  "file": "/data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src/sparsebase/io/pigo_mtx_reader.cc"
+},
+{
+  "directory": "/data/lsl/SpGEMM/SpGEMM-exp/build",
+  "command": "/usr/bin/clang++ -I/data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src -I/data/lsl/SpGEMM/SpGEMM-exp/build/src -I/data/lsl/SpGEMM/SpGEMM-exp/build -g -fopenmp=libomp -std=gnu++17 -o src/CMakeFiles/sparsebase.dir/sparsebase/object/object.cc.o -c /data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src/sparsebase/object/object.cc",
+  "file": "/data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src/sparsebase/object/object.cc"
+},
+{
+  "directory": "/data/lsl/SpGEMM/SpGEMM-exp/build",
+  "command": "/usr/bin/clang++ -I/data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src -I/data/lsl/SpGEMM/SpGEMM-exp/build/src -I/data/lsl/SpGEMM/SpGEMM-exp/build -g -fopenmp=libomp -std=gnu++17 -o src/CMakeFiles/sparsebase.dir/sparsebase/partition/metis_partition.cc.o -c /data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src/sparsebase/partition/metis_partition.cc",
+  "file": "/data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src/sparsebase/partition/metis_partition.cc"
+},
+{
+  "directory": "/data/lsl/SpGEMM/SpGEMM-exp/build",
+  "command": "/usr/bin/clang++ -I/data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src -I/data/lsl/SpGEMM/SpGEMM-exp/build/src -I/data/lsl/SpGEMM/SpGEMM-exp/build -g -fopenmp=libomp -std=gnu++17 -o src/CMakeFiles/sparsebase.dir/sparsebase/partition/partitioner.cc.o -c /data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src/sparsebase/partition/partitioner.cc",
+  "file": "/data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src/sparsebase/partition/partitioner.cc"
+},
+{
+  "directory": "/data/lsl/SpGEMM/SpGEMM-exp/build",
+  "command": "/usr/bin/clang++ -I/data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src -I/data/lsl/SpGEMM/SpGEMM-exp/build/src -I/data/lsl/SpGEMM/SpGEMM-exp/build -g -fopenmp=libomp -std=gnu++17 -o src/CMakeFiles/sparsebase.dir/sparsebase/partition/patoh_partition.cc.o -c /data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src/sparsebase/partition/patoh_partition.cc",
+  "file": "/data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src/sparsebase/partition/patoh_partition.cc"
+},
+{
+  "directory": "/data/lsl/SpGEMM/SpGEMM-exp/build",
+  "command": "/usr/bin/clang++ -I/data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src -I/data/lsl/SpGEMM/SpGEMM-exp/build/src -I/data/lsl/SpGEMM/SpGEMM-exp/build -g -fopenmp=libomp -std=gnu++17 -o src/CMakeFiles/sparsebase.dir/sparsebase/partition/pulp_partition.cc.o -c /data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src/sparsebase/partition/pulp_partition.cc",
+  "file": "/data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src/sparsebase/partition/pulp_partition.cc"
+},
+{
+  "directory": "/data/lsl/SpGEMM/SpGEMM-exp/build",
+  "command": "/usr/bin/clang++ -I/data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src -I/data/lsl/SpGEMM/SpGEMM-exp/build/src -I/data/lsl/SpGEMM/SpGEMM-exp/build -g -fopenmp=libomp -std=gnu++17 -o src/CMakeFiles/sparsebase.dir/sparsebase/permute/permute_order_one.cc.o -c /data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src/sparsebase/permute/permute_order_one.cc",
+  "file": "/data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src/sparsebase/permute/permute_order_one.cc"
+},
+{
+  "directory": "/data/lsl/SpGEMM/SpGEMM-exp/build",
+  "command": "/usr/bin/clang++ -I/data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src -I/data/lsl/SpGEMM/SpGEMM-exp/build/src -I/data/lsl/SpGEMM/SpGEMM-exp/build -g -fopenmp=libomp -std=gnu++17 -o src/CMakeFiles/sparsebase.dir/sparsebase/permute/permute_order_two.cc.o -c /data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src/sparsebase/permute/permute_order_two.cc",
+  "file": "/data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src/sparsebase/permute/permute_order_two.cc"
+},
+{
+  "directory": "/data/lsl/SpGEMM/SpGEMM-exp/build",
+  "command": "/usr/bin/clang++ -I/data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src -I/data/lsl/SpGEMM/SpGEMM-exp/build/src -I/data/lsl/SpGEMM/SpGEMM-exp/build -g -fopenmp=libomp -std=gnu++17 -o src/CMakeFiles/sparsebase.dir/sparsebase/permute/permuter.cc.o -c /data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src/sparsebase/permute/permuter.cc",
+  "file": "/data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src/sparsebase/permute/permuter.cc"
+},
+{
+  "directory": "/data/lsl/SpGEMM/SpGEMM-exp/build",
+  "command": "/usr/bin/clang++ -I/data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src -I/data/lsl/SpGEMM/SpGEMM-exp/build/src -I/data/lsl/SpGEMM/SpGEMM-exp/build -g -fopenmp=libomp -std=gnu++17 -o src/CMakeFiles/sparsebase.dir/sparsebase/reorder/amd_reorder.cc.o -c /data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src/sparsebase/reorder/amd_reorder.cc",
+  "file": "/data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src/sparsebase/reorder/amd_reorder.cc"
+},
+{
+  "directory": "/data/lsl/SpGEMM/SpGEMM-exp/build",
+  "command": "/usr/bin/clang++ -I/data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src -I/data/lsl/SpGEMM/SpGEMM-exp/build/src -I/data/lsl/SpGEMM/SpGEMM-exp/build -g -fopenmp=libomp -std=gnu++17 -o src/CMakeFiles/sparsebase.dir/sparsebase/reorder/degree_reorder.cc.o -c /data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src/sparsebase/reorder/degree_reorder.cc",
+  "file": "/data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src/sparsebase/reorder/degree_reorder.cc"
+},
+{
+  "directory": "/data/lsl/SpGEMM/SpGEMM-exp/build",
+  "command": "/usr/bin/clang++ -I/data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src -I/data/lsl/SpGEMM/SpGEMM-exp/build/src -I/data/lsl/SpGEMM/SpGEMM-exp/build -g -fopenmp=libomp -std=gnu++17 -o src/CMakeFiles/sparsebase.dir/sparsebase/reorder/generic_reorder.cc.o -c /data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src/sparsebase/reorder/generic_reorder.cc",
+  "file": "/data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src/sparsebase/reorder/generic_reorder.cc"
+},
+{
+  "directory": "/data/lsl/SpGEMM/SpGEMM-exp/build",
+  "command": "/usr/bin/clang++ -I/data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src -I/data/lsl/SpGEMM/SpGEMM-exp/build/src -I/data/lsl/SpGEMM/SpGEMM-exp/build -g -fopenmp=libomp -std=gnu++17 -o src/CMakeFiles/sparsebase.dir/sparsebase/reorder/gray_reorder.cc.o -c /data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src/sparsebase/reorder/gray_reorder.cc",
+  "file": "/data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src/sparsebase/reorder/gray_reorder.cc"
+},
+{
+  "directory": "/data/lsl/SpGEMM/SpGEMM-exp/build",
+  "command": "/usr/bin/clang++ -I/data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src -I/data/lsl/SpGEMM/SpGEMM-exp/build/src -I/data/lsl/SpGEMM/SpGEMM-exp/build -g -fopenmp=libomp -std=gnu++17 -o src/CMakeFiles/sparsebase.dir/sparsebase/reorder/metis_reorder.cc.o -c /data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src/sparsebase/reorder/metis_reorder.cc",
+  "file": "/data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src/sparsebase/reorder/metis_reorder.cc"
+},
+{
+  "directory": "/data/lsl/SpGEMM/SpGEMM-exp/build",
+  "command": "/usr/bin/clang++ -I/data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src -I/data/lsl/SpGEMM/SpGEMM-exp/build/src -I/data/lsl/SpGEMM/SpGEMM-exp/build -g -fopenmp=libomp -std=gnu++17 -o src/CMakeFiles/sparsebase.dir/sparsebase/reorder/rabbit_reorder.cc.o -c /data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src/sparsebase/reorder/rabbit_reorder.cc",
+  "file": "/data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src/sparsebase/reorder/rabbit_reorder.cc"
+},
+{
+  "directory": "/data/lsl/SpGEMM/SpGEMM-exp/build",
+  "command": "/usr/bin/clang++ -I/data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src -I/data/lsl/SpGEMM/SpGEMM-exp/build/src -I/data/lsl/SpGEMM/SpGEMM-exp/build -g -fopenmp=libomp -std=gnu++17 -o src/CMakeFiles/sparsebase.dir/sparsebase/reorder/rcm_reorder.cc.o -c /data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src/sparsebase/reorder/rcm_reorder.cc",
+  "file": "/data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src/sparsebase/reorder/rcm_reorder.cc"
+},
+{
+  "directory": "/data/lsl/SpGEMM/SpGEMM-exp/build",
+  "command": "/usr/bin/clang++ -I/data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src -I/data/lsl/SpGEMM/SpGEMM-exp/build/src -I/data/lsl/SpGEMM/SpGEMM-exp/build -g -fopenmp=libomp -std=gnu++17 -o src/CMakeFiles/sparsebase.dir/sparsebase/reorder/reorder_heatmap.cc.o -c /data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src/sparsebase/reorder/reorder_heatmap.cc",
+  "file": "/data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src/sparsebase/reorder/reorder_heatmap.cc"
+},
+{
+  "directory": "/data/lsl/SpGEMM/SpGEMM-exp/build",
+  "command": "/usr/bin/clang++ -I/data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src -I/data/lsl/SpGEMM/SpGEMM-exp/build/src -I/data/lsl/SpGEMM/SpGEMM-exp/build -g -fopenmp=libomp -std=gnu++17 -o src/CMakeFiles/sparsebase.dir/sparsebase/reorder/reorderer.cc.o -c /data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src/sparsebase/reorder/reorderer.cc",
+  "file": "/data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src/sparsebase/reorder/reorderer.cc"
+},
+{
+  "directory": "/data/lsl/SpGEMM/SpGEMM-exp/build",
+  "command": "/usr/bin/clang++ -I/data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src -I/data/lsl/SpGEMM/SpGEMM-exp/build/src -I/data/lsl/SpGEMM/SpGEMM-exp/build -g -fopenmp=libomp -std=gnu++17 -o src/CMakeFiles/sparsebase.dir/sparsebase/reorder/slashburn_reorder.cc.o -c /data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src/sparsebase/reorder/slashburn_reorder.cc",
+  "file": "/data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src/sparsebase/reorder/slashburn_reorder.cc"
+},
+{
+  "directory": "/data/lsl/SpGEMM/SpGEMM-exp/build",
+  "command": "/usr/bin/clang++ -I/data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src -I/data/lsl/SpGEMM/SpGEMM-exp/build/src -I/data/lsl/SpGEMM/SpGEMM-exp/build -g -fopenmp=libomp -std=gnu++17 -o src/CMakeFiles/sparsebase.dir/sparsebase/utils/logger.cc.o -c /data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src/sparsebase/utils/logger.cc",
+  "file": "/data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src/sparsebase/utils/logger.cc"
+},
+{
+  "directory": "/data/lsl/SpGEMM/SpGEMM-exp/build",
+  "command": "/usr/bin/clang++ -I/data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src -I/data/lsl/SpGEMM/SpGEMM-exp/build/src -I/data/lsl/SpGEMM/SpGEMM-exp/build -g -fopenmp=libomp -std=gnu++17 -o src/CMakeFiles/sparsebase.dir/sparsebase/utils/utils.cc.o -c /data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src/sparsebase/utils/utils.cc",
+  "file": "/data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src/sparsebase/utils/utils.cc"
+},
+{
+  "directory": "/data/lsl/SpGEMM/SpGEMM-exp/build",
+  "command": "/usr/bin/clang++ -I/data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src -I/data/lsl/SpGEMM/SpGEMM-exp/build/src -I/data/lsl/SpGEMM/SpGEMM-exp/build -g -fopenmp=libomp -std=gnu++17 -o src/CMakeFiles/sparsebase.dir/sparsebase/utils/visualizer.cc.o -c /data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src/sparsebase/utils/visualizer.cc",
+  "file": "/data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src/sparsebase/utils/visualizer.cc"
+},
+{
+  "directory": "/data/lsl/SpGEMM/SpGEMM-exp/build",
+  "command": "/usr/bin/clang++ -I/data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src -I/data/lsl/SpGEMM/SpGEMM-exp/build/src -I/data/lsl/SpGEMM/SpGEMM-exp/build -g -fopenmp=libomp -std=gnu++17 -o examples/csr_coo/CMakeFiles/csr_coo.dir/csr_coo.cc.o -c /data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/examples/csr_coo/csr_coo.cc",
+  "file": "/data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/examples/csr_coo/csr_coo.cc"
+},
+{
+  "directory": "/data/lsl/SpGEMM/SpGEMM-exp/build",
+  "command": "/usr/bin/clang++ -I/data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src -I/data/lsl/SpGEMM/SpGEMM-exp/build/src -I/data/lsl/SpGEMM/SpGEMM-exp/build -g -fopenmp=libomp -std=gnu++17 -o examples/degree_order/CMakeFiles/degree_order.dir/degree_order.cc.o -c /data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/examples/degree_order/degree_order.cc",
+  "file": "/data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/examples/degree_order/degree_order.cc"
+},
+{
+  "directory": "/data/lsl/SpGEMM/SpGEMM-exp/build",
+  "command": "/usr/bin/clang++ -I/data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src -I/data/lsl/SpGEMM/SpGEMM-exp/build/src -I/data/lsl/SpGEMM/SpGEMM-exp/build -g -fopenmp=libomp -std=gnu++17 -o examples/degree_order/CMakeFiles/degree_order_mtx.dir/degree_order_mtx.cc.o -c /data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/examples/degree_order/degree_order_mtx.cc",
+  "file": "/data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/examples/degree_order/degree_order_mtx.cc"
+},
+{
+  "directory": "/data/lsl/SpGEMM/SpGEMM-exp/build",
+  "command": "/usr/bin/clang++ -I/data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src -I/data/lsl/SpGEMM/SpGEMM-exp/build/src -I/data/lsl/SpGEMM/SpGEMM-exp/build -g -fopenmp=libomp -std=gnu++17 -o examples/amd_order/CMakeFiles/amd_order.dir/amd_order.cc.o -c /data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/examples/amd_order/amd_order.cc",
+  "file": "/data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/examples/amd_order/amd_order.cc"
+},
+{
+  "directory": "/data/lsl/SpGEMM/SpGEMM-exp/build",
+  "command": "/usr/bin/clang++ -I/data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src -I/data/lsl/SpGEMM/SpGEMM-exp/build/src -I/data/lsl/SpGEMM/SpGEMM-exp/build -g -fopenmp=libomp -std=gnu++17 -o examples/custom_order/CMakeFiles/custom_order.dir/custom_order.cc.o -c /data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/examples/custom_order/custom_order.cc",
+  "file": "/data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/examples/custom_order/custom_order.cc"
+},
+{
+  "directory": "/data/lsl/SpGEMM/SpGEMM-exp/build",
+  "command": "/usr/bin/clang++ -I/data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src -I/data/lsl/SpGEMM/SpGEMM-exp/build/src -I/data/lsl/SpGEMM/SpGEMM-exp/build -g -fopenmp=libomp -std=gnu++17 -o examples/format_conversion/CMakeFiles/format_conversion.dir/format_conversion.cc.o -c /data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/examples/format_conversion/format_conversion.cc",
+  "file": "/data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/examples/format_conversion/format_conversion.cc"
+},
+{
+  "directory": "/data/lsl/SpGEMM/SpGEMM-exp/build",
+  "command": "/usr/bin/clang++ -I/data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src -I/data/lsl/SpGEMM/SpGEMM-exp/build/src -I/data/lsl/SpGEMM/SpGEMM-exp/build -g -fopenmp=libomp -std=gnu++17 -o examples/gray_order/CMakeFiles/gray_order.dir/gray_order.cc.o -c /data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/examples/gray_order/gray_order.cc",
+  "file": "/data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/examples/gray_order/gray_order.cc"
+},
+{
+  "directory": "/data/lsl/SpGEMM/SpGEMM-exp/build",
+  "command": "/usr/bin/clang++ -I/data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src -I/data/lsl/SpGEMM/SpGEMM-exp/build/src -I/data/lsl/SpGEMM/SpGEMM-exp/build -g -fopenmp=libomp -std=gnu++17 -o examples/gray_order/CMakeFiles/gray_order_el.dir/gray_order_el.cc.o -c /data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/examples/gray_order/gray_order_el.cc",
+  "file": "/data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/examples/gray_order/gray_order_el.cc"
+},
+{
+  "directory": "/data/lsl/SpGEMM/SpGEMM-exp/build",
+  "command": "/usr/bin/clang++ -I/data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src -I/data/lsl/SpGEMM/SpGEMM-exp/build/src -I/data/lsl/SpGEMM/SpGEMM-exp/build -g -fopenmp=libomp -std=gnu++17 -o examples/rcm_order/CMakeFiles/rcm_order.dir/rcm_order.cc.o -c /data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/examples/rcm_order/rcm_order.cc",
+  "file": "/data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/examples/rcm_order/rcm_order.cc"
+},
+{
+  "directory": "/data/lsl/SpGEMM/SpGEMM-exp/build",
+  "command": "/usr/bin/clang++ -I/data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src -I/data/lsl/SpGEMM/SpGEMM-exp/build/src -I/data/lsl/SpGEMM/SpGEMM-exp/build -g -fopenmp=libomp -std=gnu++17 -o examples/rcm_order/CMakeFiles/rcm_order_mtx.dir/rcm_order_mtx.cc.o -c /data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/examples/rcm_order/rcm_order_mtx.cc",
+  "file": "/data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/examples/rcm_order/rcm_order_mtx.cc"
+},
+{
+  "directory": "/data/lsl/SpGEMM/SpGEMM-exp/build",
+  "command": "/usr/bin/clang++ -I/data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src -I/data/lsl/SpGEMM/SpGEMM-exp/build/src -I/data/lsl/SpGEMM/SpGEMM-exp/build -g -fopenmp=libomp -std=gnu++17 -o examples/sparse_feature/CMakeFiles/sparse_feature.dir/sparse_feature.cc.o -c /data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/examples/sparse_feature/sparse_feature.cc",
+  "file": "/data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/examples/sparse_feature/sparse_feature.cc"
+},
+{
+  "directory": "/data/lsl/SpGEMM/SpGEMM-exp/build",
+  "command": "/usr/bin/clang++ -I/data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src -I/data/lsl/SpGEMM/SpGEMM-exp/build/src -I/data/lsl/SpGEMM/SpGEMM-exp/build -g -fopenmp=libomp -std=gnu++17 -o examples/sparse_reader/CMakeFiles/sparse_reader.dir/sparse_reader.cc.o -c /data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/examples/sparse_reader/sparse_reader.cc",
+  "file": "/data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/examples/sparse_reader/sparse_reader.cc"
+},
+{
+  "directory": "/data/lsl/SpGEMM/SpGEMM-exp/build",
+  "command": "/usr/bin/clang++ -I/data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src -I/data/lsl/SpGEMM/SpGEMM-exp/build/src -I/data/lsl/SpGEMM/SpGEMM-exp/build -g -fopenmp=libomp -std=gnu++17 -o examples/slashburn_order/CMakeFiles/slashburn_order.dir/slashburn_order.cc.o -c /data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/examples/slashburn_order/slashburn_order.cc",
+  "file": "/data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/examples/slashburn_order/slashburn_order.cc"
+},
+{
+  "directory": "/data/lsl/SpGEMM/SpGEMM-exp/build",
+  "command": "/usr/bin/clang++ -I/data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src -I/data/lsl/SpGEMM/SpGEMM-exp/build/src -I/data/lsl/SpGEMM/SpGEMM-exp/build -g -fopenmp=libomp -std=gnu++17 -o examples/custom_format/CMakeFiles/custom_format.dir/custom_format.cc.o -c /data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/examples/custom_format/custom_format.cc",
+  "file": "/data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/examples/custom_format/custom_format.cc"
+},
+{
+  "directory": "/data/lsl/SpGEMM/SpGEMM-exp/build",
+  "command": "/usr/bin/clang++ -I/data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src -I/data/lsl/SpGEMM/SpGEMM-exp/build/src -I/data/lsl/SpGEMM/SpGEMM-exp/build -g -fopenmp=libomp -std=gnu++17 -o examples/custom_converter/CMakeFiles/custom_converter.dir/custom_converter.cc.o -c /data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/examples/custom_converter/custom_converter.cc",
+  "file": "/data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/examples/custom_converter/custom_converter.cc"
+},
+{
+  "directory": "/data/lsl/SpGEMM/SpGEMM-exp/build",
+  "command": "/usr/bin/clang++ -I/data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src -I/data/lsl/SpGEMM/SpGEMM-exp/build/src -I/data/lsl/SpGEMM/SpGEMM-exp/build -g -fopenmp=libomp -std=gnu++17 -o examples/custom_experiment/CMakeFiles/custom_experiment.dir/custom_experiment.cc.o -c /data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/examples/custom_experiment/custom_experiment.cc",
+  "file": "/data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/examples/custom_experiment/custom_experiment.cc"
+},
+{
+  "directory": "/data/lsl/SpGEMM/SpGEMM-exp/build",
+  "command": "/usr/bin/clang++ -I/data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/src -I/data/lsl/SpGEMM/SpGEMM-exp/build/src -I/data/lsl/SpGEMM/SpGEMM-exp/build -g -fopenmp=libomp -std=gnu++17 -o examples/linear_solver/CMakeFiles/linear_solver.dir/linear_solver.cc.o -c /data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/examples/linear_solver/linear_solver.cc",
+  "file": "/data/lsl/SpGEMM/SpGEMM-exp/reordering-spgemm/SparseBase/examples/linear_solver/linear_solver.cc"
+}
+]

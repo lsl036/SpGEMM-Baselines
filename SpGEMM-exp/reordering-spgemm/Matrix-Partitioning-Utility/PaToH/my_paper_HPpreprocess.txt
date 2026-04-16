@@ -1,0 +1,89 @@
+~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: cant>~~~~~~~~~~~~~~~~~~~~~~~~~
+Dataset: cant.mtx PartitionTime: 27.80
+
+~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: pwtk>~~~~~~~~~~~~~~~~~~~~~~~~~
+Dataset: pwtk.mtx PartitionTime: 43.41
+
+~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: offshore>~~~~~~~~~~~~~~~~~~~~~~~~~
+Dataset: offshore.mtx PartitionTime: 86.59
+
+~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: cage12>~~~~~~~~~~~~~~~~~~~~~~~~~
+Dataset: cage12.mtx PartitionTime: 53.87
+
+~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: scircuit>~~~~~~~~~~~~~~~~~~~~~~~~~
+Dataset: scircuit.mtx PartitionTime: 15.71
+
+~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: wiki-Vote>~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: patents_main>~~~~~~~~~~~~~~~~~~~~~~~~~
+Dataset: patents_main.mtx PartitionTime: 18.57
+
+~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: poisson3Da>~~~~~~~~~~~~~~~~~~~~~~~~~
+Dataset: poisson3Da.mtx PartitionTime: 5.26
+
+~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: pdb1HYS>~~~~~~~~~~~~~~~~~~~~~~~~~
+Dataset: pdb1HYS.mtx PartitionTime: 35.87
+
+~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: rma10>~~~~~~~~~~~~~~~~~~~~~~~~~
+Dataset: rma10.mtx PartitionTime: 12.55
+
+~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: shipsec1>~~~~~~~~~~~~~~~~~~~~~~~~~
+Dataset: shipsec1.mtx PartitionTime: 39.68
+
+~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: consph>~~~~~~~~~~~~~~~~~~~~~~~~~
+Dataset: consph.mtx PartitionTime: 40.97
+
+~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: filter3D>~~~~~~~~~~~~~~~~~~~~~~~~~
+Dataset: filter3D.mtx PartitionTime: 32.43
+
+~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: mac_econ_fwd500>~~~~~~~~~~~~~~~~~~~~~~~~~
+Dataset: mac_econ_fwd500.mtx PartitionTime: 39.16
+
+~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: asia_osm>~~~~~~~~~~~~~~~~~~~~~~~~~
+Dataset: asia_osm.mtx PartitionTime: 134.56
+
+~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: af_shell10>~~~~~~~~~~~~~~~~~~~~~~~~~
+Dataset: af_shell10.mtx PartitionTime: 138.15
+
+~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: hood>~~~~~~~~~~~~~~~~~~~~~~~~~
+Dataset: hood.mtx PartitionTime: 43.48
+
+~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: case39>~~~~~~~~~~~~~~~~~~~~~~~~~
+Dataset: case39.mtx PartitionTime: 11.60
+
+~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: gupta3>~~~~~~~~~~~~~~~~~~~~~~~~~
+Dataset: gupta3.mtx PartitionTime: 77.07
+
+~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: TSOPF_FS_b300_c2>~~~~~~~~~~~~~~~~~~~~~~~~~
+Dataset: TSOPF_FS_b300_c2.mtx PartitionTime: 38.39
+
+~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: delaunay_n24>~~~~~~~~~~~~~~~~~~~~~~~~~
+Dataset: delaunay_n24.mtx PartitionTime: 770.35
+
+~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: webbase-1M>~~~~~~~~~~~~~~~~~~~~~~~~~
+Dataset: webbase-1M.mtx PartitionTime: 49.05
+
+~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: AS365>~~~~~~~~~~~~~~~~~~~~~~~~~
+Dataset: AS365.mtx PartitionTime: 302.72
+
+~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: com-LiveJournal>~~~~~~~~~~~~~~~~~~~~~~~~~
+Dataset: com-LiveJournal.mtx PartitionTime: 3806.01
+
+~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: europe_osm>~~~~~~~~~~~~~~~~~~~~~~~~~
+Dataset: europe_osm.mtx PartitionTime: 1053.77
+
+~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: GAP-road>~~~~~~~~~~~~~~~~~~~~~~~~~
+Dataset: GAP-road.mtx PartitionTime: 418.48
+
+~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: kkt_power>~~~~~~~~~~~~~~~~~~~~~~~~~
+Dataset: kkt_power.mtx PartitionTime: 385.42
+
+~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: M6>~~~~~~~~~~~~~~~~~~~~~~~~~
+Dataset: M6.mtx PartitionTime: 275.75
+
+~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: NLR>~~~~~~~~~~~~~~~~~~~~~~~~~
+Dataset: NLR.mtx PartitionTime: 326.31
+
+~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: wikipedia-20070206>~~~~~~~~~~~~~~~~~~~~~~~~~
+Dataset: wikipedia-20070206.mtx PartitionTime: 4825.17
+

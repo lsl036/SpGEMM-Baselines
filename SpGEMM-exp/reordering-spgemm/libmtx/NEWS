@@ -1,0 +1,65 @@
+* Noteworthy changes in the next release
+
+  ...
+
+* Noteworthy changes in release 0.5.0 (2023-10-30)
+
+  This version adds support for sparse matrix reordering using SCOTCH
+  as the underlying graph partitioner.
+
+
+* Noteworthy changes in release 0.4.0 (2023-04-17)
+
+  This version adds support for reordering sparse matrices by first
+  partitioning the adjacency graph using METIS and then grouping rows
+  and columns by the parts that were assigned by the partitioner.
+
+  This version fixes an issue with the METIS partitioning and nested
+  dissection reordering of non-square matrices. The fix ensures that
+  the data structure representing the (undirected) bipartite graph of
+  the matrix rows and columns is correctly passed to METIS.
+
+
+* Noteworthy changes in release 0.3.0 (2022-11-24)
+
+  This version adds support for reordering sparse matrices based on
+  the nested dissection algorithm as implemented by the METIS graph
+  partitioner.
+
+  It is also now easier to build with a user-defined BLAS library.
+
+  mtxrand was added to generate random matrices and vectors in Matrix
+  Market format.
+
+  mtxgemm was added to compute matrix-matrix products. This can be
+  used to benchmark matrix-matrix multiplication (gemm) in BLAS
+  libraries.
+
+
+* Noteworthy changes in release 0.2.0 (2022-06-28)
+
+  MPI support is added for many operations, such as sorting and vector
+  operations. There is work in progress to implement distributed
+  sparse matrix-vector multiplication.
+
+  Several implementations for vector operations now provided,
+  including a serial implementation, a BLAS-accelerated
+  implementation, and an OpenMP shared-memory parallel
+  implementation.
+
+  Matrices can now be reordered using Reverse Cuthill-McKee and
+  partitioned using METIS.
+
+
+* Noteworthy changes in release 0.1.0 (2021-06-18)
+
+  This is the initial release of Libmtx, which supports reading and
+  writing Matrix Market files, sorting sparse matrices and basic BLAS
+  operations, such as matrix-vector multiplication.
+
+
+Copyright (C) 2023 James D. Trotter
+
+Copying and distribution of this file, with or without modification,
+are permitted provided the copyright notice and this notice are
+preserved.

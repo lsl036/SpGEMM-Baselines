@@ -1,0 +1,388 @@
+#!/bin/bash
+
+# echo "~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: 2cubes_sphere>~~~~~~~~~~~~~~~~~~~~~~~~~"
+# "${SPARSEBASE_HOME}/build/examples/amd_order/amd_order" "${DATA_PATH}/2cubes_sphere/2cubes_sphere.mtx" "${AMD_DATA_PATH}/2cubes_sphere.amdorder" 1
+
+# echo "~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: cage12>~~~~~~~~~~~~~~~~~~~~~~~~~"
+# "${SPARSEBASE_HOME}/build/examples/amd_order/amd_order" "${DATA_PATH}/cage12/cage12.mtx" "${AMD_DATA_PATH}/cage12.amdorder" 1
+
+# echo "~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: cop20k_A>~~~~~~~~~~~~~~~~~~~~~~~~~"
+# "${SPARSEBASE_HOME}/build/examples/amd_order/amd_order" "${DATA_PATH}/cop20k_A/cop20k_A.mtx" "${AMD_DATA_PATH}/cop20k_A.amdorder" 1
+
+# echo "~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: m133-b3>~~~~~~~~~~~~~~~~~~~~~~~~~"
+# "${SPARSEBASE_HOME}/build/examples/amd_order/amd_order" "${DATA_PATH}/m133-b3/m133-b3.mtx" "${AMD_DATA_PATH}/m133-b3.amdorder" 1
+
+# echo "~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: mac_econ_fwd500>~~~~~~~~~~~~~~~~~~~~~~~~~"
+# "${SPARSEBASE_HOME}/build/examples/amd_order/amd_order" "${DATA_PATH}/mac_econ_fwd500/mac_econ_fwd500.mtx" "${AMD_DATA_PATH}/mac_econ_fwd500.amdorder" 1
+
+# echo "~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: mario002>~~~~~~~~~~~~~~~~~~~~~~~~~"
+# "${SPARSEBASE_HOME}/build/examples/amd_order/amd_order" "${DATA_PATH}/mario002/mario002.mtx" "${AMD_DATA_PATH}/mario002.amdorder" 1
+
+# echo "~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: mc2depi>~~~~~~~~~~~~~~~~~~~~~~~~~"
+# "${SPARSEBASE_HOME}/build/examples/amd_order/amd_order" "${DATA_PATH}/mc2depi/mc2depi.mtx" "${AMD_DATA_PATH}/mc2depi.amdorder" 1
+
+# echo "~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: poisson3Da>~~~~~~~~~~~~~~~~~~~~~~~~~"
+# "${SPARSEBASE_HOME}/build/examples/amd_order/amd_order" "${DATA_PATH}/poisson3Da/poisson3Da.mtx" "${AMD_DATA_PATH}/poisson3Da.amdorder" 1
+
+# echo "~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: pwtk>~~~~~~~~~~~~~~~~~~~~~~~~~"
+# "${SPARSEBASE_HOME}/build/examples/amd_order/amd_order" "${DATA_PATH}/pwtk/pwtk.mtx" "${AMD_DATA_PATH}/pwtk.amdorder" 1
+
+# echo "~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: webbase-1M>~~~~~~~~~~~~~~~~~~~~~~~~~"
+# "${SPARSEBASE_HOME}/build/examples/amd_order/amd_order" "${DATA_PATH}/webbase-1M/webbase-1M.mtx" "${AMD_DATA_PATH}/webbase-1M.amdorder" 1
+
+# echo "~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: cage15>~~~~~~~~~~~~~~~~~~~~~~~~~"
+# "${SPARSEBASE_HOME}/build/examples/amd_order/amd_order" "${DATA_PATH}/cage15/cage15.mtx" "${AMD_DATA_PATH}/cage15.amdorder" 1
+
+# echo "~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: cant>~~~~~~~~~~~~~~~~~~~~~~~~~"
+# "${SPARSEBASE_HOME}/build/examples/amd_order/amd_order" "${DATA_PATH}/cant/cant.mtx" "${AMD_DATA_PATH}/cant.amdorder" 1
+
+# echo "~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: conf5_4-8x8-05>~~~~~~~~~~~~~~~~~~~~~~~~~"
+# "${SPARSEBASE_HOME}/build/examples/amd_order/amd_order" "${DATA_PATH}/conf5_4-8x8-05/conf5_4-8x8-05.mtx" "${AMD_DATA_PATH}/conf5_4-8x8-05.amdorder" 1
+
+# echo "~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: consph>~~~~~~~~~~~~~~~~~~~~~~~~~"
+# "${SPARSEBASE_HOME}/build/examples/amd_order/amd_order" "${DATA_PATH}/consph/consph.mtx" "${AMD_DATA_PATH}/consph.amdorder" 1
+
+# echo "~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: delaunay_n24>~~~~~~~~~~~~~~~~~~~~~~~~~"
+# "${SPARSEBASE_HOME}/build/examples/amd_order/amd_order" "${DATA_PATH}/delaunay_n24/delaunay_n24.mtx" "${AMD_DATA_PATH}/delaunay_n24.amdorder" 1
+
+# echo "~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: filter3D>~~~~~~~~~~~~~~~~~~~~~~~~~"
+# "${SPARSEBASE_HOME}/build/examples/amd_order/amd_order" "${DATA_PATH}/filter3D/filter3D.mtx" "${AMD_DATA_PATH}/filter3D.amdorder" 1
+
+# echo "~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: hood>~~~~~~~~~~~~~~~~~~~~~~~~~"
+# "${SPARSEBASE_HOME}/build/examples/amd_order/amd_order" "${DATA_PATH}/hood/hood.mtx" "${AMD_DATA_PATH}/hood.amdorder" 1
+
+# echo "~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: majorbasis>~~~~~~~~~~~~~~~~~~~~~~~~~"
+# "${SPARSEBASE_HOME}/build/examples/amd_order/amd_order" "${DATA_PATH}/majorbasis/majorbasis.mtx" "${AMD_DATA_PATH}/majorbasis.amdorder" 1
+
+# echo "~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: mono_500Hz>~~~~~~~~~~~~~~~~~~~~~~~~~"
+# "${SPARSEBASE_HOME}/build/examples/amd_order/amd_order" "${DATA_PATH}/mono_500Hz/mono_500Hz.mtx" "${AMD_DATA_PATH}/mono_500Hz.amdorder" 1
+
+# echo "~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: offshore>~~~~~~~~~~~~~~~~~~~~~~~~~"
+# "${SPARSEBASE_HOME}/build/examples/amd_order/amd_order" "${DATA_PATH}/offshore/offshore.mtx" "${AMD_DATA_PATH}/offshore.amdorder" 1
+
+# echo "~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: patents_main>~~~~~~~~~~~~~~~~~~~~~~~~~"
+# "${SPARSEBASE_HOME}/build/examples/amd_order/amd_order" "${DATA_PATH}/patents_main/patents_main.mtx" "${AMD_DATA_PATH}/patents_main.amdorder" 1
+
+# echo "~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: pdb1HYS>~~~~~~~~~~~~~~~~~~~~~~~~~"
+# "${SPARSEBASE_HOME}/build/examples/amd_order/amd_order" "${DATA_PATH}/pdb1HYS/pdb1HYS.mtx" "${AMD_DATA_PATH}/pdb1HYS.amdorder" 1
+
+# echo "~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: rma10>~~~~~~~~~~~~~~~~~~~~~~~~~"
+# "${SPARSEBASE_HOME}/build/examples/amd_order/amd_order" "${DATA_PATH}/rma10/rma10.mtx" "${AMD_DATA_PATH}/rma10.amdorder" 1
+
+# echo "~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: scircuit>~~~~~~~~~~~~~~~~~~~~~~~~~"
+# "${SPARSEBASE_HOME}/build/examples/amd_order/amd_order" "${DATA_PATH}/scircuit/scircuit.mtx" "${AMD_DATA_PATH}/scircuit.amdorder" 1
+
+# echo "~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: shipsec1>~~~~~~~~~~~~~~~~~~~~~~~~~"
+# "${SPARSEBASE_HOME}/build/examples/amd_order/amd_order" "${DATA_PATH}/shipsec1/shipsec1.mtx" "${AMD_DATA_PATH}/shipsec1.amdorder" 1
+
+# echo "~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: wb-edu>~~~~~~~~~~~~~~~~~~~~~~~~~"
+# "${SPARSEBASE_HOME}/build/examples/amd_order/amd_order" "${DATA_PATH}/wb-edu/wb-edu.mtx" "${AMD_DATA_PATH}/wb-edu.amdorder" 1
+
+# echo "~~~~~~~~~~~~~~~~~~~~~~~~~<333SP>~~~~~~~~~~~~~~~~~~~~~~~~~"
+# "${SPARSEBASE_HOME}/build/examples/amd_order/amd_order" "${DATA_PATH}/333SP/333SP.mtx" "${AMD_DATA_PATH}/333SP.amdorder" 1
+
+# echo "~~~~~~~~~~~~~~~~~~~~~~~~~<adaptive>~~~~~~~~~~~~~~~~~~~~~~~~~"
+# "${SPARSEBASE_HOME}/build/examples/amd_order/amd_order" "${DATA_PATH}/adaptive/adaptive.mtx" "${AMD_DATA_PATH}/adaptive.amdorder" 1
+
+# echo "~~~~~~~~~~~~~~~~~~~~~~~~~<af_shell10>~~~~~~~~~~~~~~~~~~~~~~~~~"
+# "${SPARSEBASE_HOME}/build/examples/amd_order/amd_order" "${DATA_PATH}/af_shell10/af_shell10.mtx" "${AMD_DATA_PATH}/af_shell10.amdorder" 1
+
+# echo "~~~~~~~~~~~~~~~~~~~~~~~~~<AS365>~~~~~~~~~~~~~~~~~~~~~~~~~"
+# "${SPARSEBASE_HOME}/build/examples/amd_order/amd_order" "${DATA_PATH}/AS365/AS365.mtx" "${AMD_DATA_PATH}/AS365.amdorder" 1
+
+# echo "~~~~~~~~~~~~~~~~~~~~~~~~~<as-Skitter>~~~~~~~~~~~~~~~~~~~~~~~~~"
+# "${SPARSEBASE_HOME}/build/examples/amd_order/amd_order" "${DATA_PATH}/as-Skitter/as-Skitter.mtx" "${AMD_DATA_PATH}/as-Skitter.amdorder" 1
+
+# echo "~~~~~~~~~~~~~~~~~~~~~~~~~<channel-500x100x100-b050>~~~~~~~~~~~~~~~~~~~~~~~~~"
+# "${SPARSEBASE_HOME}/build/examples/amd_order/amd_order" "${DATA_PATH}/channel-500x100x100-b050/channel-500x100x100-b050.mtx" "${AMD_DATA_PATH}/channel-500x100x100-b050.amdorder" 1
+
+# #echo "~~~~~~~~~~~~~~~~~~~~~~~~~<circuit5M>~~~~~~~~~~~~~~~~~~~~~~~~~"
+# #"${SPARSEBASE_HOME}/build/examples/amd_order/amd_order" "${DATA_PATH}/circuit5M/circuit5M.mtx" "${AMD_DATA_PATH}/circuit5M.amdorder" 1
+
+# echo "~~~~~~~~~~~~~~~~~~~~~~~~~<cit-Patents>~~~~~~~~~~~~~~~~~~~~~~~~~"
+# "${SPARSEBASE_HOME}/build/examples/amd_order/amd_order" "${DATA_PATH}/cit-Patents/cit-Patents.mtx" "${AMD_DATA_PATH}/cit-Patents.amdorder" 1
+
+# echo "~~~~~~~~~~~~~~~~~~~~~~~~~<com-LiveJournal>~~~~~~~~~~~~~~~~~~~~~~~~~"
+# "${SPARSEBASE_HOME}/build/examples/amd_order/amd_order" "${DATA_PATH}/com-LiveJournal/com-LiveJournal.mtx" "${AMD_DATA_PATH}/com-LiveJournal.amdorder" 1
+
+# #echo "~~~~~~~~~~~~~~~~~~~~~~~~~<com-Orkut>~~~~~~~~~~~~~~~~~~~~~~~~~"
+# #"${SPARSEBASE_HOME}/build/examples/amd_order/amd_order" "${DATA_PATH}/com-Orkut/com-Orkut.mtx" "${AMD_DATA_PATH}/com-Orkut.amdorder" 1
+
+# echo "~~~~~~~~~~~~~~~~~~~~~~~~~<CurlCurl_4>~~~~~~~~~~~~~~~~~~~~~~~~~"
+# "${SPARSEBASE_HOME}/build/examples/amd_order/amd_order" "${DATA_PATH}/CurlCurl_4/CurlCurl_4.mtx" "${AMD_DATA_PATH}/CurlCurl_4.amdorder" 1
+
+# echo "~~~~~~~~~~~~~~~~~~~~~~~~~<europe_osm>~~~~~~~~~~~~~~~~~~~~~~~~~"
+# "${SPARSEBASE_HOME}/build/examples/amd_order/amd_order" "${DATA_PATH}/europe_osm/europe_osm.mtx" "${AMD_DATA_PATH}/europe_osm.amdorder" 1
+
+# echo "~~~~~~~~~~~~~~~~~~~~~~~~~<G3_circuit>~~~~~~~~~~~~~~~~~~~~~~~~~"
+# "${SPARSEBASE_HOME}/build/examples/amd_order/amd_order" "${DATA_PATH}/G3_circuit/G3_circuit.mtx" "${AMD_DATA_PATH}/G3_circuit.amdorder" 1
+
+# echo "~~~~~~~~~~~~~~~~~~~~~~~~~<GAP-road>~~~~~~~~~~~~~~~~~~~~~~~~~"
+# "${SPARSEBASE_HOME}/build/examples/amd_order/amd_order" "${DATA_PATH}/GAP-road/GAP-road.mtx" "${AMD_DATA_PATH}/GAP-road.amdorder" 1
+
+# #echo "~~~~~~~~~~~~~~~~~~~~~~~~~<GAP-twitter>~~~~~~~~~~~~~~~~~~~~~~~~~"
+# #"${SPARSEBASE_HOME}/build/examples/amd_order/amd_order" "${DATA_PATH}/GAP-twitter/GAP-twitter.mtx" "${AMD_DATA_PATH}/GAP-twitter.amdorder" 1
+
+# echo "~~~~~~~~~~~~~~~~~~~~~~~~~<hugebubbles-00020>~~~~~~~~~~~~~~~~~~~~~~~~~"
+# "${SPARSEBASE_HOME}/build/examples/amd_order/amd_order" "${DATA_PATH}/hugebubbles-00020/hugebubbles-00020.mtx" "${AMD_DATA_PATH}/hugebubbles-00020.amdorder" 1
+
+# echo "~~~~~~~~~~~~~~~~~~~~~~~~~<hugetrace-00020>~~~~~~~~~~~~~~~~~~~~~~~~~"
+# "${SPARSEBASE_HOME}/build/examples/amd_order/amd_order" "${DATA_PATH}/hugetrace-00020/hugetrace-00020.mtx" "${AMD_DATA_PATH}/hugetrace-00020.amdorder" 1
+
+# echo "~~~~~~~~~~~~~~~~~~~~~~~~~<hugetric-00010>~~~~~~~~~~~~~~~~~~~~~~~~~"
+# "${SPARSEBASE_HOME}/build/examples/amd_order/amd_order" "${DATA_PATH}/hugetric-00010/hugetric-00010.mtx" "${AMD_DATA_PATH}/hugetric-00010.amdorder" 1
+
+# echo "~~~~~~~~~~~~~~~~~~~~~~~~~<HV15R>~~~~~~~~~~~~~~~~~~~~~~~~~"
+# "${SPARSEBASE_HOME}/build/examples/amd_order/amd_order" "${DATA_PATH}/HV15R/HV15R.mtx" "${AMD_DATA_PATH}/HV15R.amdorder" 1
+
+# echo "~~~~~~~~~~~~~~~~~~~~~~~~~<kkt_power>~~~~~~~~~~~~~~~~~~~~~~~~~"
+# "${SPARSEBASE_HOME}/build/examples/amd_order/amd_order" "${DATA_PATH}/kkt_power/kkt_power.mtx" "${AMD_DATA_PATH}/kkt_power.amdorder" 1
+
+# #echo "~~~~~~~~~~~~~~~~~~~~~~~~~<kron_g500-logn21>~~~~~~~~~~~~~~~~~~~~~~~~~"
+# #"${SPARSEBASE_HOME}/build/examples/amd_order/amd_order" "${DATA_PATH}/kron_g500-logn21/kron_g500-logn21.mtx" "${AMD_DATA_PATH}/kron_g500-logn21.amdorder" 1
+
+# echo "~~~~~~~~~~~~~~~~~~~~~~~~~<M6>~~~~~~~~~~~~~~~~~~~~~~~~~"
+# "${SPARSEBASE_HOME}/build/examples/amd_order/amd_order" "${DATA_PATH}/M6/M6.mtx" "${AMD_DATA_PATH}/M6.amdorder" 1
+
+# #echo "~~~~~~~~~~~~~~~~~~~~~~~~~<mawi_201512020330>~~~~~~~~~~~~~~~~~~~~~~~~~"
+# #"${SPARSEBASE_HOME}/build/examples/amd_order/amd_order" "${DATA_PATH}/mawi_201512020330/mawi_201512020330.mtx" "${AMD_DATA_PATH}/mawi_201512020330.amdorder" 1
+
+# echo "~~~~~~~~~~~~~~~~~~~~~~~~~<nlpkkt240>~~~~~~~~~~~~~~~~~~~~~~~~~"
+# "${SPARSEBASE_HOME}/build/examples/amd_order/amd_order" "${DATA_PATH}/nlpkkt240/nlpkkt240.mtx" "${AMD_DATA_PATH}/nlpkkt240.amdorder" 1
+
+# echo "~~~~~~~~~~~~~~~~~~~~~~~~~<NLR>~~~~~~~~~~~~~~~~~~~~~~~~~"
+# "${SPARSEBASE_HOME}/build/examples/amd_order/amd_order" "${DATA_PATH}/NLR/NLR.mtx" "${AMD_DATA_PATH}/NLR.amdorder" 1
+
+# echo "~~~~~~~~~~~~~~~~~~~~~~~~~<packing-500x100x100-b050>~~~~~~~~~~~~~~~~~~~~~~~~~"
+# "${SPARSEBASE_HOME}/build/examples/amd_order/amd_order" "${DATA_PATH}/packing-500x100x100-b050/packing-500x100x100-b050.mtx" "${AMD_DATA_PATH}/packing-500x100x100-b050.amdorder" 1
+
+# echo "~~~~~~~~~~~~~~~~~~~~~~~~~<patents>~~~~~~~~~~~~~~~~~~~~~~~~~"
+# "${SPARSEBASE_HOME}/build/examples/amd_order/amd_order" "${DATA_PATH}/patents/patents.mtx" "${AMD_DATA_PATH}/patents.amdorder" 1
+
+# echo "~~~~~~~~~~~~~~~~~~~~~~~~~<Queen_4147>~~~~~~~~~~~~~~~~~~~~~~~~~"
+# "${SPARSEBASE_HOME}/build/examples/amd_order/amd_order" "${DATA_PATH}/Queen_4147/Queen_4147.mtx" "${AMD_DATA_PATH}/Queen_4147.amdorder" 1
+
+# echo "~~~~~~~~~~~~~~~~~~~~~~~~~<rajat31>~~~~~~~~~~~~~~~~~~~~~~~~~"
+# "${SPARSEBASE_HOME}/build/examples/amd_order/amd_order" "${DATA_PATH}/rajat31/rajat31.mtx" "${AMD_DATA_PATH}/rajat31.amdorder" 1
+
+# echo "~~~~~~~~~~~~~~~~~~~~~~~~~<rgg_n_2_24_s0>~~~~~~~~~~~~~~~~~~~~~~~~~"
+# "${SPARSEBASE_HOME}/build/examples/amd_order/amd_order" "${DATA_PATH}/rgg_n_2_24_s0/rgg_n_2_24_s0.mtx" "${AMD_DATA_PATH}/rgg_n_2_24_s0.amdorder" 1
+
+# #echo "~~~~~~~~~~~~~~~~~~~~~~~~~<sk-2005>~~~~~~~~~~~~~~~~~~~~~~~~~"
+# #"${SPARSEBASE_HOME}/build/examples/amd_order/amd_order" "${DATA_PATH}/sk-2005/sk-2005.mtx" "${AMD_DATA_PATH}/sk-2005.amdorder" 1
+
+# echo "~~~~~~~~~~~~~~~~~~~~~~~~~<soc-LiveJournal1>~~~~~~~~~~~~~~~~~~~~~~~~~"
+# "${SPARSEBASE_HOME}/build/examples/amd_order/amd_order" "${DATA_PATH}/soc-LiveJournal1/soc-LiveJournal1.mtx" "${AMD_DATA_PATH}/soc-LiveJournal1.amdorder" 1
+
+# #echo "~~~~~~~~~~~~~~~~~~~~~~~~~<soc-Pokec>~~~~~~~~~~~~~~~~~~~~~~~~~"
+# #"${SPARSEBASE_HOME}/build/examples/amd_order/amd_order" "${DATA_PATH}/soc-Pokec/soc-Pokec.mtx" "${AMD_DATA_PATH}/soc-Pokec.amdorder" 1
+
+# echo "~~~~~~~~~~~~~~~~~~~~~~~~~<stokes>~~~~~~~~~~~~~~~~~~~~~~~~~"
+# "${SPARSEBASE_HOME}/build/examples/amd_order/amd_order" "${DATA_PATH}/stokes/stokes.mtx" "${AMD_DATA_PATH}/stokes.amdorder" 1
+
+# echo "~~~~~~~~~~~~~~~~~~~~~~~~~<sx-stackoverflow>~~~~~~~~~~~~~~~~~~~~~~~~~"
+# "${SPARSEBASE_HOME}/build/examples/amd_order/amd_order" "${DATA_PATH}/sx-stackoverflow/sx-stackoverflow.mtx" "${AMD_DATA_PATH}/sx-stackoverflow.amdorder" 1
+
+# echo "~~~~~~~~~~~~~~~~~~~~~~~~~<venturiLevel3>~~~~~~~~~~~~~~~~~~~~~~~~~"
+# "${SPARSEBASE_HOME}/build/examples/amd_order/amd_order" "${DATA_PATH}/venturiLevel3/venturiLevel3.mtx" "${AMD_DATA_PATH}/venturiLevel3.amdorder" 1
+
+# echo "~~~~~~~~~~~~~~~~~~~~~~~~~<wikipedia-20070206>~~~~~~~~~~~~~~~~~~~~~~~~~"
+# "${SPARSEBASE_HOME}/build/examples/amd_order/amd_order" "${DATA_PATH}/wikipedia-20070206/wikipedia-20070206.mtx" "${AMD_DATA_PATH}/wikipedia-20070206.amdorder" 1
+
+# echo "~~~~~~~~~~~~~~~~~~~~~~~~~<wiki-Talk>~~~~~~~~~~~~~~~~~~~~~~~~~"
+# "${SPARSEBASE_HOME}/build/examples/amd_order/amd_order" "${DATA_PATH}/wiki-Talk/wiki-Talk.mtx" "${AMD_DATA_PATH}/wiki-Talk.amdorder" 1
+
+# echo "~~~~~~~~~~~~~~~~~~~~~~~~~<wiki-topcats>~~~~~~~~~~~~~~~~~~~~~~~~~"
+# "${SPARSEBASE_HOME}/build/examples/amd_order/amd_order" "${DATA_PATH}/wiki-topcats/wiki-topcats.mtx" "${AMD_DATA_PATH}/wiki-topcats.amdorder" 1
+
+# echo "~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: mip1>~~~~~~~~~~~~~~~~~~~~~~~~~"
+# "${SPARSEBASE_HOME}/build/examples/amd_order/amd_order" "${DATA_PATH}/mip1/mip1.mtx" "${AMD_DATA_PATH}/mip1.amdorder" 1
+
+# echo "~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: mouse_gene>~~~~~~~~~~~~~~~~~~~~~~~~~"
+# "${SPARSEBASE_HOME}/build/examples/amd_order/amd_order" "${DATA_PATH}/mouse_gene/mouse_gene.mtx" "${AMD_DATA_PATH}/mouse_gene.amdorder" 1
+
+# echo "~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: BenElechi1>~~~~~~~~~~~~~~~~~~~~~~~~~"
+# "${SPARSEBASE_HOME}/build/examples/amd_order/amd_order" "${DATA_PATH}/BenElechi1/BenElechi1.mtx" "${AMD_DATA_PATH}/BenElechi1.amdorder" 1
+
+# echo "~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: atmosmodl>~~~~~~~~~~~~~~~~~~~~~~~~~"
+# "${SPARSEBASE_HOME}/build/examples/amd_order/amd_order" "${DATA_PATH}/atmosmodl/atmosmodl.mtx" "${AMD_DATA_PATH}/atmosmodl.amdorder" 1
+
+# echo "~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET:2month1>~~~~~~~~~~~~~~~~~~~~~~~~~"
+# "${SPARSEBASE_HOME}/build/examples/amd_order/amd_order" "${DATA_PATH}/12month1/12month1.mtx" "${AMD_DATA_PATH}/12month1.amdorder" 1
+
+# echo "~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: pkustk14>~~~~~~~~~~~~~~~~~~~~~~~~~"
+# "${SPARSEBASE_HOME}/build/examples/amd_order/amd_order" "${DATA_PATH}/pkustk14/pkustk14.mtx" "${AMD_DATA_PATH}/pkustk14.amdorder" 1
+
+# echo "~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: great-britain_osm>~~~~~~~~~~~~~~~~~~~~~~~~~"
+# "${SPARSEBASE_HOME}/build/examples/amd_order/amd_order" "${DATA_PATH}/great-britain_osm/great-britain_osm.mtx" "${AMD_DATA_PATH}/great-britain_osm.amdorder" 1
+
+# echo "~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: hugebubbles-00000>~~~~~~~~~~~~~~~~~~~~~~~~~"
+# "${SPARSEBASE_HOME}/build/examples/amd_order/amd_order" "${DATA_PATH}/hugebubbles-00000/hugebubbles-00000.mtx" "${AMD_DATA_PATH}/hugebubbles-00000.amdorder" 1
+
+# echo "~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: hugebubbles-00010>~~~~~~~~~~~~~~~~~~~~~~~~~"
+# "${SPARSEBASE_HOME}/build/examples/amd_order/amd_order" "${DATA_PATH}/hugebubbles-00010/hugebubbles-00010.mtx" "${AMD_DATA_PATH}/hugebubbles-00010.amdorder" 1
+
+# echo "~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: hugetrace-00000>~~~~~~~~~~~~~~~~~~~~~~~~~"
+# "${SPARSEBASE_HOME}/build/examples/amd_order/amd_order" "${DATA_PATH}/hugetrace-00000/hugetrace-00000.mtx" "${AMD_DATA_PATH}/hugetrace-00000.amdorder" 1
+
+# echo "~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: hugetrace-00010>~~~~~~~~~~~~~~~~~~~~~~~~~"
+# "${SPARSEBASE_HOME}/build/examples/amd_order/amd_order" "${DATA_PATH}/hugetrace-00010/hugetrace-00010.mtx" "${AMD_DATA_PATH}/hugetrace-00010.amdorder" 1
+
+# echo "~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: hugetrace-00010>~~~~~~~~~~~~~~~~~~~~~~~~~"
+# "${SPARSEBASE_HOME}/build/examples/amd_order/amd_order" "${DATA_PATH}/hugetrace-00010/hugetrace-00010.mtx" "${AMD_DATA_PATH}/hugetrace-00010.amdorder" 1
+
+# echo "~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: hugetric-00000>~~~~~~~~~~~~~~~~~~~~~~~~~"
+# "${SPARSEBASE_HOME}/build/examples/amd_order/amd_order" "${DATA_PATH}/hugetric-00000/hugetric-00000.mtx" "${AMD_DATA_PATH}/hugetric-00000.amdorder" 1
+
+# echo "~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: hugetric-00020>~~~~~~~~~~~~~~~~~~~~~~~~~"
+# "${SPARSEBASE_HOME}/build/examples/amd_order/amd_order" "${DATA_PATH}/hugetric-00020/hugetric-00020.mtx" "${AMD_DATA_PATH}/hugetric-00020.amdorder" 1
+
+# echo "~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: italy_osm>~~~~~~~~~~~~~~~~~~~~~~~~~"
+# "${SPARSEBASE_HOME}/build/examples/amd_order/amd_order" "${DATA_PATH}/italy_osm/italy_osm.mtx" "${AMD_DATA_PATH}/italy_osm.amdorder" 1
+
+# echo "~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: kron_g500-logn17>~~~~~~~~~~~~~~~~~~~~~~~~~"
+# "${SPARSEBASE_HOME}/build/examples/amd_order/amd_order" "${DATA_PATH}/kron_g500-logn17/kron_g500-logn17.mtx" "${AMD_DATA_PATH}/kron_g500-logn17.amdorder" 1
+
+# echo "~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: kron_g500-logn18>~~~~~~~~~~~~~~~~~~~~~~~~~"
+# "${SPARSEBASE_HOME}/build/examples/amd_order/amd_order" "${DATA_PATH}/kron_g500-logn18/kron_g500-logn18.mtx" "${AMD_DATA_PATH}/kron_g500-logn18.amdorder" 1
+
+# echo "~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: kron_g500-logn19>~~~~~~~~~~~~~~~~~~~~~~~~~"
+# "${SPARSEBASE_HOME}/build/examples/amd_order/amd_order" "${DATA_PATH}/kron_g500-logn19/kron_g500-logn19.mtx" "${AMD_DATA_PATH}/kron_g500-logn19.amdorder" 1
+
+# echo "~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: kron_g500-logn20>~~~~~~~~~~~~~~~~~~~~~~~~~"
+# "${SPARSEBASE_HOME}/build/examples/amd_order/amd_order" "${DATA_PATH}/kron_g500-logn20/kron_g500-logn20.mtx" "${AMD_DATA_PATH}/kron_g500-logn20.amdorder" 1
+
+# echo "~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: rgg_n_2_20_s0>~~~~~~~~~~~~~~~~~~~~~~~~~"
+# "${SPARSEBASE_HOME}/build/examples/amd_order/amd_order" "${DATA_PATH}/rgg_n_2_20_s0/rgg_n_2_20_s0.mtx" "${AMD_DATA_PATH}/rgg_n_2_20_s0.amdorder" 1
+
+# echo "~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: rgg_n_2_21_s0>~~~~~~~~~~~~~~~~~~~~~~~~~"
+# "${SPARSEBASE_HOME}/build/examples/amd_order/amd_order" "${DATA_PATH}/rgg_n_2_21_s0/rgg_n_2_21_s0.mtx" "${AMD_DATA_PATH}/rgg_n_2_21_s0.amdorder" 1
+
+# echo "~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: rgg_n_2_22_s0>~~~~~~~~~~~~~~~~~~~~~~~~~"
+# "${SPARSEBASE_HOME}/build/examples/amd_order/amd_order" "${DATA_PATH}/rgg_n_2_22_s0/rgg_n_2_22_s0.mtx" "${AMD_DATA_PATH}/rgg_n_2_22_s0.amdorder" 1
+
+# echo "~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: rgg_n_2_23_s0>~~~~~~~~~~~~~~~~~~~~~~~~~"
+# "${SPARSEBASE_HOME}/build/examples/amd_order/amd_order" "${DATA_PATH}/rgg_n_2_23_s0/rgg_n_2_23_s0.mtx" "${AMD_DATA_PATH}/rgg_n_2_23_s0.amdorder" 1
+
+# echo "~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: road_central>~~~~~~~~~~~~~~~~~~~~~~~~~"
+# "${SPARSEBASE_HOME}/build/examples/amd_order/amd_order" "${DATA_PATH}/road_central/road_central.mtx" "${AMD_DATA_PATH}/road_central.amdorder" 1
+
+# echo "~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: road_usa>~~~~~~~~~~~~~~~~~~~~~~~~~"
+# "${SPARSEBASE_HOME}/build/examples/amd_order/amd_order" "${DATA_PATH}/road_usa/road_usa.mtx" "${AMD_DATA_PATH}/road_usa.amdorder" 1
+
+# echo "~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: asia_osm>~~~~~~~~~~~~~~~~~~~~~~~~~"
+# "${SPARSEBASE_HOME}/build/examples/amd_order/amd_order" "${DATA_PATH}/asia_osm/asia_osm.mtx" "${AMD_DATA_PATH}/asia_osm.amdorder" 1
+
+# echo "~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: coPapersCiteseer>~~~~~~~~~~~~~~~~~~~~~~~~~"
+# "${SPARSEBASE_HOME}/build/examples/amd_order/amd_order" "${DATA_PATH}/coPapersCiteseer/coPapersCiteseer.mtx" "${AMD_DATA_PATH}/coPapersCiteseer.amdorder" 1
+
+# echo "~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: coPapersDBLP>~~~~~~~~~~~~~~~~~~~~~~~~~"
+# "${SPARSEBASE_HOME}/build/examples/amd_order/amd_order" "${DATA_PATH}/coPapersDBLP/coPapersDBLP.mtx" "${AMD_DATA_PATH}/coPapersDBLP.amdorder" 1
+
+# echo "~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: delaunay_n21>~~~~~~~~~~~~~~~~~~~~~~~~~"
+# "${SPARSEBASE_HOME}/build/examples/amd_order/amd_order" "${DATA_PATH}/delaunay_n21/delaunay_n21.mtx" "${AMD_DATA_PATH}/delaunay_n21.amdorder" 1
+
+# echo "~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: delaunay_n22>~~~~~~~~~~~~~~~~~~~~~~~~~"
+# "${SPARSEBASE_HOME}/build/examples/amd_order/amd_order" "${DATA_PATH}/delaunay_n22/delaunay_n22.mtx" "${AMD_DATA_PATH}/delaunay_n22.amdorder" 1
+
+# echo "~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: delaunay_n23>~~~~~~~~~~~~~~~~~~~~~~~~~"
+# "${SPARSEBASE_HOME}/build/examples/amd_order/amd_order" "${DATA_PATH}/delaunay_n23/delaunay_n23.mtx" "${AMD_DATA_PATH}/delaunay_n23.amdorder" 1
+
+# echo "~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: germany_osm>~~~~~~~~~~~~~~~~~~~~~~~~~"
+# "${SPARSEBASE_HOME}/build/examples/amd_order/amd_order" "${DATA_PATH}/germany_osm/germany_osm.mtx" "${AMD_DATA_PATH}/germany_osm.amdorder" 1
+
+# echo "~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: halfb>~~~~~~~~~~~~~~~~~~~~~~~~~"
+# "${SPARSEBASE_HOME}/build/examples/amd_order/amd_order" "${DATA_PATH}/halfb/halfb.mtx" "${AMD_DATA_PATH}/halfb.amdorder" 1
+
+# echo "~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: dielFilterV3real>~~~~~~~~~~~~~~~~~~~~~~~~~"
+# "${SPARSEBASE_HOME}/build/examples/amd_order/amd_order" "${DATA_PATH}/dielFilterV3real/dielFilterV3real.mtx" "${AMD_DATA_PATH}/dielFilterV3real.amdorder" 1
+
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: kmer_V1r>~~~~~~~~~~~~~~~~~~~~~~~~~"
+"${SPARSEBASE_HOME}/build/examples/amd_order/amd_order" "${DATA_PATH}/kmer_V1r/kmer_V1r.mtx" "${AMD_DATA_PATH}/kmer_V1r.amdorder" 1
+
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: bmw3_2>~~~~~~~~~~~~~~~~~~~~~~~~~"
+"${SPARSEBASE_HOME}/build/examples/amd_order/amd_order" "${DATA_PATH}/bmw3_2/bmw3_2.mtx" "${AMD_DATA_PATH}/bmw3_2.amdorder" 1
+
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: audikw_1>~~~~~~~~~~~~~~~~~~~~~~~~~"
+"${SPARSEBASE_HOME}/build/examples/amd_order/amd_order" "${DATA_PATH}/audikw_1/audikw_1.mtx" "${AMD_DATA_PATH}/audikw_1.amdorder" 1
+
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: Hardesty3>~~~~~~~~~~~~~~~~~~~~~~~~~"
+"${SPARSEBASE_HOME}/build/examples/amd_order/amd_order" "${DATA_PATH}/Hardesty3/Hardesty3.mtx" "${AMD_DATA_PATH}/Hardesty3.amdorder" 1
+
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: JP>~~~~~~~~~~~~~~~~~~~~~~~~~"
+"${SPARSEBASE_HOME}/build/examples/amd_order/amd_order" "${DATA_PATH}/JP/JP.mtx" "${AMD_DATA_PATH}/JP.amdorder" 1
+
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: msdoor>~~~~~~~~~~~~~~~~~~~~~~~~~"
+"${SPARSEBASE_HOME}/build/examples/amd_order/amd_order" "${DATA_PATH}/msdoor/msdoor.mtx" "${AMD_DATA_PATH}/msdoor.amdorder" 1
+
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: bibd_22_8>~~~~~~~~~~~~~~~~~~~~~~~~~"
+"${SPARSEBASE_HOME}/build/examples/amd_order/amd_order" "${DATA_PATH}/bibd_22_8/bibd_22_8.mtx" "${AMD_DATA_PATH}/bibd_22_8.amdorder" 1
+
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: GL7d19>~~~~~~~~~~~~~~~~~~~~~~~~~"
+"${SPARSEBASE_HOME}/build/examples/amd_order/amd_order" "${DATA_PATH}/GL7d19/GL7d19.mtx" "${AMD_DATA_PATH}/GL7d19.amdorder" 1
+
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: relat9>~~~~~~~~~~~~~~~~~~~~~~~~~"
+"${SPARSEBASE_HOME}/build/examples/amd_order/amd_order" "${DATA_PATH}/relat9/relat9.mtx" "${AMD_DATA_PATH}/relat9.amdorder" 1
+
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: kim2>~~~~~~~~~~~~~~~~~~~~~~~~~"
+"${SPARSEBASE_HOME}/build/examples/amd_order/amd_order" "${DATA_PATH}/kim2/kim2.mtx" "${AMD_DATA_PATH}/kim2.amdorder" 1
+
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: F1>~~~~~~~~~~~~~~~~~~~~~~~~~"
+"${SPARSEBASE_HOME}/build/examples/amd_order/amd_order" "${DATA_PATH}/F1/F1.mtx" "${AMD_DATA_PATH}/F1.amdorder" 1
+
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: uk-2002>~~~~~~~~~~~~~~~~~~~~~~~~~"
+"${SPARSEBASE_HOME}/build/examples/amd_order/amd_order" "${DATA_PATH}/uk-2002/uk-2002.mtx" "${AMD_DATA_PATH}/uk-2002.amdorder" 1
+
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: fem_hifreq_circuit>~~~~~~~~~~~~~~~~~~~~~~~~~"
+"${SPARSEBASE_HOME}/build/examples/amd_order/amd_order" "${DATA_PATH}/fem_hifreq_circuit/fem_hifreq_circuit.mtx" "${AMD_DATA_PATH}/fem_hifreq_circuit.amdorder" 1
+
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: bundle_adj>~~~~~~~~~~~~~~~~~~~~~~~~~"
+"${SPARSEBASE_HOME}/build/examples/amd_order/amd_order" "${DATA_PATH}/bundle_adj/bundle_adj.mtx" "${AMD_DATA_PATH}/bundle_adj.amdorder" 1
+
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: tp-6>~~~~~~~~~~~~~~~~~~~~~~~~~"
+"${SPARSEBASE_HOME}/build/examples/amd_order/amd_order" "${DATA_PATH}/tp-6/tp-6.mtx" "${AMD_DATA_PATH}/tp-6.amdorder" 1
+
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: spal_004>~~~~~~~~~~~~~~~~~~~~~~~~~"
+"${SPARSEBASE_HOME}/build/examples/amd_order/amd_order" "${DATA_PATH}/spal_004/spal_004.mtx" "${AMD_DATA_PATH}/spal_004.amdorder" 1
+
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: mycielskian18>~~~~~~~~~~~~~~~~~~~~~~~~~"
+"${SPARSEBASE_HOME}/build/examples/amd_order/amd_order" "${DATA_PATH}/mycielskian18/mycielskian18.mtx" "${AMD_DATA_PATH}/mycielskian18.amdorder" 1
+
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: mycielskian20>~~~~~~~~~~~~~~~~~~~~~~~~~"
+"${SPARSEBASE_HOME}/build/examples/amd_order/amd_order" "${DATA_PATH}/mycielskian20/mycielskian20.mtx" "${AMD_DATA_PATH}/mycielskian20.amdorder" 1
+
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: nd24k>~~~~~~~~~~~~~~~~~~~~~~~~~"
+"${SPARSEBASE_HOME}/build/examples/amd_order/amd_order" "${DATA_PATH}/nd24k/nd24k.mtx" "${AMD_DATA_PATH}/nd24k.amdorder" 1
+
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: torso1>~~~~~~~~~~~~~~~~~~~~~~~~~"
+"${SPARSEBASE_HOME}/build/examples/amd_order/amd_order" "${DATA_PATH}/torso1/torso1.mtx" "${AMD_DATA_PATH}/torso1.amdorder" 1
+
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: bone010>~~~~~~~~~~~~~~~~~~~~~~~~~"
+"${SPARSEBASE_HOME}/build/examples/amd_order/amd_order" "${DATA_PATH}/bone010/bone010.mtx" "${AMD_DATA_PATH}/bone010.amdorder" 1
+
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: Ga41As41H72>~~~~~~~~~~~~~~~~~~~~~~~~~"
+"${SPARSEBASE_HOME}/build/examples/amd_order/amd_order" "${DATA_PATH}/Ga41As41H72/Ga41As41H72.mtx" "${AMD_DATA_PATH}/Ga41As41H72.amdorder" 1
+
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: gearbox>~~~~~~~~~~~~~~~~~~~~~~~~~"
+"${SPARSEBASE_HOME}/build/examples/amd_order/amd_order" "${DATA_PATH}/gearbox/gearbox.mtx" "${AMD_DATA_PATH}/gearbox.amdorder" 1
+
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: thermal2>~~~~~~~~~~~~~~~~~~~~~~~~~"
+"${SPARSEBASE_HOME}/build/examples/amd_order/amd_order" "${DATA_PATH}/thermal2/thermal2.mtx" "${AMD_DATA_PATH}/thermal2.amdorder" 1
+
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: 3Dspectralwave>~~~~~~~~~~~~~~~~~~~~~~~~~"
+"${SPARSEBASE_HOME}/build/examples/amd_order/amd_order" "${DATA_PATH}/3Dspectralwave/3Dspectralwave.mtx" "${AMD_DATA_PATH}/3Dspectralwave.amdorder" 1
+
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: higgs-twitter>~~~~~~~~~~~~~~~~~~~~~~~~~"
+"${SPARSEBASE_HOME}/build/examples/amd_order/amd_order" "${DATA_PATH}/higgs-twitter/higgs-twitter.mtx" "${AMD_DATA_PATH}/higgs-twitter.amdorder" 1
+
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: twitter7>~~~~~~~~~~~~~~~~~~~~~~~~~"
+"${SPARSEBASE_HOME}/build/examples/amd_order/amd_order" "${DATA_PATH}/twitter7/twitter7.mtx" "${AMD_DATA_PATH}/twitter7.amdorder" 1
+
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: com-Friendster>~~~~~~~~~~~~~~~~~~~~~~~~~"
+"${SPARSEBASE_HOME}/build/examples/amd_order/amd_order" "${DATA_PATH}/com-Friendster/com-Friendster.mtx" "${AMD_DATA_PATH}/com-Friendster.amdorder" 1
+
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: MOLIERE_2016>~~~~~~~~~~~~~~~~~~~~~~~~~"
+"${SPARSEBASE_HOME}/build/examples/amd_order/amd_order" "${DATA_PATH}/MOLIERE_2016/MOLIERE_2016.mtx" "${AMD_DATA_PATH}/MOLIERE_2016.amdorder" 1
+
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: TSOPF_RS_b2383_c1>~~~~~~~~~~~~~~~~~~~~~~~~~"
+"${SPARSEBASE_HOME}/build/examples/amd_order/amd_order" "${DATA_PATH}/TSOPF_RS_b2383_c1/TSOPF_RS_b2383_c1.mtx" "${AMD_DATA_PATH}/TSOPF_RS_b2383_c1.amdorder" 1

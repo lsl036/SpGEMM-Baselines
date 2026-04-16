@@ -1,0 +1,13 @@
+#ifndef SPARSEBASE_CONFIG_H_
+#define SPARSEBASE_CONFIG_H_
+
+#cmakedefine _HEADER_ONLY
+#cmakedefine USE_CUDA
+#cmakedefine USE_PIGO
+#cmakedefine USE_METIS
+#cmakedefine USE_RABBIT_ORDER
+#cmakedefine USE_AMD_ORDER
+#cmakedefine USE_PULP
+#cmakedefine USE_PATOH
+
+#endif

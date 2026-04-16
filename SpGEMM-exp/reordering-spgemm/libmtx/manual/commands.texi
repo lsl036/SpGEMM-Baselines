@@ -1,0 +1,626 @@
+@c This file is part of Libmtx.
+@c Copyright (C) 2022 James D. Trotter
+@c
+@c Libmtx is free software: you can redistribute it and/or
+@c modify it under the terms of the GNU General Public License as
+@c published by the Free Software Foundation, either version 3 of the
+@c License, or (at your option) any later version.
+@c
+@c Libmtx is distributed in the hope that it will be useful,
+@c but WITHOUT ANY WARRANTY; without even the implied warranty of
+@c MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+@c General Public License for more details.
+@c
+@c You should have received a copy of the GNU General Public License
+@c along with Libmtx.  If not, see
+@c <https://www.gnu.org/licenses/>.
+@c
+@c Authors: James D. Trotter <james@simula.no>
+@c Last modified: 2022-11-24
+@c
+@c Libmtx User Guide: Commands.
+
+@node Commands
+@chapter Commands
+
+This chapter decribes a collection of command-line programs that are
+provided by Libmtx for workiang with Matrix Market files.
+
+
+@table @command
+@cindex vector addition
+@pindex mtxaxpy
+@item mtxaxpy
+adds two vectors.
+
+@cindex dot product
+@cindex Euclidean inner product
+@pindex mtxdot
+@item mtxdot
+computes the dot product of two vectors.
+
+@pindex mtxgemv
+@item mtxgemv
+multiplies a general, unsymmetric matrix by a vector.
+
+@pindex mtxinfo
+@item mtxinfo
+reads a Matrix Market file, validates the contents and displays some
+high-level information about the Matrix Market object.
+
+@cindex Euclidean norm
+@pindex mtxnrm2
+@item mtxnrm2
+computes the Euclidean norm of a vector.
+
+@cindex partition
+@pindex mtxpartition
+@item mtxpartition
+partitions a sparse matrix by rows, columns or nonzeros, or using a graph
+partitioner such as METIS.
+
+@cindex reorder
+@pindex mtxreorder
+@item mtxreorder
+reorders the nonzeros of a sparse matrix, for example, using the Reverse
+Cuthill-McKee (RCM) ordering (@pxref{E. Cuthill and J. McKee (1969)}).
+
+@cindex vector scaling
+@pindex mtxscal
+@item mtxscal
+scales a vector by a scalar.
+
+@cindex sort
+@pindex mtxsort
+@item mtxsort
+sorts the entries of a dense or sparse matrix, for example, in row- or
+column-major order.
+
+@cindex sparsity pattern
+@pindex mtxspy
+@item mtxspy
+draws an image of a matrix sparsity pattern and writes it to a PNG file.
+
+@end table
+
+Further details about each program are given in the following sections.
+
+@menu
+* @command{mtxaxpy}::
+* @command{mtxdot}::
+* @command{mtxgemv}::
+* @command{mtxinfo}::
+* @command{mtxnrm2}::
+* @command{mtxpartition}::
+* @command{mtxreorder}::
+* @command{mtxscal}::
+* @command{mtxsort}::
+* @command{mtxspy}::
+@end menu
+
+
+@node @command{mtxaxpy}
+@section @command{mtxaxpy}
+@cindex vector addition
+@pindex mtxaxpy
+The command @command{mtxaxpy} is used to add two vectors. The result is
+written to standard output in the form of a Matrix Market file
+representing the result vector. More specifically, the calculation
+carried out is @samp{@var{y} := @var{alpha}*@var{x} + @var{y}}.
+
+@example
+@code{mtxaxpy [OPTION..] [@var{alpha}] @var{x} [@var{y}]}
+@end example
+
+The positional arguments are:
+@table @option
+@item @var{alpha}
+The scalar floating-point value @option{@var{alpha}}. If this argument
+is omitted, then @option{@var{alpha}} defaults to @samp{1.0}.
+
+@item @var{x}
+Path to a Matrix Market file containing the vector
+@option{@var{x}}.
+
+@item @var{y}
+Path to a Matrix Market file containing the vector
+@option{@var{y}}. If this argument is omitted, then a vector of zeros
+of length equal to @option{@var{x}} is used.
+
+@end table
+
+In addition, the following options are accepted:
+
+@table @option
+@item -z, --gzip, --gunzip, --ungzip
+Filter files through gzip.
+
+@item --format=FORMAT
+Format string for outputting numerical values.  For real, double and
+complex values, the format specifiers @samp{%e}, @samp{%E}, @samp{%f},
+@samp{%F}, @samp{%g} or @samp{%G} may be used, whereas @samp{%d} must
+be used for integers. Flags, field width and precision can optionally
+be specified, e.g., @samp{%+3.1f}.
+
+@item --repeat=N
+The number of times to repeat the matrix-vector multiplication.
+
+@item -q, --quiet
+Do not print the resulting Matrix Market file to standard output.
+
+@item -v, --verbose
+Print some diagnostics to the standard error stream.
+
+@end table
+
+
+The @command{mtxaxpy} command can be used in the same way as the
+STREAM benchmark (@pxref{J.D. McCalpin (2013)}). to measure
+realistically achievable memory bandwidth of a single core.  For
+example, the following command will run the vector addition one
+hundred times using a double precision floating point vector with ten
+million elements:
+@example
+@code{$ ./mtxaxpy --verbose -q --repeat=100 1.0 - < <( \
+    N=10000000; \
+    printf "%%%%MatrixMarket vector array double general\n"; \
+    printf "$@{N@}\n"; \
+    for i in $(seq $@{N@}); do printf "1.0\n"; done)
+mtx_read: 39.443018 seconds
+mtx_daxpy: 0.013981 seconds
+mtx_daxpy: 0.013948 seconds
+[...]}
+@end example
+At eight bytes per element, each vector occupies 80 MB of memory.
+Assuming that the data is too large to fit in cache, then every vector
+addition causes 160 MB of data to be read from main memory. Thus,
+dividing the volume of memory traffic by the time required for a
+single vector addition, we find that, in this example, the memory
+throughput is about 11.47 GB/s.
+
+
+@node @command{mtxdot}
+@section @command{mtxdot}
+@pindex mtxdot
+
+The command @command{mtxdot} is used to compute the dot product of two
+vectors.  That is, @samp{@var{dot} := @var{x}'@var{y}}, where
+@samp{@var{x}} and @samp{@var{y}} are vectors, and @samp{@var{x}'}
+denotes the transpose of @samp{@var{x}}.
+
+@example
+@code{mtxdot [OPTION..] @var{x} [@var{y}]}
+@end example
+
+If matrices are provided instead of vectors, then the Frobenius inner
+product is computed.
+
+The positional arguments are:
+@table @option
+@item @var{x}
+Path to a Matrix Market file containing the vector
+@option{@var{x}}.
+
+@item @var{y}
+Path to a Matrix Market file containing the vector
+@option{@var{y}}. If this argument is omitted, then a vector of ones
+of length equal to @option{@var{x}} is used.
+
+@end table
+
+In addition, the following options are accepted:
+
+@table @option
+@item -z, --gzip, --gunzip, --ungzip
+Filter files through gzip.
+
+@item --format=FORMAT
+Format string for outputting numerical values.  For real, double and
+complex values, the format specifiers @samp{%e}, @samp{%E}, @samp{%f},
+@samp{%F}, @samp{%g} or @samp{%G} may be used, whereas @samp{%d} must
+be used for integers. Flags, field width and precision can optionally
+be specified, e.g., @samp{%+3.1f}.
+
+@item -q, --quiet
+Do not print the resulting Matrix Market file to standard output.
+
+@item -v, --verbose
+Print some diagnostics to the standard error stream.
+
+@end table
+
+
+@node @command{mtxgemv}
+@section @command{mtxgemv}
+@pindex mtxgemv
+
+The command @command{mtxgemv} is used to multiply a general,
+unsymmetric matrix with a vector. The result is written to standard
+output in the form of a Matrix Market file representing the result
+vector. More specifically, the calculation carried out is
+@samp{@var{y} := @var{alpha}*@var{A}*@var{x} + @var{beta}*@var{y}}.
+
+The @command{mtxgemv} command accepts a number of positional arguments
+corresponding to the variables in the matrix-vector multiplication:
+@example
+@code{mtxgemv [OPTION..] @var{alpha} @var{A} [@var{x}] [@var{beta}] [@var{y}]}
+@end example
+
+The positional arguments are:
+@table @option
+@item @var{alpha}
+The scalar floating-point value @option{@var{alpha}}.
+
+@item @var{A}
+Path to a Matrix Market file containing the matrix @option{@var{A}}.
+
+@item @var{x}
+Path to a Matrix Market file containing the vector
+@option{@var{x}}. If this argument is omitted or an empty string
+(i.e., @kbd{""}), then a vector of ones of length equal to the number
+of columns of @option{@var{A}} is used.
+
+@item @var{beta}
+The scalar floating-point value @option{@var{beta}}. If this argument is
+omitted, then @option{@var{beta}} is set equal to one.
+
+@item @var{y}
+Path to a Matrix Market file containing the vector @option{@var{y}}. If this
+argument is omitted, then a vector of zeros of length equal to the
+number of rows of @option{@var{A}} is used.
+
+@end table
+
+In addition, the following options are accepted:
+
+@table @option
+@item -z, --gzip, --gunzip, --ungzip
+Filter files through gzip.
+
+@item --format=FORMAT
+Format string for outputting numerical values.  For real, double and
+complex values, the format specifiers @samp{%e}, @samp{%E}, @samp{%f},
+@samp{%F}, @samp{%g} or @samp{%G} may be used, whereas @samp{%d} must
+be used for integers. Flags, field width and precision can optionally
+be specified, e.g., @samp{%+3.1f}.
+
+@item --repeat=N
+The number of times to repeat the matrix-vector multiplication.
+
+@item -q, --quiet
+Do not print the resulting Matrix Market file to standard output.
+
+@item -v, --verbose
+Print some diagnostics to the standard error stream.
+
+@end table
+
+
+@node @command{mtxinfo}
+@section @command{mtxinfo}
+@pindex mtxinfo
+
+The command @command{mtxinfo} reads a Matrix Market file, validates the
+contents and displays some high-level information about the Matrix
+Market object.
+@example
+@code{mtxinfo [OPTION..] FILE}
+@end example
+
+The following options are accepted:
+@table @option
+@item -z, --gzip, --gunzip, --ungzip
+Filter the file through gzip.
+
+@item -v, --verbose
+Print diagnostics to standard error.
+
+@end table
+
+
+@node @command{mtxnrm2}
+@section @command{mtxnrm2}
+@pindex mtxnrm2
+
+The command @command{mtxnrm2} is used to compute the Euclidean norm of
+a vector.  That is, @samp{@var{nrm2} := sqrt(@var{x}'@var{x})}, where
+@samp{@var{x}} is a vector and @samp{@var{x}'} denotes its transpose.
+
+@example
+@code{mtxnrm2 [OPTION..] @var{x} [@var{y}]}
+@end example
+
+If matrices are provided instead of vectors, then the Frobenius norm
+of the matrices is computed.
+
+The positional arguments are:
+@table @option
+@item @var{x}
+Path to a Matrix Market file containing the vector
+@option{@var{x}}.
+
+@end table
+
+In addition, the following options are accepted:
+
+@table @option
+@item -z, --gzip, --gunzip, --ungzip
+Filter files through gzip.
+
+@item --format=FORMAT
+Format string for outputting numerical values.  For real, double and
+complex values, the format specifiers @samp{%e}, @samp{%E}, @samp{%f},
+@samp{%F}, @samp{%g} or @samp{%G} may be used, whereas @samp{%d} must
+be used for integers. Flags, field width and precision can optionally
+be specified, e.g., @samp{%+3.1f}.
+
+@item -q, --quiet
+Do not print the resulting Matrix Market file to standard output.
+
+@item -v, --verbose
+Print some diagnostics to the standard error stream.
+
+@end table
+
+
+@node @command{mtxpartition}
+@section @command{mtxpartition}
+@pindex mtxpartition
+
+The command @command{mtxpartition} is used to partition sparse matrices.x
+@example
+@code{mtxpartition [OPTION..] FILE}
+@end example
+
+@table @option
+@item -z, --gzip, --gunzip, --ungzip
+Filter the file through gzip
+
+@item --format=FORMAT
+Format string for outputting numerical values.  For real, double and
+complex values, the format specifiers @samp{%e}, @samp{%E}, @samp{%f},
+@samp{%F}, @samp{%g} or @samp{%G} may be used, whereas @samp{%d} must be
+used for integers. Flags, field width and precision can optionally be
+specified, e.g., @samp{%+3.1f}.
+
+@item --row-part-path=FILE
+Path for outputting row partition as a dense vector in Matrix Market
+format.
+
+@item --col-part-path=FILE
+Path for outputting column partition as a dense vector in Matrix Market
+format.
+
+@item --part-type=TYPE
+The method of partitioning algorithm to use: @samp{nonzeros} (default),
+@samp{rows}, @samp{columns}, @samp{2d} or @samp{metis}.
+
+
+@item --nz-parts=N
+number of parts to use when partitioning nonzeros.
+
+@item --nz-part-type=TYPE
+method of partitioning nonzeros if @code{--part-type=nonzeros}:
+@samp{block} (default), @samp{cyclic} or @samp{block-cyclic}.
+
+@item --nz-blksize=N
+block size to use if --nz-part-type is @samp{block-cyclic}.
+
+@item --row-parts=N
+number of parts to use when partitioning rows.
+
+@item --row-part-type=TYPE method of partitioning
+rows if @code{--part-type} is @samp{rows} or @samp{2d}: @samp{block}
+(default), @samp{cyclic} or @samp{block-cyclic}.
+
+@item --row-blksize=N
+block size to use if @code{--row-part-type} is @samp{block-cyclic}.
+
+@item --column-parts=N
+number of parts to use when partitioning columns.
+
+@item --column-part-type=TYPE
+method of partitioning columns if @code{--part-type} is @samp{columns} or
+@samp{2d}: @samp{block} (default), @samp{cyclic} or @samp{block-cyclic}.
+
+@item --column-blksize=N
+block size to use if @code{--column-part-type} is @samp{block-cyclic}.
+
+@item -q, --quiet
+Do not print the resulting Matrix Market file to standard output.
+
+@item -v, --verbose
+Print diagnostics to standard error.
+
+@end table
+
+
+@node @command{mtxreorder}
+@section @command{mtxreorder}
+@pindex mtxreorder
+
+The command @command{mtxreorder} is used to reorder the rows and
+columns of a sparse matrix, for example, using the Reverse
+Cuthill-McKee (RCM) ordering (@pxref{E. Cuthill and J. McKee (1969)}).
+@example
+@code{mtxreorder [OPTION..] FILE}
+@end example
+
+The following options are accepted:
+
+@table @option
+@item -z, --gzip, --gunzip, --ungzip
+Filter the file through gzip
+
+@item --format=FORMAT
+Format string for outputting numerical values.  For real, double and
+complex values, the format specifiers @samp{%e}, @samp{%E}, @samp{%f},
+@samp{%F}, @samp{%g} or @samp{%G} may be used, whereas @samp{%d} must
+be used for integers. Flags, field width and precision can optionally
+be specified, e.g., @samp{%+3.1f}.
+
+@item --rowperm-path=FILE
+Path for outputting row permutation as a dense vector in Matrix Market
+format.
+
+@item --colperm-path=FILE
+Path for outputting column permutation as a dense vector in Matrix
+Market format.
+
+@item --ordering=ORDERING
+The reordering algorithm to use. For now, the only supported algorithm
+is @samp{rcm}.
+
+@item --rcm-starting-row=N
+Starting row for the RCM algorithm.  The default value is @samp{0},
+which means to choose a starting row automatically.
+
+@item -q, --quiet
+Do not print the resulting Matrix Market file to standard output.
+
+@item -v, --verbose
+Print diagnostics to standard error.
+
+@end table
+
+
+@node @command{mtxscal}
+@section @command{mtxscal}
+@pindex mtxscal
+
+The command @command{mtxscal} is used to scale a vector by a scalar,
+floating point value. The result is written to standard output in the
+form of a Matrix Market file representing the scaled vector. More
+specifically, the calculation carried out is @samp{@var{x} :=
+@var{alpha}*@var{x}}, where @samp{@var{x}} is a vector and
+@samp{@var{alpha}} is a scalar.
+
+The @command{mtxscal} command accepts the following positional
+arguments:
+@example
+@code{mtxscal [OPTION..] @var{alpha} @var{x}}
+@end example
+
+The positional arguments are:
+@table @option
+@item @var{alpha}
+The scalar floating-point value @option{@var{alpha}}.
+
+@item @var{x}
+Path to a Matrix Market file containing the vector
+@option{@var{x}}.
+
+@end table
+
+In addition, the following options are accepted:
+
+@table @option
+@item -z, --gzip, --gunzip, --ungzip
+Filter files through gzip.
+
+@item --format=FORMAT
+Format string for outputting numerical values.  For real, double and
+complex values, the format specifiers @samp{%e}, @samp{%E}, @samp{%f},
+@samp{%F}, @samp{%g} or @samp{%G} may be used, whereas @samp{%d} must
+be used for integers. Flags, field width and precision can optionally
+be specified, e.g., @samp{%+3.1f}.
+
+@item --repeat=N
+The number of times to repeat the matrix-vector multiplication.
+
+@item -q, --quiet
+Do not print the resulting Matrix Market file to standard output.
+
+@item -v, --verbose
+Print some diagnostics to the standard error stream.
+
+@end table
+
+
+@node @command{mtxsort}
+@section @command{mtxsort}
+@pindex mtxsort
+
+The command @command{mtxsort} is used to sort the entries of a dense
+or sparse matrix, for example, in row- or column-major order.
+@example
+@code{mtxsort [OPTION..] FILE}
+@end example
+
+The following options are accepted:
+
+@table @option
+@item -z, --gzip, --gunzip, --ungzip
+Filter the file through gzip.
+
+@item --format=FORMAT
+Format string for outputting numerical values.  For real, double and
+complex values, the format specifiers @samp{%e}, @samp{%E}, @samp{%f},
+@samp{%F}, @samp{%g} or @samp{%G} may be used, whereas @samp{%d} must
+be used for integers. Flags, field width and precision can optionally
+be specified, e.g., @samp{%+3.1f}.
+
+@item --sorting=SORTING
+The ordering to use when sorting the data. This is either
+@samp{row-major} or @samp{column-major}. By default, @samp{row-major}
+is used.
+
+@item -q, --quiet
+Do not print the resulting Matrix Market file to standard output.
+
+@item -v, --verbose
+Print diagnostics to standard error.
+
+@end table
+
+
+@node @command{mtxspy}
+@section @command{mtxspy}
+@pindex mtxspy
+@cindex libpng
+The command @command{mtxspy} draws an image of the sparsity pattern of
+a matrix, saving it to a PNG file.  This command is only available if
+Libmtx is compiled with libpng support.
+@example
+@code{mtxspy [OPTION..] FILE}
+@end example
+
+The following options are accepted:
+
+@table @option
+@item --output-path=FILE
+Output path for the PNG image file. If not specified, the default
+output path is @samp{out.png}.
+
+@item -z, --gzip, --gunzip, --ungzip
+Filter files through gzip.
+
+@item --max-height=M
+@item --max-width=N
+Maximum width and height of the rendered image in pixels. The default
+maximum image size is 1000-by-1000 pixels.
+
+@item fgcolor=COLOR
+@item bgcolor=COLOR
+Foreground and background colors used to indicate sparse matrix
+entries that are present and absent in the sparsity pattern,
+respectively. Colors are specified in hexadecimal, optionally prefixed
+with a @samp{#} character (e.g., @samp{#38B6F1}). The default a black
+foreground and white background.
+
+@item gamma=GAMMA
+Gamma value to embed in the PNG.
+
+@item --title=TEXT
+@item --author=TEXT
+@item --description=TEXT
+@item --copyright=TEXT
+@item --email=TEXT
+@item --url=TEXT
+These options specify various text fields that may be stored in the
+PNG image to provide additional metadata about the image.
+
+@item -v, --verbose
+Print diagnostics to standard error.
+
+@end table

@@ -1,0 +1,130 @@
+2023-06-09  James D. Trotter  <james@simula.no>
+
+	* add support for graph partitioning and reordering with SCOTCH.
+
+2023-03-25  James D. Trotter  <james@simula.no>
+
+	* libmtx/util/metis.c (metis_partgraphsym): Fix maximum allowed
+	load imbalance to use the default value (up to 3%) instead of 0%.
+
+	* mtxreorder, mtxpartition: print the edge-cut of the partitioning
+	solution when using the METIS partitioner.
+
+2023-03-24  James D. Trotter  <james@simula.no>
+
+	* mtxreorder: implement reordering based on graph partitioning
+	with METIS.
+
+2023-02-10  James D. Trotter  <james@simula.no>
+
+	* mtxrand: add generator for rectangular block matrices, which is
+	sometimes useful as an ideal case for performance testing.
+
+2022-11-28  James D. Trotter  <james@simula.no>
+
+	* libmtx/util/metis.c (metis_nd): fix an issue where nested
+	dissection ordering fails for non-square matrices due to missing
+	symmetric nonzeros.
+
+2022-10-06  James D. Trotter  <james@simula.no>
+
+	* mtxgemm: program for computing matrix-matrix products
+
+	* mtxrand: program for generating random matrices and vectors
+
+2022-10-05  James D. Trotter  <james@simula.no>
+
+	* libmtx/linalg/blas/dense.c: add matrix-matrix multiplication
+	based on BLAS [sd]gemm.
+
+	* libmtx/linalg/base/dense.c: add basic matrix-matrix
+	multiplication (gemm)
+
+2022-09-28  James D. Trotter  <james@simula.no>
+
+	* configure.ac: make it easier to select user-defined BLAS library
+
+2022-09-08 James D. Trotter <james@simula.no>
+
+	Implement matrix reordering based on METIS's nested dissection
+	algorithm.
+
+2022-04-08 James D. Trotter <james@simula.no>
+
+	Refactor dense vector implementations to have a serial base
+	implementation and another implementation with BLAS-accelerated
+	operations. Also, add a third implementation to support OpenMP
+	shared-memory parallel dense vector operations.
+
+2021-08-05 James D. Trotter <james@simula.no>
+
+	Implement column major sorting for sparse matrices in coordinate
+	format.
+
+	Add functions for computing column pointers and row indices.
+
+2021-08-02 James D. Trotter <james@simula.no>
+
+	Implement several new commands, including mtxscal, mtxaxpy, mtxdot
+	and mtxnrm2. These are based on the corresponding BLAS operations.
+
+	Also, add functions for setting matrix or vector values equal to
+	zero or a given constant value.
+
+	Add support for writing vectors in coordinate format to file.
+
+	Remove some unused functions, improve error handling and fix
+	various, minor issues.
+
+2021-07-28 James D. Trotter <james@simula.no>
+
+	Implement the command `mtxreorder', which reorders a symmetric
+	sparse matrix using RCM.
+
+	Add `mtx_matrix_reorder_rcm' to reorder a sparse matrix with
+	symmetric sparsity pattern based on the Reverse Cuthill-McKee
+	algorithm.
+
+	Add `mtx_matrix_row_index' and `mtx_matrix_column_index' to obtain
+	the row or column index of a given nonzero of a matrix.
+
+	Add the function `mtx_matrix_row_ptr' to compute row pointers of a
+	matrix. This can be used, for example, when converting a matrix to
+	compressed sparse row format.
+
+	Add `mtx_permute_vector' and `mtx_permute_matrix'. The former
+	permutes the elements of a vector, whereas the latter permutes the
+	rows and/or columns of a matrix.
+
+	Add missing functions for creating sparse vectors.
+
+2021-07-02 James D. Trotter <james@simula.no>
+
+	Add the function `mtx_matrix_size_per_row' to count the number of
+	entries stored in each row of a matrix.
+
+	Add the function `mtx_set_comment_lines' to reduce code
+	duplication related to allocating storage for and copying comment
+	lines to a Matrix Market object.
+
+	Consistently set `num_columns' to -1 for vectors, and also set
+	`nonzero_size'.
+
+2021-06-30 James D. Trotter <james@simula.no>
+
+	Allow specifying a format string for outputting numerical values
+	for Matrix Market objects.
+
+	Fix various issues with installation and distribution.
+
+	Rename `mtx_read' to `mtx_fread' and `mtx_write' to `mtx_fwrite'.
+	Also, add new functions `mtx_read' and `mtx_write' to read .mtx
+	files from a given path.
+
+2021-06-18 James D. Trotter <james@simula.no>
+
+        Initial version.
+
+Copyright (C) 2023 James D. Trotter
+Copying and distribution of this file, with or without modification, are
+permitted provided the copyright notice and this notice are preserved.

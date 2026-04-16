@@ -1,0 +1,625 @@
+~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: cant>~~~~~~~~~~~~~~~~~~~~~~~~~
+topk_outfile: /data2/linshengle_data/SpGEMM-Reordering/close_pairs/cant.mtx
+reading input matrices in text (ascii)... 
+Matrix is symmetric
+Converting matrix data from ASCII to COO format: 1.860870838165283 seconds
+Input Matrix: Rows = 62451, Columns= 62451, nnz = 4007383, cluster_sz = 8
+Converting to csc ... 
+
+Size of CSC matrix: 0.0452514 GB
+Generate A and B in 2.238659 [seconds]
+Size of CSC matrix: 5.96046e-08 GB
+Preprocess A and B in 0.005858 [seconds]
+Total number of floating-point operations including addition and multiplication in SpGEMM (A * B): 538972946
+
+[DONE] hash_symbolic_topK 17440029
+C total size: 0.20 GB
+Total size of BIN class instance: 0.00 GB
+[DONE] memory allocation
+[DONE] hash_numeric_topk
+Dataset: cant done C = A * A_T in 0.078603 [seconds]
+
+~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: pwtk>~~~~~~~~~~~~~~~~~~~~~~~~~
+topk_outfile: /data2/linshengle_data/SpGEMM-Reordering/close_pairs/pwtk.mtx
+reading input matrices in text (ascii)... 
+Matrix is symmetric
+Converting matrix data from ASCII to COO format: 5.492887020111084 seconds
+Input Matrix: Rows = 217918, Columns= 217918, nnz = 11634424, cluster_sz = 8
+Converting to csc ... 
+
+Size of CSC matrix: 0.131649 GB
+Generate A and B in 6.571827 [seconds]
+Size of CSC matrix: 5.96046e-08 GB
+Preprocess A and B in 0.017074 [seconds]
+Total number of floating-point operations including addition and multiplication in SpGEMM (A * B): 1252108804
+
+[DONE] hash_symbolic_topK 32772236
+C total size: 0.37 GB
+Total size of BIN class instance: 0.00 GB
+[DONE] memory allocation
+[DONE] hash_numeric_topk
+Dataset: pwtk done C = A * A_T in 0.243192 [seconds]
+
+~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: offshore>~~~~~~~~~~~~~~~~~~~~~~~~~
+topk_outfile: /data2/linshengle_data/SpGEMM-Reordering/close_pairs/offshore.mtx
+reading input matrices in text (ascii)... 
+Matrix is symmetric
+Converting matrix data from ASCII to COO format: 2.065047979354858 seconds
+Input Matrix: Rows = 259789, Columns= 259789, nnz = 4242673, cluster_sz = 8
+Converting to csc ... 
+
+Size of CSC matrix: 0.0493512 GB
+Generate A and B in 2.506963 [seconds]
+Size of CSC matrix: 5.96046e-08 GB
+Preprocess A and B in 0.006310 [seconds]
+Total number of floating-point operations including addition and multiplication in SpGEMM (A * B): 142685030
+
+[DONE] hash_symbolic_topK 23356245
+C total size: 0.26 GB
+Total size of BIN class instance: 0.00 GB
+[DONE] memory allocation
+[DONE] hash_numeric_topk
+Dataset: offshore done C = A * A_T in 0.168074 [seconds]
+
+~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: cage12>~~~~~~~~~~~~~~~~~~~~~~~~~
+topk_outfile: /data2/linshengle_data/SpGEMM-Reordering/close_pairs/cage12.mtx
+reading input matrices in text (ascii)... 
+Converting matrix data from ASCII to COO format: 1.67699408531189 seconds
+Input Matrix: Rows = 130228, Columns= 130228, nnz = 2032536, cluster_sz = 8
+Converting to csc ... 
+
+Size of CSC matrix: 0.0236857 GB
+Generate A and B in 1.908183 [seconds]
+Size of CSC matrix: 5.96046e-08 GB
+Preprocess A and B in 0.004029 [seconds]
+Total number of floating-point operations including addition and multiplication in SpGEMM (A * B): 69221652
+
+[DONE] hash_symbolic_topK 15231874
+C total size: 0.17 GB
+Total size of BIN class instance: 0.00 GB
+[DONE] memory allocation
+[DONE] hash_numeric_topk
+Dataset: cage12 done C = A * A_T in 0.042316 [seconds]
+
+~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: scircuit>~~~~~~~~~~~~~~~~~~~~~~~~~
+topk_outfile: /data2/linshengle_data/SpGEMM-Reordering/close_pairs/scircuit.mtx
+reading input matrices in text (ascii)... 
+Converting matrix data from ASCII to COO format: 0.8441929817199707 seconds
+Input Matrix: Rows = 170998, Columns= 170998, nnz = 958936, cluster_sz = 8
+Converting to csc ... 
+
+Size of CSC matrix: 0.0119911 GB
+Generate A and B in 0.961475 [seconds]
+Size of CSC matrix: 5.96046e-08 GB
+Preprocess A and B in 0.002137 [seconds]
+Total number of floating-point operations including addition and multiplication in SpGEMM (A * B): 17352752
+
+[DONE] hash_symbolic_topK 5222546
+C total size: 0.06 GB
+Total size of BIN class instance: 0.00 GB
+[DONE] memory allocation
+[DONE] hash_numeric_topk
+Dataset: scircuit done C = A * A_T in 0.031737 [seconds]
+
+~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: wiki-Vote>~~~~~~~~~~~~~~~~~~~~~~~~~
+topk_outfile: /data2/linshengle_data/SpGEMM-Reordering/close_pairs/wiki-Vote.mtx
+reading input matrices in text (ascii)... 
+Converting matrix data from ASCII to COO format: 0.03794598579406738 seconds
+Input Matrix: Rows = 8297, Columns= 8297, nnz = 103689, cluster_sz = 8
+Converting to csc ... 
+
+Size of CSC matrix: 0.00122074 GB
+Generate A and B in 0.081800 [seconds]
+Size of CSC matrix: 5.96046e-08 GB
+Preprocess A and B in 0.000241 [seconds]
+Total number of floating-point operations including addition and multiplication in SpGEMM (A * B): 17347694
+
+[DONE] hash_symbolic_topK 2801584
+C total size: 0.03 GB
+Total size of BIN class instance: 0.00 GB
+[DONE] memory allocation
+[DONE] hash_numeric_topk
+Dataset: wiki-Vote done C = A * A_T in 0.018629 [seconds]
+
+~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: patents_main>~~~~~~~~~~~~~~~~~~~~~~~~~
+topk_outfile: /data2/linshengle_data/SpGEMM-Reordering/close_pairs/patents_main.mtx
+reading input matrices in text (ascii)... 
+Converting matrix data from ASCII to COO format: 0.4565300941467285 seconds
+Input Matrix: Rows = 240547, Columns= 240547, nnz = 560943, cluster_sz = 8
+Converting to csc ... 
+
+Size of CSC matrix: 0.00806134 GB
+Generate A and B in 0.547088 [seconds]
+Size of CSC matrix: 5.96046e-08 GB
+Preprocess A and B in 0.001121 [seconds]
+Total number of floating-point operations including addition and multiplication in SpGEMM (A * B): 9924750
+
+[DONE] hash_symbolic_topK 3875107
+C total size: 0.05 GB
+Total size of BIN class instance: 0.00 GB
+[DONE] memory allocation
+[DONE] hash_numeric_topk
+Dataset: patents_main done C = A * A_T in 0.025420 [seconds]
+
+~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: poisson3Da>~~~~~~~~~~~~~~~~~~~~~~~~~
+topk_outfile: /data2/linshengle_data/SpGEMM-Reordering/close_pairs/poisson3Da.mtx
+reading input matrices in text (ascii)... 
+Converting matrix data from ASCII to COO format: 0.3031649589538574 seconds
+Input Matrix: Rows = 13514, Columns= 13514, nnz = 352762, cluster_sz = 8
+Converting to csc ... 
+
+Size of CSC matrix: 0.00404321 GB
+Generate A and B in 0.356394 [seconds]
+Size of CSC matrix: 5.96046e-08 GB
+Preprocess A and B in 0.000567 [seconds]
+Total number of floating-point operations including addition and multiplication in SpGEMM (A * B): 23537356
+
+[DONE] hash_symbolic_topK 2957530
+C total size: 0.03 GB
+Total size of BIN class instance: 0.00 GB
+[DONE] memory allocation
+[DONE] hash_numeric_topk
+Dataset: poisson3Da done C = A * A_T in 0.014041 [seconds]
+
+~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: pdb1HYS>~~~~~~~~~~~~~~~~~~~~~~~~~
+topk_outfile: /data2/linshengle_data/SpGEMM-Reordering/close_pairs/pdb1HYS.mtx
+reading input matrices in text (ascii)... 
+Matrix is symmetric
+Converting matrix data from ASCII to COO format: 1.937150955200195 seconds
+Input Matrix: Rows = 36417, Columns= 36417, nnz = 4344765, cluster_sz = 8
+Converting to csc ... 
+
+Size of CSC matrix: 0.048828 GB
+Generate A and B in 2.489916 [seconds]
+Size of CSC matrix: 5.96046e-08 GB
+Preprocess A and B in 0.006999 [seconds]
+Total number of floating-point operations including addition and multiplication in SpGEMM (A * B): 1110645318
+
+[DONE] hash_symbolic_topK 19594581
+C total size: 0.22 GB
+Total size of BIN class instance: 0.00 GB
+[DONE] memory allocation
+[DONE] hash_numeric_topk
+Dataset: pdb1HYS done C = A * A_T in 0.113489 [seconds]
+
+~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: rma10>~~~~~~~~~~~~~~~~~~~~~~~~~
+topk_outfile: /data2/linshengle_data/SpGEMM-Reordering/close_pairs/rma10.mtx
+reading input matrices in text (ascii)... 
+Converting matrix data from ASCII to COO format: 2.007867097854614 seconds
+Input Matrix: Rows = 46835, Columns= 46835, nnz = 2374001, cluster_sz = 8
+Converting to csc ... 
+
+Size of CSC matrix: 0.0268806 GB
+Generate A and B in 2.242504 [seconds]
+Size of CSC matrix: 5.96046e-08 GB
+Preprocess A and B in 0.004532 [seconds]
+Total number of floating-point operations including addition and multiplication in SpGEMM (A * B): 312960518
+
+[DONE] hash_symbolic_topK 7900917
+C total size: 0.09 GB
+Total size of BIN class instance: 0.00 GB
+[DONE] memory allocation
+[DONE] hash_numeric_topk
+Dataset: rma10 done C = A * A_T in 0.048754 [seconds]
+
+~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: shipsec1>~~~~~~~~~~~~~~~~~~~~~~~~~
+topk_outfile: /data2/linshengle_data/SpGEMM-Reordering/close_pairs/shipsec1.mtx
+reading input matrices in text (ascii)... 
+Matrix is symmetric
+Converting matrix data from ASCII to COO format: 3.000226974487305 seconds
+Input Matrix: Rows = 140874, Columns= 140874, nnz = 7813404, cluster_sz = 8
+Converting to csc ... 
+
+Size of CSC matrix: 0.0883713 GB
+Generate A and B in 3.649785 [seconds]
+Size of CSC matrix: 5.96046e-08 GB
+Preprocess A and B in 0.010450 [seconds]
+Total number of floating-point operations including addition and multiplication in SpGEMM (A * B): 901278576
+
+[DONE] hash_symbolic_topK 24086412
+C total size: 0.27 GB
+Total size of BIN class instance: 0.00 GB
+[DONE] memory allocation
+[DONE] hash_numeric_topk
+Dataset: shipsec1 done C = A * A_T in 0.248727 [seconds]
+
+~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: consph>~~~~~~~~~~~~~~~~~~~~~~~~~
+topk_outfile: /data2/linshengle_data/SpGEMM-Reordering/close_pairs/consph.mtx
+reading input matrices in text (ascii)... 
+Matrix is symmetric
+Converting matrix data from ASCII to COO format: 2.698371171951294 seconds
+Input Matrix: Rows = 83334, Columns= 83334, nnz = 6010480, cluster_sz = 8
+Converting to csc ... 
+
+Size of CSC matrix: 0.0677933 GB
+Generate A and B in 3.209550 [seconds]
+Size of CSC matrix: 5.96046e-08 GB
+Preprocess A and B in 0.008222 [seconds]
+Total number of floating-point operations including addition and multiplication in SpGEMM (A * B): 927690060
+
+[DONE] hash_symbolic_topK 26539736
+C total size: 0.30 GB
+Total size of BIN class instance: 0.00 GB
+[DONE] memory allocation
+[DONE] hash_numeric_topk
+Dataset: consph done C = A * A_T in 0.112681 [seconds]
+
+~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: filter3D>~~~~~~~~~~~~~~~~~~~~~~~~~
+topk_outfile: /data2/linshengle_data/SpGEMM-Reordering/close_pairs/filter3D.mtx
+reading input matrices in text (ascii)... 
+Matrix is symmetric
+Converting matrix data from ASCII to COO format: 1.360679864883423 seconds
+Input Matrix: Rows = 106437, Columns= 106437, nnz = 2707179, cluster_sz = 8
+Converting to csc ... 
+
+Size of CSC matrix: 0.0310482 GB
+Generate A and B in 1.634267 [seconds]
+Size of CSC matrix: 5.96046e-08 GB
+Preprocess A and B in 0.005053 [seconds]
+Total number of floating-point operations including addition and multiplication in SpGEMM (A * B): 171914370
+
+[DONE] hash_symbolic_topK 20161619
+C total size: 0.23 GB
+Total size of BIN class instance: 0.00 GB
+[DONE] memory allocation
+[DONE] hash_numeric_topk
+Dataset: filter3D done C = A * A_T in 0.056173 [seconds]
+
+~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: mac_econ_fwd500>~~~~~~~~~~~~~~~~~~~~~~~~~
+topk_outfile: /data2/linshengle_data/SpGEMM-Reordering/close_pairs/mac_econ_fwd500.mtx
+reading input matrices in text (ascii)... 
+Converting matrix data from ASCII to COO format: 1.040585041046143 seconds
+Input Matrix: Rows = 206500, Columns= 206500, nnz = 1273389, cluster_sz = 8
+Converting to csc ... 
+
+Size of CSC matrix: 0.0157699 GB
+Generate A and B in 1.181649 [seconds]
+Size of CSC matrix: 5.96046e-08 GB
+Preprocess A and B in 0.002574 [seconds]
+Total number of floating-point operations including addition and multiplication in SpGEMM (A * B): 31104754
+
+[DONE] hash_symbolic_topK 9311996
+C total size: 0.11 GB
+Total size of BIN class instance: 0.00 GB
+[DONE] memory allocation
+[DONE] hash_numeric_topk
+Dataset: mac_econ_fwd500 done C = A * A_T in 0.047569 [seconds]
+
+~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: asia_osm>~~~~~~~~~~~~~~~~~~~~~~~~~
+topk_outfile: /data2/linshengle_data/SpGEMM-Reordering/close_pairs/asia_osm.mtx
+reading input matrices in text (ascii)... 
+Matrix is symmetric
+Matrix is symmetric
+Converting matrix data from ASCII to COO format: 4.790544033050537 seconds
+Input Matrix: Rows = 11950757, Columns= 11950757, nnz = 25423206, cluster_sz = 8
+Converting to csc ... 
+
+Size of CSC matrix: 0.373167 GB
+Generate A and B in 7.985982 [seconds]
+Size of CSC matrix: 5.96046e-08 GB
+Preprocess A and B in 0.039041 [seconds]
+Total number of floating-point operations including addition and multiplication in SpGEMM (A * B): 113785436
+
+[DONE] hash_symbolic_topK 42751639
+C total size: 0.57 GB
+Total size of BIN class instance: 0.10 GB
+[DONE] memory allocation
+[DONE] hash_numeric_topk
+Dataset: asia_osm done C = A * A_T in 0.293541 [seconds]
+
+~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: af_shell10>~~~~~~~~~~~~~~~~~~~~~~~~~
+topk_outfile: /data2/linshengle_data/SpGEMM-Reordering/close_pairs/af_shell10.mtx
+reading input matrices in text (ascii)... 
+Matrix is symmetric
+Converting matrix data from ASCII to COO format: 29.69682192802429 seconds
+Input Matrix: Rows = 1508065, Columns= 1508065, nnz = 52672325, cluster_sz = 8
+Converting to csc ... 
+
+Size of CSC matrix: 0.599895 GB
+Generate A and B in 34.292275 [seconds]
+Size of CSC matrix: 5.96046e-08 GB
+Preprocess A and B in 0.113373 [seconds]
+Total number of floating-point operations including addition and multiplication in SpGEMM (A * B): 3681833750
+
+[DONE] hash_symbolic_topK 142742975
+C total size: 1.61 GB
+Total size of BIN class instance: 0.01 GB
+[DONE] memory allocation
+[DONE] hash_numeric_topk
+Dataset: af_shell10 done C = A * A_T in 0.711320 [seconds]
+
+~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: hood>~~~~~~~~~~~~~~~~~~~~~~~~~
+topk_outfile: /data2/linshengle_data/SpGEMM-Reordering/close_pairs/hood.mtx
+reading input matrices in text (ascii)... 
+Matrix is symmetric
+Converting matrix data from ASCII to COO format: 4.698606967926025 seconds
+Input Matrix: Rows = 220542, Columns= 220542, nnz = 10768436, cluster_sz = 8
+Converting to csc ... 
+
+Size of CSC matrix: 0.12199 GB
+Generate A and B in 5.651248 [seconds]
+Size of CSC matrix: 5.96046e-08 GB
+Preprocess A and B in 0.014728 [seconds]
+Total number of floating-point operations including addition and multiplication in SpGEMM (A * B): 1124056276
+
+[DONE] hash_symbolic_topK 34242180
+C total size: 0.38 GB
+Total size of BIN class instance: 0.00 GB
+[DONE] memory allocation
+[DONE] hash_numeric_topk
+Dataset: hood done C = A * A_T in 0.209206 [seconds]
+
+~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: case39>~~~~~~~~~~~~~~~~~~~~~~~~~
+topk_outfile: /data2/linshengle_data/SpGEMM-Reordering/close_pairs/case39.mtx
+reading input matrices in text (ascii)... 
+Matrix is symmetric
+Matrix is symmetric
+Converting matrix data from ASCII to COO format: 0.4778428077697754 seconds
+Input Matrix: Rows = 40216, Columns= 40216, nnz = 1042160, cluster_sz = 8
+Converting to csc ... 
+
+Size of CSC matrix: 0.0119467 GB
+Generate A and B in 0.598348 [seconds]
+Size of CSC matrix: 5.96046e-08 GB
+Preprocess A and B in 0.002259 [seconds]
+Total number of floating-point operations including addition and multiplication in SpGEMM (A * B): 8097139548
+
+[DONE] hash_symbolic_topK 404705284
+C total size: 4.52 GB
+Total size of BIN class instance: 0.00 GB
+[DONE] memory allocation
+[DONE] hash_numeric_topk
+Dataset: case39 done C = A * A_T in 1.163242 [seconds]
+
+~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: gupta3>~~~~~~~~~~~~~~~~~~~~~~~~~
+topk_outfile: /data2/linshengle_data/SpGEMM-Reordering/close_pairs/gupta3.mtx
+reading input matrices in text (ascii)... 
+Matrix is symmetric
+Converting matrix data from ASCII to COO format: 1.63360595703125 seconds
+Input Matrix: Rows = 16783, Columns= 16783, nnz = 9323427, cluster_sz = 8
+Converting to csc ... 
+
+Size of CSC matrix: 0.104323 GB
+Generate A and B in 2.545213 [seconds]
+Size of CSC matrix: 5.96046e-08 GB
+Preprocess A and B in 0.012501 [seconds]
+Total number of floating-point operations including addition and multiplication in SpGEMM (A * B): 61431943634
+
+[DONE] hash_symbolic_topK 270864545
+C total size: 3.03 GB
+Total size of BIN class instance: 0.00 GB
+[DONE] memory allocation
+[DONE] hash_numeric_topk
+Dataset: gupta3 done C = A * A_T in 6.204081 [seconds]
+
+~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: TSOPF_FS_b300_c2>~~~~~~~~~~~~~~~~~~~~~~~~~
+topk_outfile: /data2/linshengle_data/SpGEMM-Reordering/close_pairs/TSOPF_FS_b300_c2.mtx
+reading input matrices in text (ascii)... 
+Matrix is symmetric
+Matrix is symmetric
+Converting matrix data from ASCII to COO format: 4.159312009811401 seconds
+Input Matrix: Rows = 56814, Columns= 56814, nnz = 8767466, cluster_sz = 8
+Converting to csc ... 
+
+Size of CSC matrix: 0.0984074 GB
+Generate A and B in 5.024497 [seconds]
+Size of CSC matrix: 5.96046e-08 GB
+Preprocess A and B in 0.011893 [seconds]
+Total number of floating-point operations including addition and multiplication in SpGEMM (A * B): 107894274940
+
+[DONE] hash_symbolic_topK 805683050
+C total size: 9.00 GB
+Total size of BIN class instance: 0.00 GB
+[DONE] memory allocation
+[DONE] hash_numeric_topk
+Dataset: TSOPF_FS_b300_c2 done C = A * A_T in 10.730363 [seconds]
+
+~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: delaunay_n24>~~~~~~~~~~~~~~~~~~~~~~~~~
+topk_outfile: /data2/linshengle_data/SpGEMM-Reordering/close_pairs/delaunay_n24.mtx
+reading input matrices in text (ascii)... 
+Matrix is symmetric
+Matrix is symmetric
+Converting matrix data from ASCII to COO format: 18.00687885284424 seconds
+Input Matrix: Rows = 16777216, Columns= 16777216, nnz = 100663202, cluster_sz = 8
+Converting to csc ... 
+
+Size of CSC matrix: 1.25 GB
+Generate A and B in 28.148228 [seconds]
+Size of CSC matrix: 5.96046e-08 GB
+Preprocess A and B in 0.292006 [seconds]
+Total number of floating-point operations including addition and multiplication in SpGEMM (A * B): 1267828744
+
+[DONE] hash_symbolic_topK 347322258
+C total size: 4.01 GB
+Total size of BIN class instance: 0.14 GB
+[DONE] memory allocation
+[DONE] hash_numeric_topk
+Dataset: delaunay_n24 done C = A * A_T in 1.155280 [seconds]
+
+~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: webbase-1M>~~~~~~~~~~~~~~~~~~~~~~~~~
+topk_outfile: /data2/linshengle_data/SpGEMM-Reordering/close_pairs/webbase-1M.mtx
+reading input matrices in text (ascii)... 
+Converting matrix data from ASCII to COO format: 2.335202932357788 seconds
+Input Matrix: Rows = 1000005, Columns= 1000005, nnz = 3105536, cluster_sz = 8
+Converting to csc ... 
+
+Size of CSC matrix: 0.0421578 GB
+Generate A and B in 2.680738 [seconds]
+Size of CSC matrix: 5.96046e-08 GB
+Preprocess A and B in 0.004753 [seconds]
+Total number of floating-point operations including addition and multiplication in SpGEMM (A * B): 2739560104
+
+[DONE] hash_symbolic_topK 1307628897
+C total size: 14.62 GB
+Total size of BIN class instance: 0.01 GB
+[DONE] memory allocation
+[DONE] hash_numeric_topk
+Dataset: webbase-1M done C = A * A_T in 1.709836 [seconds]
+
+~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: AS365>~~~~~~~~~~~~~~~~~~~~~~~~~
+topk_outfile: /data2/linshengle_data/SpGEMM-Reordering/close_pairs/AS365.mtx
+reading input matrices in text (ascii)... 
+Matrix is symmetric
+Converting matrix data from ASCII to COO format: 4.265514850616455 seconds
+Input Matrix: Rows = 3799275, Columns= 3799275, nnz = 22736152, cluster_sz = 8
+Converting to csc ... 
+
+Size of CSC matrix: 0.282403 GB
+Generate A and B in 8.839788 [seconds]
+Size of CSC matrix: 5.96046e-08 GB
+Preprocess A and B in 0.064584 [seconds]
+Total number of floating-point operations including addition and multiplication in SpGEMM (A * B): 277813656
+
+[DONE] hash_symbolic_topK 74616587
+C total size: 0.86 GB
+Total size of BIN class instance: 0.03 GB
+[DONE] memory allocation
+[DONE] hash_numeric_topk
+Dataset: AS365 done C = A * A_T in 0.717375 [seconds]
+
+~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: com-LiveJournal>~~~~~~~~~~~~~~~~~~~~~~~~~
+topk_outfile: /data2/linshengle_data/SpGEMM-Reordering/close_pairs/com-LiveJournal.mtx
+reading input matrices in text (ascii)... 
+Matrix is symmetric
+Converting matrix data from ASCII to COO format: 12.96169114112854 seconds
+Input Matrix: Rows = 3997962, Columns= 3997962, nnz = 69362378, cluster_sz = 8
+Converting to csc ... 
+
+Size of CSC matrix: 0.804972 GB
+Generate A and B in 27.446540 [seconds]
+Size of CSC matrix: 5.96046e-08 GB
+Preprocess A and B in 0.191223 [seconds]
+Total number of floating-point operations including addition and multiplication in SpGEMM (A * B): 17161797536
+
+[DONE] hash_symbolic_topK 4859092804
+C total size: 54.33 GB
+Total size of BIN class instance: 0.03 GB
+[DONE] memory allocation
+[DONE] hash_numeric_topk
+Dataset: com-LiveJournal done C = A * A_T in 13.776859 [seconds]
+
+~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: europe_osm>~~~~~~~~~~~~~~~~~~~~~~~~~
+topk_outfile: /data2/linshengle_data/SpGEMM-Reordering/close_pairs/europe_osm.mtx
+reading input matrices in text (ascii)... 
+Matrix is symmetric
+Matrix is symmetric
+Converting matrix data from ASCII to COO format: 21.16683387756348 seconds
+Input Matrix: Rows = 50912018, Columns= 50912018, nnz = 108109320, cluster_sz = 8
+Converting to csc ... 
+
+Size of CSC matrix: 1.58754 GB
+Generate A and B in 36.051192 [seconds]
+Size of CSC matrix: 5.96046e-08 GB
+Preprocess A and B in 0.322867 [seconds]
+Total number of floating-point operations including addition and multiplication in SpGEMM (A * B): 482555136
+
+[DONE] hash_symbolic_topK 182570158
+C total size: 2.42 GB
+Total size of BIN class instance: 0.43 GB
+[DONE] memory allocation
+[DONE] hash_numeric_topk
+Dataset: europe_osm done C = A * A_T in 1.203024 [seconds]
+
+~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: GAP-road>~~~~~~~~~~~~~~~~~~~~~~~~~
+topk_outfile: /data2/linshengle_data/SpGEMM-Reordering/close_pairs/GAP-road.mtx
+reading input matrices in text (ascii)... 
+Matrix is symmetric
+Matrix is symmetric
+Converting matrix data from ASCII to COO format: 20.06716990470886 seconds
+Input Matrix: Rows = 23947347, Columns= 23947347, nnz = 57708624, cluster_sz = 8
+Converting to csc ... 
+
+Size of CSC matrix: 0.823366 GB
+Generate A and B in 27.077044 [seconds]
+Size of CSC matrix: 5.96046e-08 GB
+Preprocess A and B in 0.174185 [seconds]
+Total number of floating-point operations including addition and multiplication in SpGEMM (A * B): 319468132
+
+[DONE] hash_symbolic_topK 119546805
+C total size: 1.51 GB
+Total size of BIN class instance: 0.20 GB
+[DONE] memory allocation
+[DONE] hash_numeric_topk
+Dataset: GAP-road done C = A * A_T in 0.729824 [seconds]
+
+~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: kkt_power>~~~~~~~~~~~~~~~~~~~~~~~~~
+topk_outfile: /data2/linshengle_data/SpGEMM-Reordering/close_pairs/kkt_power.mtx
+reading input matrices in text (ascii)... 
+Matrix is symmetric
+Converting matrix data from ASCII to COO format: 6.655976057052612 seconds
+Input Matrix: Rows = 2063494, Columns= 2063494, nnz = 14612663, cluster_sz = 8
+Converting to csc ... 
+
+Size of CSC matrix: 0.178684 GB
+Generate A and B in 8.147674 [seconds]
+Size of CSC matrix: 5.96046e-08 GB
+Preprocess A and B in 0.041978 [seconds]
+Total number of floating-point operations including addition and multiplication in SpGEMM (A * B): 432975710
+
+[DONE] hash_symbolic_topK 93265642
+C total size: 1.06 GB
+Total size of BIN class instance: 0.02 GB
+[DONE] memory allocation
+[DONE] hash_numeric_topk
+Dataset: kkt_power done C = A * A_T in 0.384875 [seconds]
+
+~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: M6>~~~~~~~~~~~~~~~~~~~~~~~~~
+topk_outfile: /data2/linshengle_data/SpGEMM-Reordering/close_pairs/M6.mtx
+reading input matrices in text (ascii)... 
+Matrix is symmetric
+Converting matrix data from ASCII to COO format: 4.756300926208496 seconds
+Input Matrix: Rows = 3501776, Columns= 3501776, nnz = 21003872, cluster_sz = 8
+Converting to csc ... 
+
+Size of CSC matrix: 0.260827 GB
+Generate A and B in 8.915775 [seconds]
+Size of CSC matrix: 5.96046e-08 GB
+Preprocess A and B in 0.027819 [seconds]
+Total number of floating-point operations including addition and multiplication in SpGEMM (A * B): 256962436
+
+[DONE] hash_symbolic_topK 68984930
+C total size: 0.80 GB
+Total size of BIN class instance: 0.03 GB
+[DONE] memory allocation
+[DONE] hash_numeric_topk
+Dataset: M6 done C = A * A_T in 0.664943 [seconds]
+
+~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: NLR>~~~~~~~~~~~~~~~~~~~~~~~~~
+topk_outfile: /data2/linshengle_data/SpGEMM-Reordering/close_pairs/NLR.mtx
+reading input matrices in text (ascii)... 
+Matrix is symmetric
+Converting matrix data from ASCII to COO format: 4.708259105682373 seconds
+Input Matrix: Rows = 4163763, Columns= 4163763, nnz = 24975952, cluster_sz = 8
+Converting to csc ... 
+
+Size of CSC matrix: 0.310151 GB
+Generate A and B in 9.792899 [seconds]
+Size of CSC matrix: 5.96046e-08 GB
+Preprocess A and B in 0.069600 [seconds]
+Total number of floating-point operations including addition and multiplication in SpGEMM (A * B): 305534880
+
+[DONE] hash_symbolic_topK 82016497
+C total size: 0.95 GB
+Total size of BIN class instance: 0.03 GB
+[DONE] memory allocation
+[DONE] hash_numeric_topk
+Dataset: NLR done C = A * A_T in 0.729867 [seconds]
+
+~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: wikipedia-20070206>~~~~~~~~~~~~~~~~~~~~~~~~~
+topk_outfile: /data2/linshengle_data/SpGEMM-Reordering/close_pairs/wikipedia-20070206.mtx
+reading input matrices in text (ascii)... 
+Converting matrix data from ASCII to COO format: 16.00517582893372 seconds
+Input Matrix: Rows = 3566907, Columns= 3566907, nnz = 45030389, cluster_sz = 8
+Converting to csc ... 
+
+Size of CSC matrix: 0.529829 GB
+Generate A and B in 25.838200 [seconds]
+Size of CSC matrix: 5.96046e-08 GB
+Preprocess A and B in 0.059098 [seconds]
+Total number of floating-point operations including addition and multiplication in SpGEMM (A * B): 447425101530
+
+[DONE] hash_symbolic_topK 165704430144
+C total size: 1851.92 GB
+Total size of BIN class instance: 0.03 GB
+[DONE] memory allocation
+

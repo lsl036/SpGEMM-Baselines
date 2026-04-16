@@ -1,0 +1,711 @@
+@c This file is part of Libmtx.
+@c Copyright (C) 2022 James D. Trotter
+@c
+@c Libmtx is free software: you can redistribute it and/or modify it
+@c under the terms of the GNU General Public License as published by
+@c the Free Software Foundation, either version 3 of the License, or
+@c (at your option) any later version.
+@c
+@c Libmtx is distributed in the hope that it will be useful, but
+@c WITHOUT ANY WARRANTY; without even the implied warranty of
+@c MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+@c General Public License for more details.
+@c
+@c You should have received a copy of the GNU General Public License
+@c along with Libmtx.  If not, see <https://www.gnu.org/licenses/>.
+@c
+@c Authors: James D. Trotter <james@simula.no>
+@c Last modified: 2022-01-07
+@c
+@c Libmtx User Guide: Distributed Matrix Market files.
+
+@node Distributed Matrix Market files
+@chapter Distributed Matrix Market files
+
+This chapter describes how to distribute Matrix Market files among
+multiple processes using MPI, and how to perform various operations on
+those files in a distributed manner. To make use of these features, you
+will need to build Libmtx with MPI support.
+
+@c For most user-facing types and functions that relate to distributed
+@c computing, Libmtx uses the convention of prefixing their names with
+@c @code{mtxdist}. This makes it easier to avoid possible name clashes
+@c with other code when using Libmtx, and also to distinguish parts of a
+@c program that rely on distributed computing from those parts that are
+@c not distributed.
+
+@menu
+* Error handling: Error handling for distributed Matrix Market files.
+  How to handle errors when using Libmtx for distributed computing.
+* Data structures: Data structures for distributed Matrix Market files.
+  Basic data structures for representing distributed @file{mtx} files.
+* Creating distributed Matrix Market files::
+  How to create distributed @file{mtx} files.
+* Converting to and from Matrix Market files::
+  Functions for converting from @file{mtx} files to distributed
+  @file{mtx} files and vice versa.
+* Reading and writing distributed Matrix Market files::
+  Functions for reading from and writing to files in Matrix Market
+  format.
+@end menu
+
+
+@node Error handling for distributed Matrix Market files
+@section Error handling
+@cindex error handling
+In addition to the error handling routines described in @ref{Error
+handling}, Libmtx provides some additional error handling
+functionality when working with MPI and distributed data. First, some
+MPI functions may return an error code on failure, which should be
+handled correctly. Second, whenever multiple processes are involved,
+there are cases where only one or a few of those processes may
+encounter errors. These errors must be handled appropriately to ensure
+accurate reporting and that the program exits in a graceful manner
+instead of hanging indefinitely.
+
+@subsection MPI errors
+@findex mtxdiststrerror
+Some functions in Libmtx may fail due to MPI errors. In these cases,
+some additional information is needed to provide helpful error
+descriptions, and the function @code{mtxdiststrerror} should be used
+(instead of @code{mtxstrerror}).
+@example
+@code{const char * mtxdiststrerror(
+    int err, int mpierrcode, char * mpierrstr);}
+@end example
+The error code @code{err} is an integer corresponding to one of the
+error codes from the @code{mtxerror} enum type. The arguments
+@code{mpierrcode} and @code{mpierrstr} are only used if @code{err} is
+@samp{MTX_ERR_MPI}.
+
+@findex MPI_Error_string
+@cindex @code{MPI_MAX_ERROR_STRING}
+If @code{err} is @samp{MTX_ERR_MPI}, then the argument
+@code{mpierrcode} should be set to the error code that was returned
+from the MPI function call that failed. In addition, the argument
+@code{mpierrstr} must be a char array whose length is at least equal
+to @code{MPI_MAX_ERROR_STRING}. Internally, @code{mtxdiststrerror}
+uses @code{MPI_Error_string} to obtain a description of the error.
+
+The example below shows how @code{mtxdiststrerror} is typically used.
+@example
+@code{int err, mpierr;
+char mpierrstr[MPI_MAX_ERROR_STRING];
+struct mtxdisterror disterr;
+err = mtxdisterror_alloc(&disterr, MPI_COMM_WORLD, &mpierr);
+if (err) @{
+    fprintf(stderr, "error: %s\n",
+            mtxdiststrerror(err, mpierr, mpierrstr));
+    MPI_Abort(MPI_COMM_WORLD, EXIT_FAILURE);
+@}}
+@end example
+If @code{mtxdisterror_alloc} returns @samp{MTX_ERR_MPI} and
+@code{mpierr} is set to @samp{MPI_ERR_COMM}, then the following
+message will be printed:
+@example
+@code{error: MPI_ERR_COMM: invalid communicator}
+@end example
+
+@node Distributed error handling
+@subsection Distributed error handling
+@tindex struct mtxdisterror
+To more easily handle errors in cases where one or more processes may
+fail, Libmtx uses the data type @code{struct mtxdisterror}. Most of
+the functions in Libmtx that involve distributed computing take an
+additional argument of type @code{struct mtxdisterror} to provide
+robust error handling in these cases.
+
+@findex mtxdisterror_alloc
+To use @code{struct mtxdisterror}, one must first allocate storage
+using @code{mtxdisterror_alloc}.
+@example
+@code{int mtxdisterror_alloc(
+    struct mtxdisterror * disterr,
+    MPI_Comm comm,
+    int * mpierrcode);}
+@end example
+An example of this was already shown in the previous section.
+
+@findex mtxdisterror_free
+Note that the storage allocated for @code{mtxdisterror} should be
+freed by calling @code{mtxdisterror_free}.
+@example
+@code{void mtxdisterror_free(struct mtxdisterror * disterr);}
+@end example
+
+@findex mtxdisterror_description
+If an error occurs, then a description of the error can be obtained by
+calling @code{mtxdisterror_description}.
+@example
+@code{char * mtxdisterror_description(struct mtxdisterror * disterr);}
+@end example
+Note that if @code{mtxdisterror_description} is called more than once,
+the pointer that was returned from the previous call will no longer be
+valid and using it will result in a use-after-free error.
+
+@findex mtxdisterror_allreduce
+Finally, the function @code{mtxdisterror_allreduce} can be used to
+communicate error status among multiple processes.
+@example
+@code{int mtxdisterror_allreduce(struct mtxdisterror * disterr, int err);}
+@end example
+More specifically, @code{mtxdisterror_allreduce} performs a collective
+reduction on error codes provided by each MPI process in the
+communicator used by @code{disterr}. This is the same MPI communicator
+that was provided as the @code{comm} argument to
+@code{mtxdisterror_alloc}.
+
+Because @code{mtxdisterror_allreduce} is a collective operation, it
+must be performed by every process in the communicator of
+@code{disterr}. Otherwise, the program may hang indefinitely.
+
+Each process gathers the error code and rank of every other process.
+If the error code of each and every process is @samp{MTX_SUCCESS},
+then @code{mtxdisterror_allreduce} returns
+@samp{MTX_SUCCESS}. Otherwise, @samp{MTX_ERR_MPI_COLLECTIVE} is
+returned.  Moreover, the rank and error code of each process is stored
+in @code{disterr}.
+
+If the error code @code{err} is @samp{MTX_ERR_MPI_COLLECTIVE}, then it
+is assumed that a reduction has already been performed, and
+@code{mtxdisterror_allreduce} returns immediately with
+@samp{MTX_ERR_MPI_COLLETIVE}. As a result, if any process calls
+@code{mtxdisterror_allreduce} with @code{err} set to
+@samp{MTX_ERR_MPI_COLLETIVE}, then every other process in the
+communicator must also set @code{err} to
+@samp{MTX_ERR_MPI_COLLECTIVE}, or else the program may hang
+indefinitely.
+
+The following example shows how @code{mtxdisterror_allreduce} is used.
+@example
+@code{int err;
+struct mtxdisterror disterr;
+err = mtxdisterror_alloc(&disterr, MPI_COMM_WORLD);
+if (err)
+    MPI_Abort(MPI_COMM_WORLD, EXIT_FAILURE);
+
+// Get the MPI rank of the current process.
+// Perform an all-reduction on the error code from
+// MPI_Comm_rank, so that if any process fails,
+// then we can exit gracefully.
+int comm_err, rank;
+err = MPI_Comm_rank(MPI_COMM_WORLD, &rank);
+comm_err = mtxdisterror_allreduce(&disterr, err);
+if (comm_err)
+    return comm_err;
+
+...}
+@end example
+
+
+@node Data structures for distributed Matrix Market files
+@section Data structures
+@tindex struct mtxdistfile
+The file @file{libmtx/mtxfile/mtxdistfile.h} defines the type
+@code{struct mtxdistfile}, which is used to represent a Matrix Market
+file distributed among one or more MPI processes. Conceptually,
+processes are arranged as a one-dimensional linear array. Furthermore,
+the data is also arranged as a one-dimensional linear array, which is
+then distributed among the processes of the communicator
+@code{comm}. The definition of the @code{mtxdistfile} struct is shown
+below.
+@example
+@code{struct mtxdistfile @{
+    MPI_Comm comm;
+    int comm_size;
+    int rank;
+    struct mtxfileheader header;
+    struct mtxfilecomments comments;
+    struct mtxfilesize size;
+    enum mtxprecision precision;
+    int64_t datasize;
+    int64_t localdatasize;
+    int64_t * idx;
+    union mtxfiledata data;
+@};}
+@end example
+The first three struct members contain some information about the
+group of processes sharing the distributed Matrix Market file,
+including their MPI communicator (@code{comm}), the number of
+processes (@code{comm_size}) and the rank of the current process
+(@code{rank}).
+
+Thereafter, follows the header line, comments, size line and the
+chosen precision, all of which must be identical on every process in
+the communicator. The final struct member, @code{data}, is used to
+store those data lines of the Matrix Market file that reside on the
+current process.
+
+The nonzero entries of the underlying Matrix Market file are distributed
+among the processes such that @code{datasize} is the total number of
+entries in the entire Matrix Market file, while @code{localdatasize} is
+the number of entries stored on the current process. In addition, the
+array @code{idx}, whose length is equal to @samp{localdatasize},
+contains the global offset for each entry stored on the current
+process. (Note that these offsets are 0-based.)
+
+
+@node Creating distributed Matrix Market files
+@section Creating distributed Matrix Market files
+@findex mtxdistfile_free
+Constructing distributed Matrix Market files works in much the same
+way as the non-distributed case, which was described in @ref{Creating
+Matrix Market files}. First of all, @code{mtxdistfile_free} is used to
+free storage that is allocated when creating a distributed Matrix
+Market file.
+@example
+@code{void mtxdistfile_free(struct mtxdistfile * mtxdistfile);}
+@end example
+
+@findex mtxdistfile_alloc
+To allocate storage for a distributed Matrix Market file with the
+given header line, comment lines, size line and precision, use
+@code{mtxdistfile_alloc}.
+@example
+@code{int mtxdistfile_alloc(
+    struct mtxdistfile * mtxdistfile,
+    const struct mtxfileheader * header,
+    const struct mtxfilecomments * comments,
+    const struct mtxfilesize * size,
+    enum mtxprecision precision,
+    int64_t localdatasize,
+    const int64_t * idx,
+    MPI_Comm comm,
+    struct mtxdisterror * disterr);}
+@end example
+@code{comments} may be @samp{NULL}, in which case it is
+ignored. @code{localdatasize} is the number of entries in the underlying
+Matrix Market file that are stored on the current process. It is also
+the length of the @code{idx} array, which is used to specify the global
+offsets of the entries stored on the current process. Finally,
+@code{comm} must be the same MPI communicator that was used to create
+@code{disterr}.
+
+@findex mtxdistfile_alloc_copy
+@findex mtxdistfile_init_copy
+To allocate storage for a copy of an existing @code{mtxdistfile}, the
+function @code{mtxdistfile_alloc_copy} is used. This function does not
+initialise the underlying matrix or vector values. If the matrix or
+vector values should also be copied, then @code{mtxdistfile_init_copy}
+is used.
+@example
+@code{int mtxdistfile_alloc_copy(
+    struct mtxdistfile * dst,
+    const struct mtxdistfile * src,
+    struct mtxdisterror * disterr);
+
+int mtxdistfile_init_copy(
+    struct mtxdistfile * dst,
+    const struct mtxdistfile * src,
+    struct mtxdisterror * disterr);}
+@end example
+
+@node Creating distributed Matrix Market files in array format
+@subsection Creating distributed @file{mtx} files in array format
+@findex mtxdistfile_alloc_matrix_array
+@findex mtxdistfile_alloc_vector_array
+The functions @code{mtxdistfile_alloc_matrix_array} and
+@code{mtxdistfile_alloc_vector_array} are used to allocate distributed
+matrices and vectors in array format.
+@example
+@code{int mtxdistfile_alloc_matrix_array(
+    struct mtxdistfile * mtxdistfile,
+    enum mtxfilefield field,
+    enum mtxfilesymmetry symmetry,
+    enum mtxprecision precision,
+    int64_t num_rows,
+    int64_t num_columns,
+    int64_t localdatasize,
+    const int64_t * idx,
+    MPI_Comm comm,
+    struct mtxdisterror * disterr);
+
+int mtxdistfile_alloc_vector_array(
+    struct mtxdistfile * mtxdistfile,
+    enum mtxfilefield field,
+    enum mtxprecision precision,
+    int64_t num_rows,
+    int64_t localdatasize,
+    const int64_t * idx,
+    MPI_Comm comm,
+    struct mtxdisterror * disterr);}
+@end example
+@code{field} must be @samp{mtxfile_real}, @samp{mtxfile_complex} or
+@samp{mtxfile_integer}. Moreover, @code{field} and @code{precision} must
+be the same on every process in the MPI communicator. Likewise,
+@code{num_rows} and @code{num_columns} specify the total number of rows
+and columns in the distributed matrix or vector, and must therefore be
+the same on every process.
+
+The above functions allocate storage, but they do not initialise the
+underlying matrix or vector values. It is therefore up to the user to
+initialise these values.
+
+@findex mtxdistfile_init_@var{object}_array_@var{field}_@var{precision}
+If the matrix or vector values are already known, then the functions
+@code{mtxdistfile_init_@var{object}_array_@var{field}_@var{precision}}
+can be used to allocate storage and initialise values. Here
+@code{@var{object}}, @code{@var{field}} and @code{@var{precision}}
+correspond to the desired object (@samp{matrix} or @samp{vector}), field
+(@samp{real}, @samp{complex} or @samp{integer}), and precision
+(@samp{single} or @samp{double}). For example, for a distributed matrix
+in array format with real, single precision coefficients, the function
+@code{mtxdistfile_init_matrix_array_real_single} is used, as shown
+below.
+@example
+@code{int mtxdistfile_init_matrix_array_real_single(
+    struct mtxdistfile * mtxdistfile,
+    enum mtxfilesymmetry symmetry,
+    int64_t num_rows,
+    int64_t num_columns,
+    int64_t localdatasize,
+    const int64_t * idx,
+    const float * data,
+    MPI_Comm comm,
+    struct mtxdisterror * disterr);}
+@end example
+The corresponding function for a vector is
+@code{mtxdistfile_init_vector_array_real_single}.
+@example
+@code{int mtxdistfile_init_vector_array_real_single(
+    struct mtxdistfile * mtxdistfile,
+    int64_t num_rows,
+    int64_t localdatasize,
+    const int64_t * idx,
+    const float * data,
+    MPI_Comm comm,
+    struct mtxdisterror * disterr);}
+@end example
+
+@node Creating distributed Matrix Market files in coordinate format
+@subsection Creating distributed @file{mtx} files in coordinate format
+@findex mtxdistfile_alloc_matrix_coordinate
+@findex mtxdistfile_alloc_vector_coordinate
+Matrices and vectors in coordinate format are created in a similar way
+to what was shown in the previous section. The functions
+@code{mtxdistfile_alloc_matrix_coordinate} and
+@code{mtxdistfile_alloc_vector_coordinate} can be used to allocate
+distributed matrices and vectors in coordinate format.
+@example
+@code{int mtxdistfile_alloc_matrix_coordinate(
+    struct mtxdistfile * mtxdistfile,
+    enum mtxfilefield field,
+    enum mtxfilesymmetry symmetry,
+    enum mtxprecision precision,
+    int64_t num_rows,
+    int64_t num_columns,
+    int64_t num_nonzeros,
+    int64_t localdatasize,
+    const int64_t * idx,
+    MPI_Comm comm,
+    struct mtxdisterror * disterr);
+
+int mtxdistfile_alloc_vector_coordinate(
+    struct mtxdistfile * mtxdistfile,
+    enum mtxfilefield field,
+    enum mtxprecision precision,
+    int64_t num_rows,
+    int64_t num_nonzeros,
+    int64_t localdatasize,
+    const int64_t * idx,
+    MPI_Comm comm,
+    struct mtxdisterror * disterr);}
+@end example
+The main differences compared to array formats are: @code{field} is
+allowed to be @samp{mtxfile_pattern}, and an additional argument
+(@code{num_nonzeros}) is needed to specify the number of (nonzero)
+matrix or vector entries. Note that @code{num_nonzeros} is the total
+number of nonzeros in the distributed Matrix Market file (every process
+must specify the same value for this argument). The number of nonzeros
+that will reside on the current process is specified by
+@code{localdatasize}.
+
+@findex mtxdistfile_init_@var{object}_coordinate_@var{field}_@var{precision}
+The above functions allocate storage, but they do not initialise the
+underlying matrix or vector values. It is therefore up to the user to
+initialise these values. Alternatively, if the matrix or vector values
+are readily available, then the functions
+@code{mtxdistfile_init_@var{object}_coordinate_@var{field}_@var{precision}}
+can be used to allocate storage and initialise the matrix or vector
+values at the same time. As before, @code{@var{object}},
+@code{@var{field}} and @code{@var{precision}} correspond to the
+desired object (@samp{matrix} or @samp{vector}), field (@samp{real},
+@samp{complex}, @samp{integer} or @samp{pattern}), and precision
+(@samp{single} or @samp{double}). For example, for a distributed
+matrix in coordinate format with real, single precision coefficients,
+the function @code{mtxdistfile_init_matrix_coordinate_real_single} is
+used, as shown below.
+@example
+@code{int mtxdistfile_init_matrix_coordinate_real_single(
+    struct mtxdistfile * mtxdistfile,
+    enum mtxfilesymmetry symmetry,
+    int64_t num_rows,
+    int64_t num_columns,
+    int64_t num_nonzeros,
+    int64_t localdatasize,
+    const int64_t * idx,
+    const struct mtxfile_matrix_coordinate_real_single * data,
+    MPI_Comm comm,
+    struct mtxdisterror * disterr);}
+@end example
+In the case of a vector, the corresponding function is
+@code{mtxdistfile_init_vector_coordinate_real_single}.
+@example
+@code{int mtxdistfile_init_vector_coordinate_real_single(
+    struct mtxdistfile * mtxdistfile,
+    int64_t num_rows,
+    int64_t num_nonzeros,
+    int64_t localdatasize,
+    const int64_t * idx,
+    const struct mtxfile_vector_coordinate_real_single * data,
+    MPI_Comm comm,
+    struct mtxdisterror * disterr);}
+@end example
+
+
+@node Setting matrix or vector values for distributed Matrix Market files
+@subsection Setting matrix or vector values
+@findex mtxdistfile_set_constant_@var{field}_@var{precision}
+For convenience, the functions
+@code{mtxdistfile_set_constant_@var{field}_@var{precision}} are
+provided to initialise every value of a distributed matrix or vector
+to the same constant. Here @code{@var{field}} and
+@code{@var{precision}} should match the field (@samp{real},
+@samp{complex}, @samp{integer} or @samp{patter}) and precision
+(@samp{single} or @samp{double}) of @code{mtxdistfile}.
+@example
+@code{int mtxdistfile_set_constant_real_single(
+    struct mtxdistfile * mtxdistfile, float a,
+    struct mtxdisterror * disterr);
+
+int mtxdistfile_set_constant_real_double(
+    struct mtxdistfile * mtxdistfile, double a,
+    struct mtxdisterror * disterr);
+
+int mtxdistfile_set_constant_complex_single(
+    struct mtxdistfile * mtxdistfile, float a[2],
+    struct mtxdisterror * disterr);
+
+int mtxdistfile_set_constant_complex_double(
+    struct mtxdistfile * mtxdistfile, double a[2],
+    struct mtxdisterror * disterr);
+
+int mtxdistfile_set_constant_integer_single(
+    struct mtxdistfile * mtxdistfile, int32_t a,
+    struct mtxdisterror * disterr);
+
+int mtxdistfile_set_constant_integer_double(
+    struct mtxdistfile * mtxdistfile, int64_t a,
+    struct mtxdisterror * disterr);}
+@end example
+
+@node Converting to and from Matrix Market files
+@section Converting to and from Matrix Market files
+This section describes how to convert a Matrix Market file that
+resides on a single process to a Matrix Market file that is
+distributed among multiple processes.
+
+@findex mtxdistfile_from_mtxfile_rowwise
+The function @code{mtxdistfile_from_mtxfile_rowwise} takes a Matrix
+Market file stored on a single root process, partitions the underlying
+matrix or vector rowwise and distributes it among processes in a
+communicator.
+@example
+@code{int mtxdistfile_from_mtxfile_rowwise(
+    struct mtxdistfile * dst,
+    struct mtxfile * src,
+    enum mtxpartitioning parttype,
+    int64_t partsize, int64_t blksize, const int * parts,
+    MPI_Comm comm, int root,
+    struct mtxdisterror * disterr);}
+@end example
+@noindent
+The Matrix Market file @code{src} is distributed by first broadcasting
+the header line and precision from the root process to the other
+processes. Next, the number of matrix or vector elements to send to
+each process is determined and data is distributed accordingly.
+
+The arguments @code{parttype}, @code{partsize}, @code{blksize} and
+@code{parts} may be used to specify the manner in which the rows should
+be partitioned. For an explanation of these arguments, refer to
+@ref{Partition}.
+
+This function performs collective communication and therefore requires
+every process in the communicator to perform matching calls to the
+function.
+
+@findex mtxdistfile_to_mtxfile
+The function @code{mtxdistfile_to_mtxfile} gathers a distributed Matrix
+Market file onto a single, root process, creating a single Matrix Market
+file on that process.
+@example
+@code{int mtxdistfile_to_mtxfile(
+    struct mtxfile * dst,
+    const struct mtxdistfile * src,
+    int root,
+    struct mtxdisterror * disterr);}
+@end example
+The resulting Matrix Market file @code{dst} is only allocated on the
+process @code{root}, and so only this process should call
+@code{mtxfile_free} to free the allocated storage.
+
+
+@node Reading and writing distributed Matrix Market files
+@section Reading and writing distributed Matrix Market files
+This section explains how to read from and write to files in the
+Matrix Market format whenever data is distributed among multiple MPI
+processes.
+
+@cindex collective I/O
+@cindex distributed I/O
+@cindex parallel I/O
+@cindex file-per-process
+@cindex shared file
+In the case of reading or writing a distributed matrix or vector in
+Matrix Market format, there are essentially two options. The first
+option is the @dfn{file-per-process} model, where each process uses
+its own file to read or write its part of the matrix or vector. The
+second option is the @dfn{shared file} model, where processes send or
+receive their data to or from a single root process, and the root
+process uses a single, shared file to read or write data.
+
+Each of the I/O models mentioned above have advantages and
+disadvantages. The file-per-process model allows processes to read or
+write their data in parallel, and may therefore be much
+faster. However, when a large number of MPI processes are involved,
+there will also be many files. It is often more difficult for the user
+to manage multiple files. Furthermore, it also results in significant
+overhead due to the file system's handling of metadata associated with
+each file. The shared file model, on the other hand, produces only a
+single file.  This can be much simpler to deal with and there is no
+overhead associated with metadata beyond that one file. Unfortunately,
+the I/O performance can be severely limiting due to the fact that only
+a single process is responsible for reading from or writing to the
+file.
+
+@cindex MPI-IO
+@cindex HDF5
+Note that when using a very large number of MPI processes and very
+large files, a high-performance I/O library such as MPI-IO
+(@ref{W. Gropp@comma{} E. Lusk and R. Thakur (1999)}) or HDF5
+(@ref{HDF5}) may be a better alternative. However, this is not
+currently supported in Libmtx.
+
+@node Reading distributed Matrix Market files
+@subsection Reading distributed Matrix Market files
+@findex mtxdistfile_fread_rowwise
+To read an @file{mtx} file from a @code{FILE} stream, partition the data
+and distribute it among MPI processes in a communicator based on the
+shared file model, use @code{mtxdistfile_fread_rowwise}:
+@example
+@code{int mtxdistfile_fread_rowwise(
+    struct mtxdistfile * mtxdistfile,
+    enum mtxprecision precision,
+    enum mtxpartitioning parttype,
+    int64_t partsize, int64_t blksize, const int * parts,
+    FILE * f, int64_t * lines_read, int64_t * bytes_read,
+    size_t line_max, char * linebuf,
+    MPI_Comm comm, int root,
+    struct mtxdisterror * disterr);}
+@end example
+For the most part, @code{mtxdistfile_fread_rowwise} works just like
+@code{mtxfile_fread} (see @ref{Reading and writing Matrix Market
+files}). If successful, @samp{MTX_SUCCESS} is returned, and
+@code{mtxdistfile} will contain the distributed Matrix Market file. The
+user is responsible for calling @code{mtxdistfile_free} to free any
+storage allocated by @code{mtxdistfile_fread_rowwise}. If
+@code{mtxdistfile_fread_rowwise} fails, an error code is returned and
+@code{lines_read} and @code{bytes_read} are used to indicate the line
+number and byte of the Matrix Market file where an error was
+encountered. @code{lines_read} and @code{bytes_read} are ignored if they
+are set to @samp{NULL}.
+
+@cindex sysconf
+@cindex _SC_LINE_MAX
+Moreover, @code{precision} is used to choose the precision for storing
+the values of matrix or vector entries, as described in
+@ref{Precision}. If @code{linebuf} is not @samp{NULL}, then it must
+point to an array that can hold a null-terminated string whose length
+(including the terminating null-character) is at most @code{line_max}.
+This buffer is used for reading lines from the stream. Otherwise, if
+@code{linebuf} is @samp{NULL}, then a temporary buffer is allocated and
+used, and the maximum line length is determined by calling
+@code{sysconf()} with @code{_SC_LINE_MAX}.
+
+Only a single root process will read from the specified stream. The data
+is partitioned rowwise as determined by the arguments @code{parttype},
+@code{partsize}, @code{blksize}, and @code{parts}.
+
+@c The file is read one part at a time, which is then sent to the owning
+@c process. This avoids reading the entire file into the memory of the root
+@c process at once, which would severely limit the size of files that could
+@c be read.
+
+This function performs collective communication and therefore requires
+every process in the communicator to perform matching calls to the
+function.
+
+
+@cindex zlib
+@cindex gzip compression
+@findex mtxdistfile_gzread_rowwise
+If Libmtx is built with zlib support, then
+@code{mtxdistfile_gzread_rowwise} can be used to read gzip-compressed
+@file{mtx} files. The data is partitioned and distributed among MPI
+processes in the same way as with @code{mtxdistfile_fread_rowwise}.
+@example
+@code{int mtxdistfile_gzread_rowwise(
+    struct mtxdistfile * mtxdistfile,
+    enum mtxprecision precision,
+    enum mtxpartitioning parttype,
+    int64_t partsize, int64_t blksize, const int * parts,
+    gzFile f, int64_t * lines_read, int64_t * bytes_read,
+    size_t line_max, char * linebuf,
+    MPI_Comm comm, int root,
+    struct mtxdisterror * disterr);}
+@end example
+
+@findex mtxdistfile_read_rowwise
+For convenience, the function @code{mtxdistfile_read_rowwise} can be used to
+read an @file{mtx} file from a given path.
+@example
+@code{int mtxdistfile_read_rowwise(
+    struct mtxdistfile * mtxdistfile,
+    enum mtxprecision precision,
+    const char * path,
+    bool gzip,
+    int * lines_read, int64_t * bytes_read,
+    MPI_Comm comm,
+    struct mtxdisterror * disterr);}
+@end example
+The file is assumed to be gzip-compressed if @code{gzip} is @samp{true},
+and uncompressed otherwise. If @code{path} is @samp{-}, then the
+standard input stream is used.
+
+
+@node Writing distributed Matrix Market files
+@subsection Writing distributed Matrix Market files
+
+@findex mtxdistfile_fwrite
+To write a distributed @file{mtx} file to a @code{FILE} stream using the
+shared file model, use @code{mtxdistfile_fwrite}:
+@example
+@code{int mtxdistfile_fwrite(
+    const struct mtxdistfile * mtxdistfile,
+    FILE * f,
+    const char * fmt,
+    int64_t * bytes_written,
+    int root,
+    struct mtxdisterror * disterr);}
+@end example
+Here, @code{f} should point to a different stream on every process.  The
+processes involved are those from the MPI communicator
+@code{mtxdistfile->comm}. If successful, @samp{MTX_SUCCESS} is returned,
+and each process sent its part of the matrix or vector to the root
+process, which wrote it to the output stream. Moreover, if
+@code{bytes_written} is not @samp{NULL}, then it is used to return the
+number of bytes written to the stream.
+
+The @code{fmt} argument may optionally be used to specify a format
+string for outputting numerical values, in the same way as with
+@code{mtxfile_write} (see @ref{Writing Matrix Market files}).
