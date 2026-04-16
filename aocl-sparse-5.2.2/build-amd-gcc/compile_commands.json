@@ -1,0 +1,522 @@
+[
+{
+  "directory": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/library",
+  "command": "/usr/bin/c++ -DAOCLSPARSE_AVX2_INSTANT -DAOCLSPARSE_VERSION_STRING=\"\\\"AOCL-Sparse 5.2.2 Build 20260401\\\"\" -DSUPPORT_OMP -DUSE_AVX512 -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/include -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/analysis -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level2 -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level1 -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/extra -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/conversion -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/include -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/include -I/data/lsl/Software/amd-libflame/include/LP64 -I/data/lsl/Software/amd-blis/include/LP64 -I/data/lsl/Software/amd-utils/include/alci/.. -fPIC -mno-avx512f -march=znver2 -DNDEBUG -O3 -ftree-vectorize -ffp-contract=fast -std=c++17 -o CMakeFiles/DOUBLE_COMPILATION_AVX2.dir/src/level1/aoclsparse_dense_dot_kt.cpp.o -c /data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level1/aoclsparse_dense_dot_kt.cpp",
+  "file": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level1/aoclsparse_dense_dot_kt.cpp"
+},
+{
+  "directory": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/library",
+  "command": "/usr/bin/c++ -DAOCLSPARSE_AVX2_INSTANT -DAOCLSPARSE_VERSION_STRING=\"\\\"AOCL-Sparse 5.2.2 Build 20260401\\\"\" -DSUPPORT_OMP -DUSE_AVX512 -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/include -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/analysis -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level2 -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level1 -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/extra -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/conversion -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/include -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/include -I/data/lsl/Software/amd-libflame/include/LP64 -I/data/lsl/Software/amd-blis/include/LP64 -I/data/lsl/Software/amd-utils/include/alci/.. -fPIC -mno-avx512f -march=znver2 -DNDEBUG -O3 -ftree-vectorize -ffp-contract=fast -std=c++17 -o CMakeFiles/DOUBLE_COMPILATION_AVX2.dir/src/level1/aoclsparse_roti_kt.cpp.o -c /data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level1/aoclsparse_roti_kt.cpp",
+  "file": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level1/aoclsparse_roti_kt.cpp"
+},
+{
+  "directory": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/library",
+  "command": "/usr/bin/c++ -DAOCLSPARSE_AVX2_INSTANT -DAOCLSPARSE_VERSION_STRING=\"\\\"AOCL-Sparse 5.2.2 Build 20260401\\\"\" -DSUPPORT_OMP -DUSE_AVX512 -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/include -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/analysis -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level2 -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level1 -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/extra -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/conversion -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/include -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/include -I/data/lsl/Software/amd-libflame/include/LP64 -I/data/lsl/Software/amd-blis/include/LP64 -I/data/lsl/Software/amd-utils/include/alci/.. -fPIC -mno-avx512f -march=znver2 -DNDEBUG -O3 -ftree-vectorize -ffp-contract=fast -std=c++17 -o CMakeFiles/DOUBLE_COMPILATION_AVX2.dir/src/level1/aoclsparse_axpyi_kt.cpp.o -c /data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level1/aoclsparse_axpyi_kt.cpp",
+  "file": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level1/aoclsparse_axpyi_kt.cpp"
+},
+{
+  "directory": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/library",
+  "command": "/usr/bin/c++ -DAOCLSPARSE_AVX2_INSTANT -DAOCLSPARSE_VERSION_STRING=\"\\\"AOCL-Sparse 5.2.2 Build 20260401\\\"\" -DSUPPORT_OMP -DUSE_AVX512 -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/include -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/analysis -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level2 -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level1 -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/extra -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/conversion -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/include -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/include -I/data/lsl/Software/amd-libflame/include/LP64 -I/data/lsl/Software/amd-blis/include/LP64 -I/data/lsl/Software/amd-utils/include/alci/.. -fPIC -mno-avx512f -march=znver2 -DNDEBUG -O3 -ftree-vectorize -ffp-contract=fast -std=c++17 -o CMakeFiles/DOUBLE_COMPILATION_AVX2.dir/src/level1/aoclsparse_dot_kt.cpp.o -c /data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level1/aoclsparse_dot_kt.cpp",
+  "file": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level1/aoclsparse_dot_kt.cpp"
+},
+{
+  "directory": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/library",
+  "command": "/usr/bin/c++ -DAOCLSPARSE_AVX2_INSTANT -DAOCLSPARSE_VERSION_STRING=\"\\\"AOCL-Sparse 5.2.2 Build 20260401\\\"\" -DSUPPORT_OMP -DUSE_AVX512 -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/include -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/analysis -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level2 -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level1 -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/extra -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/conversion -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/include -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/include -I/data/lsl/Software/amd-libflame/include/LP64 -I/data/lsl/Software/amd-blis/include/LP64 -I/data/lsl/Software/amd-utils/include/alci/.. -fPIC -mno-avx512f -march=znver2 -DNDEBUG -O3 -ftree-vectorize -ffp-contract=fast -std=c++17 -o CMakeFiles/DOUBLE_COMPILATION_AVX2.dir/src/level1/aoclsparse_gthr_kt.cpp.o -c /data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level1/aoclsparse_gthr_kt.cpp",
+  "file": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level1/aoclsparse_gthr_kt.cpp"
+},
+{
+  "directory": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/library",
+  "command": "/usr/bin/c++ -DAOCLSPARSE_AVX2_INSTANT -DAOCLSPARSE_VERSION_STRING=\"\\\"AOCL-Sparse 5.2.2 Build 20260401\\\"\" -DSUPPORT_OMP -DUSE_AVX512 -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/include -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/analysis -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level2 -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level1 -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/extra -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/conversion -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/include -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/include -I/data/lsl/Software/amd-libflame/include/LP64 -I/data/lsl/Software/amd-blis/include/LP64 -I/data/lsl/Software/amd-utils/include/alci/.. -fPIC -mno-avx512f -march=znver2 -DNDEBUG -O3 -ftree-vectorize -ffp-contract=fast -std=c++17 -o CMakeFiles/DOUBLE_COMPILATION_AVX2.dir/src/level1/aoclsparse_sctr_kt.cpp.o -c /data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level1/aoclsparse_sctr_kt.cpp",
+  "file": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level1/aoclsparse_sctr_kt.cpp"
+},
+{
+  "directory": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/library",
+  "command": "/usr/bin/c++ -DAOCLSPARSE_AVX2_INSTANT -DAOCLSPARSE_VERSION_STRING=\"\\\"AOCL-Sparse 5.2.2 Build 20260401\\\"\" -DSUPPORT_OMP -DUSE_AVX512 -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/include -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/analysis -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level2 -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level1 -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/extra -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/conversion -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/include -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/include -I/data/lsl/Software/amd-libflame/include/LP64 -I/data/lsl/Software/amd-blis/include/LP64 -I/data/lsl/Software/amd-utils/include/alci/.. -fPIC -mno-avx512f -march=znver2 -DNDEBUG -O3 -ftree-vectorize -ffp-contract=fast -std=c++17 -o CMakeFiles/DOUBLE_COMPILATION_AVX2.dir/src/level2/aoclsparse_bsrmv_kt.cpp.o -c /data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level2/aoclsparse_bsrmv_kt.cpp",
+  "file": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level2/aoclsparse_bsrmv_kt.cpp"
+},
+{
+  "directory": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/library",
+  "command": "/usr/bin/c++ -DAOCLSPARSE_AVX2_INSTANT -DAOCLSPARSE_VERSION_STRING=\"\\\"AOCL-Sparse 5.2.2 Build 20260401\\\"\" -DSUPPORT_OMP -DUSE_AVX512 -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/include -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/analysis -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level2 -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level1 -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/extra -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/conversion -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/include -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/include -I/data/lsl/Software/amd-libflame/include/LP64 -I/data/lsl/Software/amd-blis/include/LP64 -I/data/lsl/Software/amd-utils/include/alci/.. -fPIC -mno-avx512f -march=znver2 -DNDEBUG -O3 -ftree-vectorize -ffp-contract=fast -std=c++17 -o CMakeFiles/DOUBLE_COMPILATION_AVX2.dir/src/level2/aoclsparse_csrmv_kt.cpp.o -c /data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level2/aoclsparse_csrmv_kt.cpp",
+  "file": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level2/aoclsparse_csrmv_kt.cpp"
+},
+{
+  "directory": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/library",
+  "command": "/usr/bin/c++ -DAOCLSPARSE_AVX2_INSTANT -DAOCLSPARSE_VERSION_STRING=\"\\\"AOCL-Sparse 5.2.2 Build 20260401\\\"\" -DSUPPORT_OMP -DUSE_AVX512 -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/include -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/analysis -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level2 -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level1 -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/extra -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/conversion -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/include -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/include -I/data/lsl/Software/amd-libflame/include/LP64 -I/data/lsl/Software/amd-blis/include/LP64 -I/data/lsl/Software/amd-utils/include/alci/.. -fPIC -mno-avx512f -march=znver2 -DNDEBUG -O3 -ftree-vectorize -ffp-contract=fast -std=c++17 -o CMakeFiles/DOUBLE_COMPILATION_AVX2.dir/src/level2/aoclsparse_trsv_kt.cpp.o -c /data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level2/aoclsparse_trsv_kt.cpp",
+  "file": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level2/aoclsparse_trsv_kt.cpp"
+},
+{
+  "directory": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/library",
+  "command": "/usr/bin/c++ -DAOCLSPARSE_AVX2_INSTANT -DAOCLSPARSE_VERSION_STRING=\"\\\"AOCL-Sparse 5.2.2 Build 20260401\\\"\" -DSUPPORT_OMP -DUSE_AVX512 -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/include -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/analysis -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level2 -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level1 -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/extra -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/conversion -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/include -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/include -I/data/lsl/Software/amd-libflame/include/LP64 -I/data/lsl/Software/amd-blis/include/LP64 -I/data/lsl/Software/amd-utils/include/alci/.. -fPIC -mno-avx512f -march=znver2 -DNDEBUG -O3 -ftree-vectorize -ffp-contract=fast -std=c++17 -o CMakeFiles/DOUBLE_COMPILATION_AVX2.dir/src/level3/aoclsparse_csrmm_kt.cpp.o -c /data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level3/aoclsparse_csrmm_kt.cpp",
+  "file": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level3/aoclsparse_csrmm_kt.cpp"
+},
+{
+  "directory": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/library",
+  "command": "/usr/bin/c++ -DAOCLSPARSE_VERSION_STRING=\"\\\"AOCL-Sparse 5.2.2 Build 20260401\\\"\" -DSUPPORT_OMP -DUSE_AVX512 -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/include -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/analysis -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level2 -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level1 -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/extra -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/conversion -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/include -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/include -I/data/lsl/Software/amd-libflame/include/LP64 -I/data/lsl/Software/amd-blis/include/LP64 -I/data/lsl/Software/amd-utils/include/alci/.. -fPIC -mavx512f -mavx512vl -mavx512dq -march=znver2 -DNDEBUG -O3 -ftree-vectorize -ffp-contract=fast -std=c++17 -o CMakeFiles/DOUBLE_COMPILATION_AVX512.dir/src/level1/aoclsparse_dense_dot_kt.cpp.o -c /data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level1/aoclsparse_dense_dot_kt.cpp",
+  "file": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level1/aoclsparse_dense_dot_kt.cpp"
+},
+{
+  "directory": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/library",
+  "command": "/usr/bin/c++ -DAOCLSPARSE_VERSION_STRING=\"\\\"AOCL-Sparse 5.2.2 Build 20260401\\\"\" -DSUPPORT_OMP -DUSE_AVX512 -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/include -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/analysis -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level2 -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level1 -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/extra -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/conversion -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/include -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/include -I/data/lsl/Software/amd-libflame/include/LP64 -I/data/lsl/Software/amd-blis/include/LP64 -I/data/lsl/Software/amd-utils/include/alci/.. -fPIC -mavx512f -mavx512vl -mavx512dq -march=znver2 -DNDEBUG -O3 -ftree-vectorize -ffp-contract=fast -std=c++17 -o CMakeFiles/DOUBLE_COMPILATION_AVX512.dir/src/level1/aoclsparse_roti_kt.cpp.o -c /data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level1/aoclsparse_roti_kt.cpp",
+  "file": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level1/aoclsparse_roti_kt.cpp"
+},
+{
+  "directory": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/library",
+  "command": "/usr/bin/c++ -DAOCLSPARSE_VERSION_STRING=\"\\\"AOCL-Sparse 5.2.2 Build 20260401\\\"\" -DSUPPORT_OMP -DUSE_AVX512 -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/include -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/analysis -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level2 -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level1 -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/extra -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/conversion -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/include -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/include -I/data/lsl/Software/amd-libflame/include/LP64 -I/data/lsl/Software/amd-blis/include/LP64 -I/data/lsl/Software/amd-utils/include/alci/.. -fPIC -mavx512f -mavx512vl -mavx512dq -march=znver2 -DNDEBUG -O3 -ftree-vectorize -ffp-contract=fast -std=c++17 -o CMakeFiles/DOUBLE_COMPILATION_AVX512.dir/src/level1/aoclsparse_axpyi_kt.cpp.o -c /data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level1/aoclsparse_axpyi_kt.cpp",
+  "file": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level1/aoclsparse_axpyi_kt.cpp"
+},
+{
+  "directory": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/library",
+  "command": "/usr/bin/c++ -DAOCLSPARSE_VERSION_STRING=\"\\\"AOCL-Sparse 5.2.2 Build 20260401\\\"\" -DSUPPORT_OMP -DUSE_AVX512 -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/include -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/analysis -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level2 -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level1 -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/extra -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/conversion -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/include -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/include -I/data/lsl/Software/amd-libflame/include/LP64 -I/data/lsl/Software/amd-blis/include/LP64 -I/data/lsl/Software/amd-utils/include/alci/.. -fPIC -mavx512f -mavx512vl -mavx512dq -march=znver2 -DNDEBUG -O3 -ftree-vectorize -ffp-contract=fast -std=c++17 -o CMakeFiles/DOUBLE_COMPILATION_AVX512.dir/src/level1/aoclsparse_dot_kt.cpp.o -c /data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level1/aoclsparse_dot_kt.cpp",
+  "file": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level1/aoclsparse_dot_kt.cpp"
+},
+{
+  "directory": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/library",
+  "command": "/usr/bin/c++ -DAOCLSPARSE_VERSION_STRING=\"\\\"AOCL-Sparse 5.2.2 Build 20260401\\\"\" -DSUPPORT_OMP -DUSE_AVX512 -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/include -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/analysis -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level2 -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level1 -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/extra -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/conversion -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/include -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/include -I/data/lsl/Software/amd-libflame/include/LP64 -I/data/lsl/Software/amd-blis/include/LP64 -I/data/lsl/Software/amd-utils/include/alci/.. -fPIC -mavx512f -mavx512vl -mavx512dq -march=znver2 -DNDEBUG -O3 -ftree-vectorize -ffp-contract=fast -std=c++17 -o CMakeFiles/DOUBLE_COMPILATION_AVX512.dir/src/level1/aoclsparse_gthr_kt.cpp.o -c /data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level1/aoclsparse_gthr_kt.cpp",
+  "file": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level1/aoclsparse_gthr_kt.cpp"
+},
+{
+  "directory": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/library",
+  "command": "/usr/bin/c++ -DAOCLSPARSE_VERSION_STRING=\"\\\"AOCL-Sparse 5.2.2 Build 20260401\\\"\" -DSUPPORT_OMP -DUSE_AVX512 -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/include -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/analysis -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level2 -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level1 -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/extra -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/conversion -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/include -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/include -I/data/lsl/Software/amd-libflame/include/LP64 -I/data/lsl/Software/amd-blis/include/LP64 -I/data/lsl/Software/amd-utils/include/alci/.. -fPIC -mavx512f -mavx512vl -mavx512dq -march=znver2 -DNDEBUG -O3 -ftree-vectorize -ffp-contract=fast -std=c++17 -o CMakeFiles/DOUBLE_COMPILATION_AVX512.dir/src/level1/aoclsparse_sctr_kt.cpp.o -c /data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level1/aoclsparse_sctr_kt.cpp",
+  "file": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level1/aoclsparse_sctr_kt.cpp"
+},
+{
+  "directory": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/library",
+  "command": "/usr/bin/c++ -DAOCLSPARSE_VERSION_STRING=\"\\\"AOCL-Sparse 5.2.2 Build 20260401\\\"\" -DSUPPORT_OMP -DUSE_AVX512 -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/include -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/analysis -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level2 -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level1 -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/extra -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/conversion -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/include -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/include -I/data/lsl/Software/amd-libflame/include/LP64 -I/data/lsl/Software/amd-blis/include/LP64 -I/data/lsl/Software/amd-utils/include/alci/.. -fPIC -mavx512f -mavx512vl -mavx512dq -march=znver2 -DNDEBUG -O3 -ftree-vectorize -ffp-contract=fast -std=c++17 -o CMakeFiles/DOUBLE_COMPILATION_AVX512.dir/src/level2/aoclsparse_bsrmv_kt.cpp.o -c /data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level2/aoclsparse_bsrmv_kt.cpp",
+  "file": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level2/aoclsparse_bsrmv_kt.cpp"
+},
+{
+  "directory": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/library",
+  "command": "/usr/bin/c++ -DAOCLSPARSE_VERSION_STRING=\"\\\"AOCL-Sparse 5.2.2 Build 20260401\\\"\" -DSUPPORT_OMP -DUSE_AVX512 -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/include -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/analysis -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level2 -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level1 -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/extra -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/conversion -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/include -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/include -I/data/lsl/Software/amd-libflame/include/LP64 -I/data/lsl/Software/amd-blis/include/LP64 -I/data/lsl/Software/amd-utils/include/alci/.. -fPIC -mavx512f -mavx512vl -mavx512dq -march=znver2 -DNDEBUG -O3 -ftree-vectorize -ffp-contract=fast -std=c++17 -o CMakeFiles/DOUBLE_COMPILATION_AVX512.dir/src/level2/aoclsparse_csrmv_kt.cpp.o -c /data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level2/aoclsparse_csrmv_kt.cpp",
+  "file": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level2/aoclsparse_csrmv_kt.cpp"
+},
+{
+  "directory": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/library",
+  "command": "/usr/bin/c++ -DAOCLSPARSE_VERSION_STRING=\"\\\"AOCL-Sparse 5.2.2 Build 20260401\\\"\" -DSUPPORT_OMP -DUSE_AVX512 -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/include -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/analysis -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level2 -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level1 -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/extra -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/conversion -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/include -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/include -I/data/lsl/Software/amd-libflame/include/LP64 -I/data/lsl/Software/amd-blis/include/LP64 -I/data/lsl/Software/amd-utils/include/alci/.. -fPIC -mavx512f -mavx512vl -mavx512dq -march=znver2 -DNDEBUG -O3 -ftree-vectorize -ffp-contract=fast -std=c++17 -o CMakeFiles/DOUBLE_COMPILATION_AVX512.dir/src/level2/aoclsparse_trsv_kt.cpp.o -c /data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level2/aoclsparse_trsv_kt.cpp",
+  "file": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level2/aoclsparse_trsv_kt.cpp"
+},
+{
+  "directory": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/library",
+  "command": "/usr/bin/c++ -DAOCLSPARSE_VERSION_STRING=\"\\\"AOCL-Sparse 5.2.2 Build 20260401\\\"\" -DSUPPORT_OMP -DUSE_AVX512 -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/include -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/analysis -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level2 -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level1 -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/extra -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/conversion -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/include -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/include -I/data/lsl/Software/amd-libflame/include/LP64 -I/data/lsl/Software/amd-blis/include/LP64 -I/data/lsl/Software/amd-utils/include/alci/.. -fPIC -mavx512f -mavx512vl -mavx512dq -march=znver2 -DNDEBUG -O3 -ftree-vectorize -ffp-contract=fast -std=c++17 -o CMakeFiles/DOUBLE_COMPILATION_AVX512.dir/src/level3/aoclsparse_csrmm_kt.cpp.o -c /data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level3/aoclsparse_csrmm_kt.cpp",
+  "file": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level3/aoclsparse_csrmm_kt.cpp"
+},
+{
+  "directory": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/library",
+  "command": "/usr/bin/c++ -DAOCLSPARSE_VERSION_STRING=\"\\\"AOCL-Sparse 5.2.2 Build 20260401\\\"\" -DSUPPORT_OMP -DUSE_AVX512 -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/include -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/analysis -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level2 -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level1 -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/extra -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/conversion -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/include -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/include -I/data/lsl/Software/amd-libflame/include/LP64 -I/data/lsl/Software/amd-blis/include/LP64 -I/data/lsl/Software/amd-utils/include/alci/.. -fPIC -mavx512f -mavx512vl -mavx512dq -march=znver2 -DNDEBUG -O3 -ftree-vectorize -ffp-contract=fast -std=c++17 -o CMakeFiles/AVX512_FILES.dir/src/level2/aoclsparse_blkcsrmv_avx512.cpp.o -c /data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level2/aoclsparse_blkcsrmv_avx512.cpp",
+  "file": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level2/aoclsparse_blkcsrmv_avx512.cpp"
+},
+{
+  "directory": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/library",
+  "command": "/usr/bin/c++ -DAOCLSPARSE_VERSION_STRING=\"\\\"AOCL-Sparse 5.2.2 Build 20260401\\\"\" -DSUPPORT_OMP -DUSE_AVX512 -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/include -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/analysis -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level2 -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level1 -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/extra -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/conversion -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/include -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/include -I/data/lsl/Software/amd-libflame/include/LP64 -I/data/lsl/Software/amd-blis/include/LP64 -I/data/lsl/Software/amd-utils/include/alci/.. -fPIC -mavx512f -mavx512vl -mavx512dq -march=znver2 -DNDEBUG -O3 -ftree-vectorize -ffp-contract=fast -std=c++17 -o CMakeFiles/AVX512_FILES.dir/src/level2/aoclsparse_csrmv_avx512.cpp.o -c /data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level2/aoclsparse_csrmv_avx512.cpp",
+  "file": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level2/aoclsparse_csrmv_avx512.cpp"
+},
+{
+  "directory": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/library",
+  "command": "/usr/bin/c++ -DAOCLSPARSE_VERSION_STRING=\"\\\"AOCL-Sparse 5.2.2 Build 20260401\\\"\" -DSUPPORT_OMP -DUSE_AVX512 -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/include -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/analysis -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level2 -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level1 -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/extra -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/conversion -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/include -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/include -I/data/lsl/Software/amd-libflame/include/LP64 -I/data/lsl/Software/amd-blis/include/LP64 -I/data/lsl/Software/amd-utils/include/alci/.. -fPIC -mavx512f -mavx512vl -mavx512dq -march=znver2 -DNDEBUG -O3 -ftree-vectorize -ffp-contract=fast -std=c++17 -o CMakeFiles/AVX512_FILES.dir/src/level2/aoclsparse_ellmv_avx512.cpp.o -c /data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level2/aoclsparse_ellmv_avx512.cpp",
+  "file": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level2/aoclsparse_ellmv_avx512.cpp"
+},
+{
+  "directory": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/library",
+  "command": "/usr/bin/c++ -DAOCLSPARSE_VERSION_STRING=\"\\\"AOCL-Sparse 5.2.2 Build 20260401\\\"\" -DSUPPORT_OMP -DUSE_AVX512 -Daoclsparse_EXPORTS -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/include -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/analysis -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level2 -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level1 -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/extra -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/conversion -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/include -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/include -I/data/lsl/Software/amd-libflame/include/LP64 -I/data/lsl/Software/amd-blis/include/LP64 -I/data/lsl/Software/amd-utils/include/alci/.. -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -mno-avx512f -march=znver2 -DNDEBUG -O3 -ftree-vectorize -ffp-contract=fast -fopenmp -std=c++17 -o CMakeFiles/aoclsparse.dir/src/level1/aoclsparse_roti.cpp.o -c /data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level1/aoclsparse_roti.cpp",
+  "file": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level1/aoclsparse_roti.cpp"
+},
+{
+  "directory": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/library",
+  "command": "/usr/bin/c++ -DAOCLSPARSE_VERSION_STRING=\"\\\"AOCL-Sparse 5.2.2 Build 20260401\\\"\" -DSUPPORT_OMP -DUSE_AVX512 -Daoclsparse_EXPORTS -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/include -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/analysis -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level2 -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level1 -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/extra -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/conversion -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/include -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/include -I/data/lsl/Software/amd-libflame/include/LP64 -I/data/lsl/Software/amd-blis/include/LP64 -I/data/lsl/Software/amd-utils/include/alci/.. -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -mno-avx512f -march=znver2 -DNDEBUG -O3 -ftree-vectorize -ffp-contract=fast -fopenmp -std=c++17 -o CMakeFiles/aoclsparse.dir/src/level1/aoclsparse_axpyi.cpp.o -c /data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level1/aoclsparse_axpyi.cpp",
+  "file": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level1/aoclsparse_axpyi.cpp"
+},
+{
+  "directory": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/library",
+  "command": "/usr/bin/c++ -DAOCLSPARSE_VERSION_STRING=\"\\\"AOCL-Sparse 5.2.2 Build 20260401\\\"\" -DSUPPORT_OMP -DUSE_AVX512 -Daoclsparse_EXPORTS -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/include -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/analysis -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level2 -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level1 -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/extra -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/conversion -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/include -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/include -I/data/lsl/Software/amd-libflame/include/LP64 -I/data/lsl/Software/amd-blis/include/LP64 -I/data/lsl/Software/amd-utils/include/alci/.. -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -mno-avx512f -march=znver2 -DNDEBUG -O3 -ftree-vectorize -ffp-contract=fast -fopenmp -std=c++17 -o CMakeFiles/aoclsparse.dir/src/level1/aoclsparse_dot.cpp.o -c /data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level1/aoclsparse_dot.cpp",
+  "file": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level1/aoclsparse_dot.cpp"
+},
+{
+  "directory": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/library",
+  "command": "/usr/bin/c++ -DAOCLSPARSE_VERSION_STRING=\"\\\"AOCL-Sparse 5.2.2 Build 20260401\\\"\" -DSUPPORT_OMP -DUSE_AVX512 -Daoclsparse_EXPORTS -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/include -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/analysis -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level2 -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level1 -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/extra -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/conversion -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/include -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/include -I/data/lsl/Software/amd-libflame/include/LP64 -I/data/lsl/Software/amd-blis/include/LP64 -I/data/lsl/Software/amd-utils/include/alci/.. -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -mno-avx512f -march=znver2 -DNDEBUG -O3 -ftree-vectorize -ffp-contract=fast -fopenmp -std=c++17 -o CMakeFiles/aoclsparse.dir/src/level1/aoclsparse_gthr.cpp.o -c /data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level1/aoclsparse_gthr.cpp",
+  "file": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level1/aoclsparse_gthr.cpp"
+},
+{
+  "directory": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/library",
+  "command": "/usr/bin/c++ -DAOCLSPARSE_VERSION_STRING=\"\\\"AOCL-Sparse 5.2.2 Build 20260401\\\"\" -DSUPPORT_OMP -DUSE_AVX512 -Daoclsparse_EXPORTS -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/include -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/analysis -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level2 -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level1 -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/extra -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/conversion -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/include -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/include -I/data/lsl/Software/amd-libflame/include/LP64 -I/data/lsl/Software/amd-blis/include/LP64 -I/data/lsl/Software/amd-utils/include/alci/.. -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -mno-avx512f -march=znver2 -DNDEBUG -O3 -ftree-vectorize -ffp-contract=fast -fopenmp -std=c++17 -o CMakeFiles/aoclsparse.dir/src/level1/aoclsparse_sctr.cpp.o -c /data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level1/aoclsparse_sctr.cpp",
+  "file": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level1/aoclsparse_sctr.cpp"
+},
+{
+  "directory": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/library",
+  "command": "/usr/bin/c++ -DAOCLSPARSE_VERSION_STRING=\"\\\"AOCL-Sparse 5.2.2 Build 20260401\\\"\" -DSUPPORT_OMP -DUSE_AVX512 -Daoclsparse_EXPORTS -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/include -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/analysis -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level2 -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level1 -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/extra -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/conversion -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/include -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/include -I/data/lsl/Software/amd-libflame/include/LP64 -I/data/lsl/Software/amd-blis/include/LP64 -I/data/lsl/Software/amd-utils/include/alci/.. -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -mno-avx512f -march=znver2 -DNDEBUG -O3 -ftree-vectorize -ffp-contract=fast -fopenmp -std=c++17 -o CMakeFiles/aoclsparse.dir/src/level2/aoclsparse_trsv.cpp.o -c /data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level2/aoclsparse_trsv.cpp",
+  "file": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level2/aoclsparse_trsv.cpp"
+},
+{
+  "directory": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/library",
+  "command": "/usr/bin/c++ -DAOCLSPARSE_VERSION_STRING=\"\\\"AOCL-Sparse 5.2.2 Build 20260401\\\"\" -DSUPPORT_OMP -DUSE_AVX512 -Daoclsparse_EXPORTS -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/include -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/analysis -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level2 -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level1 -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/extra -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/conversion -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/include -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/include -I/data/lsl/Software/amd-libflame/include/LP64 -I/data/lsl/Software/amd-blis/include/LP64 -I/data/lsl/Software/amd-utils/include/alci/.. -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -mno-avx512f -march=znver2 -DNDEBUG -O3 -ftree-vectorize -ffp-contract=fast -fopenmp -std=c++17 -o CMakeFiles/aoclsparse.dir/src/level2/aoclsparse_csrmv.cpp.o -c /data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level2/aoclsparse_csrmv.cpp",
+  "file": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level2/aoclsparse_csrmv.cpp"
+},
+{
+  "directory": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/library",
+  "command": "/usr/bin/c++ -DAOCLSPARSE_VERSION_STRING=\"\\\"AOCL-Sparse 5.2.2 Build 20260401\\\"\" -DSUPPORT_OMP -DUSE_AVX512 -Daoclsparse_EXPORTS -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/include -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/analysis -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level2 -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level1 -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/extra -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/conversion -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/include -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/include -I/data/lsl/Software/amd-libflame/include/LP64 -I/data/lsl/Software/amd-blis/include/LP64 -I/data/lsl/Software/amd-utils/include/alci/.. -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -mno-avx512f -march=znver2 -DNDEBUG -O3 -ftree-vectorize -ffp-contract=fast -fopenmp -std=c++17 -o CMakeFiles/aoclsparse.dir/src/level2/aoclsparse_blkcsrmv.cpp.o -c /data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level2/aoclsparse_blkcsrmv.cpp",
+  "file": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level2/aoclsparse_blkcsrmv.cpp"
+},
+{
+  "directory": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/library",
+  "command": "/usr/bin/c++ -DAOCLSPARSE_VERSION_STRING=\"\\\"AOCL-Sparse 5.2.2 Build 20260401\\\"\" -DSUPPORT_OMP -DUSE_AVX512 -Daoclsparse_EXPORTS -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/include -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/analysis -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level2 -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level1 -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/extra -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/conversion -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/include -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/include -I/data/lsl/Software/amd-libflame/include/LP64 -I/data/lsl/Software/amd-blis/include/LP64 -I/data/lsl/Software/amd-utils/include/alci/.. -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -mno-avx512f -march=znver2 -DNDEBUG -O3 -ftree-vectorize -ffp-contract=fast -fopenmp -std=c++17 -o CMakeFiles/aoclsparse.dir/src/level2/aoclsparse_ellmv.cpp.o -c /data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level2/aoclsparse_ellmv.cpp",
+  "file": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level2/aoclsparse_ellmv.cpp"
+},
+{
+  "directory": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/library",
+  "command": "/usr/bin/c++ -DAOCLSPARSE_VERSION_STRING=\"\\\"AOCL-Sparse 5.2.2 Build 20260401\\\"\" -DSUPPORT_OMP -DUSE_AVX512 -Daoclsparse_EXPORTS -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/include -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/analysis -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level2 -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level1 -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/extra -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/conversion -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/include -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/include -I/data/lsl/Software/amd-libflame/include/LP64 -I/data/lsl/Software/amd-blis/include/LP64 -I/data/lsl/Software/amd-utils/include/alci/.. -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -mno-avx512f -march=znver2 -DNDEBUG -O3 -ftree-vectorize -ffp-contract=fast -fopenmp -std=c++17 -o CMakeFiles/aoclsparse.dir/src/level2/aoclsparse_mv.cpp.o -c /data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level2/aoclsparse_mv.cpp",
+  "file": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level2/aoclsparse_mv.cpp"
+},
+{
+  "directory": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/library",
+  "command": "/usr/bin/c++ -DAOCLSPARSE_VERSION_STRING=\"\\\"AOCL-Sparse 5.2.2 Build 20260401\\\"\" -DSUPPORT_OMP -DUSE_AVX512 -Daoclsparse_EXPORTS -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/include -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/analysis -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level2 -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level1 -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/extra -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/conversion -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/include -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/include -I/data/lsl/Software/amd-libflame/include/LP64 -I/data/lsl/Software/amd-blis/include/LP64 -I/data/lsl/Software/amd-utils/include/alci/.. -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -mno-avx512f -march=znver2 -DNDEBUG -O3 -ftree-vectorize -ffp-contract=fast -fopenmp -std=c++17 -o CMakeFiles/aoclsparse.dir/src/level2/aoclsparse_diamv.cpp.o -c /data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level2/aoclsparse_diamv.cpp",
+  "file": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level2/aoclsparse_diamv.cpp"
+},
+{
+  "directory": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/library",
+  "command": "/usr/bin/c++ -DAOCLSPARSE_VERSION_STRING=\"\\\"AOCL-Sparse 5.2.2 Build 20260401\\\"\" -DSUPPORT_OMP -DUSE_AVX512 -Daoclsparse_EXPORTS -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/include -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/analysis -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level2 -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level1 -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/extra -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/conversion -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/include -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/include -I/data/lsl/Software/amd-libflame/include/LP64 -I/data/lsl/Software/amd-blis/include/LP64 -I/data/lsl/Software/amd-utils/include/alci/.. -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -mno-avx512f -march=znver2 -DNDEBUG -O3 -ftree-vectorize -ffp-contract=fast -fopenmp -std=c++17 -o CMakeFiles/aoclsparse.dir/src/level2/aoclsparse_bsrmv.cpp.o -c /data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level2/aoclsparse_bsrmv.cpp",
+  "file": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level2/aoclsparse_bsrmv.cpp"
+},
+{
+  "directory": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/library",
+  "command": "/usr/bin/c++ -DAOCLSPARSE_VERSION_STRING=\"\\\"AOCL-Sparse 5.2.2 Build 20260401\\\"\" -DSUPPORT_OMP -DUSE_AVX512 -Daoclsparse_EXPORTS -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/include -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/analysis -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level2 -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level1 -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/extra -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/conversion -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/include -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/include -I/data/lsl/Software/amd-libflame/include/LP64 -I/data/lsl/Software/amd-blis/include/LP64 -I/data/lsl/Software/amd-utils/include/alci/.. -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -mno-avx512f -march=znver2 -DNDEBUG -O3 -ftree-vectorize -ffp-contract=fast -fopenmp -std=c++17 -o CMakeFiles/aoclsparse.dir/src/level2/aoclsparse_csrsv.cpp.o -c /data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level2/aoclsparse_csrsv.cpp",
+  "file": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level2/aoclsparse_csrsv.cpp"
+},
+{
+  "directory": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/library",
+  "command": "/usr/bin/c++ -DAOCLSPARSE_VERSION_STRING=\"\\\"AOCL-Sparse 5.2.2 Build 20260401\\\"\" -DSUPPORT_OMP -DUSE_AVX512 -Daoclsparse_EXPORTS -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/include -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/analysis -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level2 -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level1 -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/extra -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/conversion -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/include -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/include -I/data/lsl/Software/amd-libflame/include/LP64 -I/data/lsl/Software/amd-blis/include/LP64 -I/data/lsl/Software/amd-utils/include/alci/.. -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -mno-avx512f -march=znver2 -DNDEBUG -O3 -ftree-vectorize -ffp-contract=fast -fopenmp -std=c++17 -o CMakeFiles/aoclsparse.dir/src/level2/aoclsparse_dotmv.cpp.o -c /data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level2/aoclsparse_dotmv.cpp",
+  "file": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level2/aoclsparse_dotmv.cpp"
+},
+{
+  "directory": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/library",
+  "command": "/usr/bin/c++ -DAOCLSPARSE_VERSION_STRING=\"\\\"AOCL-Sparse 5.2.2 Build 20260401\\\"\" -DSUPPORT_OMP -DUSE_AVX512 -Daoclsparse_EXPORTS -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/include -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/analysis -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level2 -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level1 -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/extra -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/conversion -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/include -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/include -I/data/lsl/Software/amd-libflame/include/LP64 -I/data/lsl/Software/amd-blis/include/LP64 -I/data/lsl/Software/amd-utils/include/alci/.. -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -mno-avx512f -march=znver2 -DNDEBUG -O3 -ftree-vectorize -ffp-contract=fast -fopenmp -std=c++17 -o CMakeFiles/aoclsparse.dir/src/level3/aoclsparse_csradd.cpp.o -c /data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level3/aoclsparse_csradd.cpp",
+  "file": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level3/aoclsparse_csradd.cpp"
+},
+{
+  "directory": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/library",
+  "command": "/usr/bin/c++ -DAOCLSPARSE_VERSION_STRING=\"\\\"AOCL-Sparse 5.2.2 Build 20260401\\\"\" -DSUPPORT_OMP -DUSE_AVX512 -Daoclsparse_EXPORTS -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/include -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/analysis -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level2 -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level1 -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/extra -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/conversion -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/include -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/include -I/data/lsl/Software/amd-libflame/include/LP64 -I/data/lsl/Software/amd-blis/include/LP64 -I/data/lsl/Software/amd-utils/include/alci/.. -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -mno-avx512f -march=znver2 -DNDEBUG -O3 -ftree-vectorize -ffp-contract=fast -fopenmp -std=c++17 -o CMakeFiles/aoclsparse.dir/src/level2/aoclsparse_tcsrmv.cpp.o -c /data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level2/aoclsparse_tcsrmv.cpp",
+  "file": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level2/aoclsparse_tcsrmv.cpp"
+},
+{
+  "directory": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/library",
+  "command": "/usr/bin/c++ -DAOCLSPARSE_VERSION_STRING=\"\\\"AOCL-Sparse 5.2.2 Build 20260401\\\"\" -DSUPPORT_OMP -DUSE_AVX512 -Daoclsparse_EXPORTS -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/include -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/analysis -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level2 -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level1 -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/extra -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/conversion -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/include -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/include -I/data/lsl/Software/amd-libflame/include/LP64 -I/data/lsl/Software/amd-blis/include/LP64 -I/data/lsl/Software/amd-utils/include/alci/.. -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -mno-avx512f -march=znver2 -DNDEBUG -O3 -ftree-vectorize -ffp-contract=fast -fopenmp -std=c++17 -o CMakeFiles/aoclsparse.dir/src/level3/aoclsparse_csrmm.cpp.o -c /data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level3/aoclsparse_csrmm.cpp",
+  "file": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level3/aoclsparse_csrmm.cpp"
+},
+{
+  "directory": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/library",
+  "command": "/usr/bin/c++ -DAOCLSPARSE_VERSION_STRING=\"\\\"AOCL-Sparse 5.2.2 Build 20260401\\\"\" -DSUPPORT_OMP -DUSE_AVX512 -Daoclsparse_EXPORTS -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/include -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/analysis -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level2 -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level1 -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/extra -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/conversion -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/include -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/include -I/data/lsl/Software/amd-libflame/include/LP64 -I/data/lsl/Software/amd-blis/include/LP64 -I/data/lsl/Software/amd-utils/include/alci/.. -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -mno-avx512f -march=znver2 -DNDEBUG -O3 -ftree-vectorize -ffp-contract=fast -fopenmp -std=c++17 -o CMakeFiles/aoclsparse.dir/src/level3/aoclsparse_csr2m.cpp.o -c /data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level3/aoclsparse_csr2m.cpp",
+  "file": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level3/aoclsparse_csr2m.cpp"
+},
+{
+  "directory": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/library",
+  "command": "/usr/bin/c++ -DAOCLSPARSE_VERSION_STRING=\"\\\"AOCL-Sparse 5.2.2 Build 20260401\\\"\" -DSUPPORT_OMP -DUSE_AVX512 -Daoclsparse_EXPORTS -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/include -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/analysis -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level2 -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level1 -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/extra -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/conversion -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/include -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/include -I/data/lsl/Software/amd-libflame/include/LP64 -I/data/lsl/Software/amd-blis/include/LP64 -I/data/lsl/Software/amd-utils/include/alci/.. -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -mno-avx512f -march=znver2 -DNDEBUG -O3 -ftree-vectorize -ffp-contract=fast -fopenmp -std=c++17 -o CMakeFiles/aoclsparse.dir/src/level3/aoclsparse_csr2m_wrapper.cpp.o -c /data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level3/aoclsparse_csr2m_wrapper.cpp",
+  "file": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level3/aoclsparse_csr2m_wrapper.cpp"
+},
+{
+  "directory": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/library",
+  "command": "/usr/bin/c++ -DAOCLSPARSE_VERSION_STRING=\"\\\"AOCL-Sparse 5.2.2 Build 20260401\\\"\" -DSUPPORT_OMP -DUSE_AVX512 -Daoclsparse_EXPORTS -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/include -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/analysis -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level2 -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level1 -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/extra -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/conversion -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/include -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/include -I/data/lsl/Software/amd-libflame/include/LP64 -I/data/lsl/Software/amd-blis/include/LP64 -I/data/lsl/Software/amd-utils/include/alci/.. -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -mno-avx512f -march=znver2 -DNDEBUG -O3 -ftree-vectorize -ffp-contract=fast -fopenmp -std=c++17 -o CMakeFiles/aoclsparse.dir/src/level3/aoclsparse_sp2m.cpp.o -c /data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level3/aoclsparse_sp2m.cpp",
+  "file": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level3/aoclsparse_sp2m.cpp"
+},
+{
+  "directory": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/library",
+  "command": "/usr/bin/c++ -DAOCLSPARSE_VERSION_STRING=\"\\\"AOCL-Sparse 5.2.2 Build 20260401\\\"\" -DSUPPORT_OMP -DUSE_AVX512 -Daoclsparse_EXPORTS -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/include -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/analysis -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level2 -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level1 -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/extra -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/conversion -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/include -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/include -I/data/lsl/Software/amd-libflame/include/LP64 -I/data/lsl/Software/amd-blis/include/LP64 -I/data/lsl/Software/amd-utils/include/alci/.. -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -mno-avx512f -march=znver2 -DNDEBUG -O3 -ftree-vectorize -ffp-contract=fast -fopenmp -std=c++17 -o CMakeFiles/aoclsparse.dir/src/level3/aoclsparse_spmm.cpp.o -c /data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level3/aoclsparse_spmm.cpp",
+  "file": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level3/aoclsparse_spmm.cpp"
+},
+{
+  "directory": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/library",
+  "command": "/usr/bin/c++ -DAOCLSPARSE_VERSION_STRING=\"\\\"AOCL-Sparse 5.2.2 Build 20260401\\\"\" -DSUPPORT_OMP -DUSE_AVX512 -Daoclsparse_EXPORTS -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/include -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/analysis -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level2 -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level1 -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/extra -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/conversion -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/include -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/include -I/data/lsl/Software/amd-libflame/include/LP64 -I/data/lsl/Software/amd-blis/include/LP64 -I/data/lsl/Software/amd-utils/include/alci/.. -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -mno-avx512f -march=znver2 -DNDEBUG -O3 -ftree-vectorize -ffp-contract=fast -fopenmp -std=c++17 -o CMakeFiles/aoclsparse.dir/src/level3/aoclsparse_spmmd.cpp.o -c /data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level3/aoclsparse_spmmd.cpp",
+  "file": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level3/aoclsparse_spmmd.cpp"
+},
+{
+  "directory": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/library",
+  "command": "/usr/bin/c++ -DAOCLSPARSE_VERSION_STRING=\"\\\"AOCL-Sparse 5.2.2 Build 20260401\\\"\" -DSUPPORT_OMP -DUSE_AVX512 -Daoclsparse_EXPORTS -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/include -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/analysis -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level2 -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level1 -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/extra -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/conversion -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/include -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/include -I/data/lsl/Software/amd-libflame/include/LP64 -I/data/lsl/Software/amd-blis/include/LP64 -I/data/lsl/Software/amd-utils/include/alci/.. -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -mno-avx512f -march=znver2 -DNDEBUG -O3 -ftree-vectorize -ffp-contract=fast -fopenmp -std=c++17 -o CMakeFiles/aoclsparse.dir/src/level3/aoclsparse_sp2md.cpp.o -c /data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level3/aoclsparse_sp2md.cpp",
+  "file": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level3/aoclsparse_sp2md.cpp"
+},
+{
+  "directory": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/library",
+  "command": "/usr/bin/c++ -DAOCLSPARSE_VERSION_STRING=\"\\\"AOCL-Sparse 5.2.2 Build 20260401\\\"\" -DSUPPORT_OMP -DUSE_AVX512 -Daoclsparse_EXPORTS -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/include -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/analysis -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level2 -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level1 -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/extra -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/conversion -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/include -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/include -I/data/lsl/Software/amd-libflame/include/LP64 -I/data/lsl/Software/amd-blis/include/LP64 -I/data/lsl/Software/amd-utils/include/alci/.. -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -mno-avx512f -march=znver2 -DNDEBUG -O3 -ftree-vectorize -ffp-contract=fast -fopenmp -std=c++17 -o CMakeFiles/aoclsparse.dir/src/level3/aoclsparse_syrkd.cpp.o -c /data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level3/aoclsparse_syrkd.cpp",
+  "file": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level3/aoclsparse_syrkd.cpp"
+},
+{
+  "directory": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/library",
+  "command": "/usr/bin/c++ -DAOCLSPARSE_VERSION_STRING=\"\\\"AOCL-Sparse 5.2.2 Build 20260401\\\"\" -DSUPPORT_OMP -DUSE_AVX512 -Daoclsparse_EXPORTS -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/include -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/analysis -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level2 -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level1 -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/extra -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/conversion -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/include -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/include -I/data/lsl/Software/amd-libflame/include/LP64 -I/data/lsl/Software/amd-blis/include/LP64 -I/data/lsl/Software/amd-utils/include/alci/.. -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -mno-avx512f -march=znver2 -DNDEBUG -O3 -ftree-vectorize -ffp-contract=fast -fopenmp -std=c++17 -o CMakeFiles/aoclsparse.dir/src/level3/aoclsparse_syprd.cpp.o -c /data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level3/aoclsparse_syprd.cpp",
+  "file": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level3/aoclsparse_syprd.cpp"
+},
+{
+  "directory": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/library",
+  "command": "/usr/bin/c++ -DAOCLSPARSE_VERSION_STRING=\"\\\"AOCL-Sparse 5.2.2 Build 20260401\\\"\" -DSUPPORT_OMP -DUSE_AVX512 -Daoclsparse_EXPORTS -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/include -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/analysis -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level2 -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level1 -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/extra -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/conversion -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/include -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/include -I/data/lsl/Software/amd-libflame/include/LP64 -I/data/lsl/Software/amd-blis/include/LP64 -I/data/lsl/Software/amd-utils/include/alci/.. -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -mno-avx512f -march=znver2 -DNDEBUG -O3 -ftree-vectorize -ffp-contract=fast -fopenmp -std=c++17 -o CMakeFiles/aoclsparse.dir/src/level3/aoclsparse_sypr.cpp.o -c /data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level3/aoclsparse_sypr.cpp",
+  "file": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level3/aoclsparse_sypr.cpp"
+},
+{
+  "directory": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/library",
+  "command": "/usr/bin/c++ -DAOCLSPARSE_VERSION_STRING=\"\\\"AOCL-Sparse 5.2.2 Build 20260401\\\"\" -DSUPPORT_OMP -DUSE_AVX512 -Daoclsparse_EXPORTS -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/include -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/analysis -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level2 -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level1 -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/extra -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/conversion -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/include -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/include -I/data/lsl/Software/amd-libflame/include/LP64 -I/data/lsl/Software/amd-blis/include/LP64 -I/data/lsl/Software/amd-utils/include/alci/.. -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -mno-avx512f -march=znver2 -DNDEBUG -O3 -ftree-vectorize -ffp-contract=fast -fopenmp -std=c++17 -o CMakeFiles/aoclsparse.dir/src/level3/aoclsparse_syrk.cpp.o -c /data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level3/aoclsparse_syrk.cpp",
+  "file": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level3/aoclsparse_syrk.cpp"
+},
+{
+  "directory": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/library",
+  "command": "/usr/bin/c++ -DAOCLSPARSE_VERSION_STRING=\"\\\"AOCL-Sparse 5.2.2 Build 20260401\\\"\" -DSUPPORT_OMP -DUSE_AVX512 -Daoclsparse_EXPORTS -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/include -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/analysis -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level2 -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level1 -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/extra -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/conversion -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/include -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/include -I/data/lsl/Software/amd-libflame/include/LP64 -I/data/lsl/Software/amd-blis/include/LP64 -I/data/lsl/Software/amd-utils/include/alci/.. -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -mno-avx512f -march=znver2 -DNDEBUG -O3 -ftree-vectorize -ffp-contract=fast -fopenmp -std=c++17 -o CMakeFiles/aoclsparse.dir/src/level3/aoclsparse_trsm.cpp.o -c /data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level3/aoclsparse_trsm.cpp",
+  "file": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level3/aoclsparse_trsm.cpp"
+},
+{
+  "directory": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/library",
+  "command": "/usr/bin/c++ -DAOCLSPARSE_VERSION_STRING=\"\\\"AOCL-Sparse 5.2.2 Build 20260401\\\"\" -DSUPPORT_OMP -DUSE_AVX512 -Daoclsparse_EXPORTS -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/include -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/analysis -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level2 -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level1 -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/extra -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/conversion -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/include -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/include -I/data/lsl/Software/amd-libflame/include/LP64 -I/data/lsl/Software/amd-blis/include/LP64 -I/data/lsl/Software/amd-utils/include/alci/.. -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -mno-avx512f -march=znver2 -DNDEBUG -O3 -ftree-vectorize -ffp-contract=fast -fopenmp -std=c++17 -o CMakeFiles/aoclsparse.dir/src/solvers/aoclsparse_ilu.cpp.o -c /data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/solvers/aoclsparse_ilu.cpp",
+  "file": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/solvers/aoclsparse_ilu.cpp"
+},
+{
+  "directory": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/library",
+  "command": "/usr/bin/c++ -DAOCLSPARSE_VERSION_STRING=\"\\\"AOCL-Sparse 5.2.2 Build 20260401\\\"\" -DSUPPORT_OMP -DUSE_AVX512 -Daoclsparse_EXPORTS -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/include -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/analysis -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level2 -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level1 -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/extra -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/conversion -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/include -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/include -I/data/lsl/Software/amd-libflame/include/LP64 -I/data/lsl/Software/amd-blis/include/LP64 -I/data/lsl/Software/amd-utils/include/alci/.. -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -mno-avx512f -march=znver2 -DNDEBUG -O3 -ftree-vectorize -ffp-contract=fast -fopenmp -std=c++17 -o CMakeFiles/aoclsparse.dir/src/solvers/aoclsparse_sorv.cpp.o -c /data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/solvers/aoclsparse_sorv.cpp",
+  "file": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/solvers/aoclsparse_sorv.cpp"
+},
+{
+  "directory": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/library",
+  "command": "/usr/bin/c++ -DAOCLSPARSE_VERSION_STRING=\"\\\"AOCL-Sparse 5.2.2 Build 20260401\\\"\" -DSUPPORT_OMP -DUSE_AVX512 -Daoclsparse_EXPORTS -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/include -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/analysis -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level2 -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level1 -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/extra -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/conversion -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/include -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/include -I/data/lsl/Software/amd-libflame/include/LP64 -I/data/lsl/Software/amd-blis/include/LP64 -I/data/lsl/Software/amd-utils/include/alci/.. -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -mno-avx512f -march=znver2 -DNDEBUG -O3 -ftree-vectorize -ffp-contract=fast -fopenmp -std=c++17 -Wno-tautological-compare -o CMakeFiles/aoclsparse.dir/src/solvers/aoclsparse_itsol_functions.cpp.o -c /data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/solvers/aoclsparse_itsol_functions.cpp",
+  "file": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/solvers/aoclsparse_itsol_functions.cpp"
+},
+{
+  "directory": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/library",
+  "command": "/usr/bin/c++ -DAOCLSPARSE_VERSION_STRING=\"\\\"AOCL-Sparse 5.2.2 Build 20260401\\\"\" -DSUPPORT_OMP -DUSE_AVX512 -Daoclsparse_EXPORTS -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/include -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/analysis -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level2 -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level1 -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/extra -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/conversion -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/include -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/include -I/data/lsl/Software/amd-libflame/include/LP64 -I/data/lsl/Software/amd-blis/include/LP64 -I/data/lsl/Software/amd-utils/include/alci/.. -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -mno-avx512f -march=znver2 -DNDEBUG -O3 -ftree-vectorize -ffp-contract=fast -fopenmp -std=c++17 -o CMakeFiles/aoclsparse.dir/src/solvers/aoclsparse_symgs.cpp.o -c /data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/solvers/aoclsparse_symgs.cpp",
+  "file": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/solvers/aoclsparse_symgs.cpp"
+},
+{
+  "directory": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/library",
+  "command": "/usr/bin/c++ -DAOCLSPARSE_VERSION_STRING=\"\\\"AOCL-Sparse 5.2.2 Build 20260401\\\"\" -DSUPPORT_OMP -DUSE_AVX512 -Daoclsparse_EXPORTS -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/include -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/analysis -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level2 -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level1 -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/extra -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/conversion -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/include -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/include -I/data/lsl/Software/amd-libflame/include/LP64 -I/data/lsl/Software/amd-blis/include/LP64 -I/data/lsl/Software/amd-utils/include/alci/.. -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -mno-avx512f -march=znver2 -DNDEBUG -O3 -ftree-vectorize -ffp-contract=fast -fopenmp -std=c++17 -o CMakeFiles/aoclsparse.dir/src/create/aoclsparse_create.cpp.o -c /data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/create/aoclsparse_create.cpp",
+  "file": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/create/aoclsparse_create.cpp"
+},
+{
+  "directory": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/library",
+  "command": "/usr/bin/c++ -DAOCLSPARSE_VERSION_STRING=\"\\\"AOCL-Sparse 5.2.2 Build 20260401\\\"\" -DSUPPORT_OMP -DUSE_AVX512 -Daoclsparse_EXPORTS -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/include -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/analysis -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level2 -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level1 -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/extra -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/conversion -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/include -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/include -I/data/lsl/Software/amd-libflame/include/LP64 -I/data/lsl/Software/amd-blis/include/LP64 -I/data/lsl/Software/amd-utils/include/alci/.. -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -mno-avx512f -march=znver2 -DNDEBUG -O3 -ftree-vectorize -ffp-contract=fast -fopenmp -std=c++17 -o CMakeFiles/aoclsparse.dir/src/create/aoclsparse_create_wrapper.cpp.o -c /data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/create/aoclsparse_create_wrapper.cpp",
+  "file": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/create/aoclsparse_create_wrapper.cpp"
+},
+{
+  "directory": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/library",
+  "command": "/usr/bin/c++ -DAOCLSPARSE_VERSION_STRING=\"\\\"AOCL-Sparse 5.2.2 Build 20260401\\\"\" -DSUPPORT_OMP -DUSE_AVX512 -Daoclsparse_EXPORTS -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/include -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/analysis -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level2 -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level1 -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/extra -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/conversion -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/include -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/include -I/data/lsl/Software/amd-libflame/include/LP64 -I/data/lsl/Software/amd-blis/include/LP64 -I/data/lsl/Software/amd-utils/include/alci/.. -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -mno-avx512f -march=znver2 -DNDEBUG -O3 -ftree-vectorize -ffp-contract=fast -fopenmp -std=c++17 -o CMakeFiles/aoclsparse.dir/src/conversion/aoclsparse_convert.cpp.o -c /data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/conversion/aoclsparse_convert.cpp",
+  "file": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/conversion/aoclsparse_convert.cpp"
+},
+{
+  "directory": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/library",
+  "command": "/usr/bin/c++ -DAOCLSPARSE_VERSION_STRING=\"\\\"AOCL-Sparse 5.2.2 Build 20260401\\\"\" -DSUPPORT_OMP -DUSE_AVX512 -Daoclsparse_EXPORTS -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/include -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/analysis -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level2 -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level1 -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/extra -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/conversion -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/include -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/include -I/data/lsl/Software/amd-libflame/include/LP64 -I/data/lsl/Software/amd-blis/include/LP64 -I/data/lsl/Software/amd-utils/include/alci/.. -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -mno-avx512f -march=znver2 -DNDEBUG -O3 -ftree-vectorize -ffp-contract=fast -fopenmp -std=c++17 -o CMakeFiles/aoclsparse.dir/src/extra/aoclsparse_auxiliary.cpp.o -c /data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/extra/aoclsparse_auxiliary.cpp",
+  "file": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/extra/aoclsparse_auxiliary.cpp"
+},
+{
+  "directory": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/library",
+  "command": "/usr/bin/c++ -DAOCLSPARSE_VERSION_STRING=\"\\\"AOCL-Sparse 5.2.2 Build 20260401\\\"\" -DSUPPORT_OMP -DUSE_AVX512 -Daoclsparse_EXPORTS -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/include -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/analysis -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level2 -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level1 -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/extra -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/conversion -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/include -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/include -I/data/lsl/Software/amd-libflame/include/LP64 -I/data/lsl/Software/amd-blis/include/LP64 -I/data/lsl/Software/amd-utils/include/alci/.. -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -mno-avx512f -march=znver2 -DNDEBUG -O3 -ftree-vectorize -ffp-contract=fast -fopenmp -std=c++17 -o CMakeFiles/aoclsparse.dir/src/extra/aoclsparse_context.cpp.o -c /data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/extra/aoclsparse_context.cpp",
+  "file": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/extra/aoclsparse_context.cpp"
+},
+{
+  "directory": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/library",
+  "command": "/usr/bin/c++ -DAOCLSPARSE_VERSION_STRING=\"\\\"AOCL-Sparse 5.2.2 Build 20260401\\\"\" -DSUPPORT_OMP -DUSE_AVX512 -Daoclsparse_EXPORTS -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/include -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/analysis -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level2 -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level1 -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/extra -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/conversion -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/include -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/include -I/data/lsl/Software/amd-libflame/include/LP64 -I/data/lsl/Software/amd-blis/include/LP64 -I/data/lsl/Software/amd-utils/include/alci/.. -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -mno-avx512f -march=znver2 -DNDEBUG -O3 -ftree-vectorize -ffp-contract=fast -fopenmp -std=c++17 -o CMakeFiles/aoclsparse.dir/src/analysis/aoclsparse_analysis.cpp.o -c /data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/analysis/aoclsparse_analysis.cpp",
+  "file": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/analysis/aoclsparse_analysis.cpp"
+},
+{
+  "directory": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/library",
+  "command": "/usr/bin/c++ -DAOCLSPARSE_VERSION_STRING=\"\\\"AOCL-Sparse 5.2.2 Build 20260401\\\"\" -DSUPPORT_OMP -DUSE_AVX512 -Daoclsparse_EXPORTS -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/include -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/analysis -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level2 -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/level1 -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/extra -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/conversion -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/include -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/include -I/data/lsl/Software/amd-libflame/include/LP64 -I/data/lsl/Software/amd-blis/include/LP64 -I/data/lsl/Software/amd-utils/include/alci/.. -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -mno-avx512f -march=znver2 -DNDEBUG -O3 -ftree-vectorize -ffp-contract=fast -fopenmp -std=c++17 -o CMakeFiles/aoclsparse.dir/src/analysis/aoclsparse_csr_util.cpp.o -c /data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/analysis/aoclsparse_csr_util.cpp",
+  "file": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/src/analysis/aoclsparse_csr_util.cpp"
+},
+{
+  "directory": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/tests/examples",
+  "command": "/usr/bin/c++ -DUSE_AVX512 -I/data/lsl/Software/amd-libflame/include/LP64 -I/data/lsl/Software/amd-blis/include/LP64 -I/data/lsl/Software/amd-utils/include/alci/.. -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/include -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/include -march=znver2 -DNDEBUG -O3 -ftree-vectorize -ffp-contract=fast -mno-avx512f -fopenmp -std=c++17 -o CMakeFiles/sample_axpyi.dir/sample_axpyi.cpp.o -c /data/lsl/SpGEMM/aocl-sparse-5.2.2/tests/examples/sample_axpyi.cpp",
+  "file": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/tests/examples/sample_axpyi.cpp"
+},
+{
+  "directory": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/tests/examples",
+  "command": "/usr/bin/c++ -DUSE_AVX512 -I/data/lsl/Software/amd-libflame/include/LP64 -I/data/lsl/Software/amd-blis/include/LP64 -I/data/lsl/Software/amd-utils/include/alci/.. -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/include -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/include -march=znver2 -DNDEBUG -O3 -ftree-vectorize -ffp-contract=fast -mno-avx512f -fopenmp -std=c++17 -o CMakeFiles/sample_csr2m.dir/sample_csr2m.cpp.o -c /data/lsl/SpGEMM/aocl-sparse-5.2.2/tests/examples/sample_csr2m.cpp",
+  "file": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/tests/examples/sample_csr2m.cpp"
+},
+{
+  "directory": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/tests/examples",
+  "command": "/usr/bin/c++ -DUSE_AVX512 -I/data/lsl/Software/amd-libflame/include/LP64 -I/data/lsl/Software/amd-blis/include/LP64 -I/data/lsl/Software/amd-utils/include/alci/.. -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/include -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/include -march=znver2 -DNDEBUG -O3 -ftree-vectorize -ffp-contract=fast -mno-avx512f -fopenmp -std=c++17 -o CMakeFiles/sample_csr2m_cpp.dir/sample_csr2m_cpp.cpp.o -c /data/lsl/SpGEMM/aocl-sparse-5.2.2/tests/examples/sample_csr2m_cpp.cpp",
+  "file": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/tests/examples/sample_csr2m_cpp.cpp"
+},
+{
+  "directory": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/tests/examples",
+  "command": "/usr/bin/c++ -DUSE_AVX512 -I/data/lsl/Software/amd-libflame/include/LP64 -I/data/lsl/Software/amd-blis/include/LP64 -I/data/lsl/Software/amd-utils/include/alci/.. -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/include -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/include -march=znver2 -DNDEBUG -O3 -ftree-vectorize -ffp-contract=fast -mno-avx512f -fopenmp -std=c++17 -o CMakeFiles/sample_csrmm.dir/sample_csrmm.cpp.o -c /data/lsl/SpGEMM/aocl-sparse-5.2.2/tests/examples/sample_csrmm.cpp",
+  "file": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/tests/examples/sample_csrmm.cpp"
+},
+{
+  "directory": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/tests/examples",
+  "command": "/usr/bin/c++ -DUSE_AVX512 -I/data/lsl/Software/amd-libflame/include/LP64 -I/data/lsl/Software/amd-blis/include/LP64 -I/data/lsl/Software/amd-utils/include/alci/.. -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/include -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/include -march=znver2 -DNDEBUG -O3 -ftree-vectorize -ffp-contract=fast -mno-avx512f -fopenmp -std=c++17 -o CMakeFiles/sample_dotmv.dir/sample_dotmv.cpp.o -c /data/lsl/SpGEMM/aocl-sparse-5.2.2/tests/examples/sample_dotmv.cpp",
+  "file": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/tests/examples/sample_dotmv.cpp"
+},
+{
+  "directory": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/tests/examples",
+  "command": "/usr/bin/c++ -DUSE_AVX512 -I/data/lsl/Software/amd-libflame/include/LP64 -I/data/lsl/Software/amd-blis/include/LP64 -I/data/lsl/Software/amd-utils/include/alci/.. -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/include -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/include -march=znver2 -DNDEBUG -O3 -ftree-vectorize -ffp-contract=fast -mno-avx512f -fopenmp -std=c++17 -o CMakeFiles/sample_dotp.dir/sample_dotp.cpp.o -c /data/lsl/SpGEMM/aocl-sparse-5.2.2/tests/examples/sample_dotp.cpp",
+  "file": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/tests/examples/sample_dotp.cpp"
+},
+{
+  "directory": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/tests/examples",
+  "command": "/usr/bin/c++ -DUSE_AVX512 -I/data/lsl/Software/amd-libflame/include/LP64 -I/data/lsl/Software/amd-blis/include/LP64 -I/data/lsl/Software/amd-utils/include/alci/.. -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/include -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/include -march=znver2 -DNDEBUG -O3 -ftree-vectorize -ffp-contract=fast -mno-avx512f -fopenmp -std=c++17 -o CMakeFiles/sample_dsorv.dir/sample_dsorv.cpp.o -c /data/lsl/SpGEMM/aocl-sparse-5.2.2/tests/examples/sample_dsorv.cpp",
+  "file": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/tests/examples/sample_dsorv.cpp"
+},
+{
+  "directory": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/tests/examples",
+  "command": "/usr/bin/c++ -DUSE_AVX512 -I/data/lsl/Software/amd-libflame/include/LP64 -I/data/lsl/Software/amd-blis/include/LP64 -I/data/lsl/Software/amd-utils/include/alci/.. -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/include -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/include -march=znver2 -DNDEBUG -O3 -ftree-vectorize -ffp-contract=fast -mno-avx512f -fopenmp -std=c++17 -o CMakeFiles/sample_dsymgs.dir/sample_dsymgs.cpp.o -c /data/lsl/SpGEMM/aocl-sparse-5.2.2/tests/examples/sample_dsymgs.cpp",
+  "file": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/tests/examples/sample_dsymgs.cpp"
+},
+{
+  "directory": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/tests/examples",
+  "command": "/usr/bin/c++ -DUSE_AVX512 -I/data/lsl/Software/amd-libflame/include/LP64 -I/data/lsl/Software/amd-blis/include/LP64 -I/data/lsl/Software/amd-utils/include/alci/.. -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/include -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/include -march=znver2 -DNDEBUG -O3 -ftree-vectorize -ffp-contract=fast -mno-avx512f -fopenmp -std=c++17 -o CMakeFiles/sample_dsymgs_mv.dir/sample_dsymgs_mv.cpp.o -c /data/lsl/SpGEMM/aocl-sparse-5.2.2/tests/examples/sample_dsymgs_mv.cpp",
+  "file": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/tests/examples/sample_dsymgs_mv.cpp"
+},
+{
+  "directory": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/tests/examples",
+  "command": "/usr/bin/c++ -DUSE_AVX512 -I/data/lsl/Software/amd-libflame/include/LP64 -I/data/lsl/Software/amd-blis/include/LP64 -I/data/lsl/Software/amd-utils/include/alci/.. -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/include -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/include -march=znver2 -DNDEBUG -O3 -ftree-vectorize -ffp-contract=fast -mno-avx512f -fopenmp -std=c++17 -o CMakeFiles/sample_dsyrk.dir/sample_dsyrk.cpp.o -c /data/lsl/SpGEMM/aocl-sparse-5.2.2/tests/examples/sample_dsyrk.cpp",
+  "file": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/tests/examples/sample_dsyrk.cpp"
+},
+{
+  "directory": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/tests/examples",
+  "command": "/usr/bin/c++ -DUSE_AVX512 -I/data/lsl/Software/amd-libflame/include/LP64 -I/data/lsl/Software/amd-blis/include/LP64 -I/data/lsl/Software/amd-utils/include/alci/.. -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/include -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/include -march=znver2 -DNDEBUG -O3 -ftree-vectorize -ffp-contract=fast -mno-avx512f -fopenmp -std=c++17 -o CMakeFiles/sample_dsyrkd.dir/sample_dsyrkd.cpp.o -c /data/lsl/SpGEMM/aocl-sparse-5.2.2/tests/examples/sample_dsyrkd.cpp",
+  "file": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/tests/examples/sample_dsyrkd.cpp"
+},
+{
+  "directory": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/tests/examples",
+  "command": "/usr/bin/c++ -DUSE_AVX512 -I/data/lsl/Software/amd-libflame/include/LP64 -I/data/lsl/Software/amd-blis/include/LP64 -I/data/lsl/Software/amd-utils/include/alci/.. -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/include -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/include -march=znver2 -DNDEBUG -O3 -ftree-vectorize -ffp-contract=fast -mno-avx512f -fopenmp -std=c++17 -o CMakeFiles/sample_dtrsm.dir/sample_dtrsm.cpp.o -c /data/lsl/SpGEMM/aocl-sparse-5.2.2/tests/examples/sample_dtrsm.cpp",
+  "file": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/tests/examples/sample_dtrsm.cpp"
+},
+{
+  "directory": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/tests/examples",
+  "command": "/usr/bin/c++ -DUSE_AVX512 -I/data/lsl/Software/amd-libflame/include/LP64 -I/data/lsl/Software/amd-blis/include/LP64 -I/data/lsl/Software/amd-utils/include/alci/.. -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/include -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/include -march=znver2 -DNDEBUG -O3 -ftree-vectorize -ffp-contract=fast -mno-avx512f -fopenmp -std=c++17 -o CMakeFiles/sample_dtrsv.dir/sample_dtrsv.cpp.o -c /data/lsl/SpGEMM/aocl-sparse-5.2.2/tests/examples/sample_dtrsv.cpp",
+  "file": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/tests/examples/sample_dtrsv.cpp"
+},
+{
+  "directory": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/tests/examples",
+  "command": "/usr/bin/c++ -DUSE_AVX512 -I/data/lsl/Software/amd-libflame/include/LP64 -I/data/lsl/Software/amd-blis/include/LP64 -I/data/lsl/Software/amd-utils/include/alci/.. -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/include -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/include -march=znver2 -DNDEBUG -O3 -ftree-vectorize -ffp-contract=fast -mno-avx512f -fopenmp -std=c++17 -o CMakeFiles/sample_itsol_d_cg.dir/sample_itsol_d_cg.cpp.o -c /data/lsl/SpGEMM/aocl-sparse-5.2.2/tests/examples/sample_itsol_d_cg.cpp",
+  "file": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/tests/examples/sample_itsol_d_cg.cpp"
+},
+{
+  "directory": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/tests/examples",
+  "command": "/usr/bin/c++ -DUSE_AVX512 -I/data/lsl/Software/amd-libflame/include/LP64 -I/data/lsl/Software/amd-blis/include/LP64 -I/data/lsl/Software/amd-utils/include/alci/.. -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/include -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/include -march=znver2 -DNDEBUG -O3 -ftree-vectorize -ffp-contract=fast -mno-avx512f -fopenmp -std=c++17 -o CMakeFiles/sample_itsol_d_cg_rci.dir/sample_itsol_d_cg_rci.cpp.o -c /data/lsl/SpGEMM/aocl-sparse-5.2.2/tests/examples/sample_itsol_d_cg_rci.cpp",
+  "file": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/tests/examples/sample_itsol_d_cg_rci.cpp"
+},
+{
+  "directory": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/tests/examples",
+  "command": "/usr/bin/c++ -DUSE_AVX512 -I/data/lsl/Software/amd-libflame/include/LP64 -I/data/lsl/Software/amd-blis/include/LP64 -I/data/lsl/Software/amd-utils/include/alci/.. -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/include -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/include -march=znver2 -DNDEBUG -O3 -ftree-vectorize -ffp-contract=fast -mno-avx512f -fopenmp -std=c++17 -o CMakeFiles/sample_itsol_d_gmres.dir/sample_itsol_d_gmres.cpp.o -c /data/lsl/SpGEMM/aocl-sparse-5.2.2/tests/examples/sample_itsol_d_gmres.cpp",
+  "file": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/tests/examples/sample_itsol_d_gmres.cpp"
+},
+{
+  "directory": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/tests/examples",
+  "command": "/usr/bin/c++ -DUSE_AVX512 -I/data/lsl/Software/amd-libflame/include/LP64 -I/data/lsl/Software/amd-blis/include/LP64 -I/data/lsl/Software/amd-utils/include/alci/.. -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/include -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/include -march=znver2 -DNDEBUG -O3 -ftree-vectorize -ffp-contract=fast -mno-avx512f -fopenmp -std=c++17 -o CMakeFiles/sample_itsol_d_gmres_rci.dir/sample_itsol_d_gmres_rci.cpp.o -c /data/lsl/SpGEMM/aocl-sparse-5.2.2/tests/examples/sample_itsol_d_gmres_rci.cpp",
+  "file": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/tests/examples/sample_itsol_d_gmres_rci.cpp"
+},
+{
+  "directory": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/tests/examples",
+  "command": "/usr/bin/c++ -DUSE_AVX512 -I/data/lsl/Software/amd-libflame/include/LP64 -I/data/lsl/Software/amd-blis/include/LP64 -I/data/lsl/Software/amd-utils/include/alci/.. -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/include -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/include -march=znver2 -DNDEBUG -O3 -ftree-vectorize -ffp-contract=fast -mno-avx512f -fopenmp -std=c++17 -o CMakeFiles/sample_itsol_s_cg.dir/sample_itsol_s_cg.cpp.o -c /data/lsl/SpGEMM/aocl-sparse-5.2.2/tests/examples/sample_itsol_s_cg.cpp",
+  "file": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/tests/examples/sample_itsol_s_cg.cpp"
+},
+{
+  "directory": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/tests/examples",
+  "command": "/usr/bin/c++ -DUSE_AVX512 -I/data/lsl/Software/amd-libflame/include/LP64 -I/data/lsl/Software/amd-blis/include/LP64 -I/data/lsl/Software/amd-utils/include/alci/.. -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/include -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/include -march=znver2 -DNDEBUG -O3 -ftree-vectorize -ffp-contract=fast -mno-avx512f -fopenmp -std=c++17 -o CMakeFiles/sample_itsol_s_cg_rci.dir/sample_itsol_s_cg_rci.cpp.o -c /data/lsl/SpGEMM/aocl-sparse-5.2.2/tests/examples/sample_itsol_s_cg_rci.cpp",
+  "file": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/tests/examples/sample_itsol_s_cg_rci.cpp"
+},
+{
+  "directory": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/tests/examples",
+  "command": "/usr/bin/c++ -DUSE_AVX512 -I/data/lsl/Software/amd-libflame/include/LP64 -I/data/lsl/Software/amd-blis/include/LP64 -I/data/lsl/Software/amd-utils/include/alci/.. -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/include -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/include -march=znver2 -DNDEBUG -O3 -ftree-vectorize -ffp-contract=fast -mno-avx512f -fopenmp -std=c++17 -o CMakeFiles/sample_itsol_s_gmres.dir/sample_itsol_s_gmres.cpp.o -c /data/lsl/SpGEMM/aocl-sparse-5.2.2/tests/examples/sample_itsol_s_gmres.cpp",
+  "file": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/tests/examples/sample_itsol_s_gmres.cpp"
+},
+{
+  "directory": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/tests/examples",
+  "command": "/usr/bin/c++ -DUSE_AVX512 -I/data/lsl/Software/amd-libflame/include/LP64 -I/data/lsl/Software/amd-blis/include/LP64 -I/data/lsl/Software/amd-utils/include/alci/.. -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/include -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/include -march=znver2 -DNDEBUG -O3 -ftree-vectorize -ffp-contract=fast -mno-avx512f -fopenmp -std=c++17 -o CMakeFiles/sample_itsol_s_gmres_rci.dir/sample_itsol_s_gmres_rci.cpp.o -c /data/lsl/SpGEMM/aocl-sparse-5.2.2/tests/examples/sample_itsol_s_gmres_rci.cpp",
+  "file": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/tests/examples/sample_itsol_s_gmres_rci.cpp"
+},
+{
+  "directory": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/tests/examples",
+  "command": "/usr/bin/c++ -DUSE_AVX512 -I/data/lsl/Software/amd-libflame/include/LP64 -I/data/lsl/Software/amd-blis/include/LP64 -I/data/lsl/Software/amd-utils/include/alci/.. -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/include -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/include -march=znver2 -DNDEBUG -O3 -ftree-vectorize -ffp-contract=fast -mno-avx512f -fopenmp -std=c++17 -o CMakeFiles/sample_itsol_z_gmres.dir/sample_itsol_z_gmres.cpp.o -c /data/lsl/SpGEMM/aocl-sparse-5.2.2/tests/examples/sample_itsol_z_gmres.cpp",
+  "file": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/tests/examples/sample_itsol_z_gmres.cpp"
+},
+{
+  "directory": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/tests/examples",
+  "command": "/usr/bin/c++ -DUSE_AVX512 -I/data/lsl/Software/amd-libflame/include/LP64 -I/data/lsl/Software/amd-blis/include/LP64 -I/data/lsl/Software/amd-utils/include/alci/.. -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/include -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/include -march=znver2 -DNDEBUG -O3 -ftree-vectorize -ffp-contract=fast -mno-avx512f -fopenmp -std=c++17 -o CMakeFiles/sample_itsol_z_gmres_rci.dir/sample_itsol_z_gmres_rci.cpp.o -c /data/lsl/SpGEMM/aocl-sparse-5.2.2/tests/examples/sample_itsol_z_gmres_rci.cpp",
+  "file": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/tests/examples/sample_itsol_z_gmres_rci.cpp"
+},
+{
+  "directory": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/tests/examples",
+  "command": "/usr/bin/c++ -DUSE_AVX512 -I/data/lsl/Software/amd-libflame/include/LP64 -I/data/lsl/Software/amd-blis/include/LP64 -I/data/lsl/Software/amd-utils/include/alci/.. -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/include -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/include -march=znver2 -DNDEBUG -O3 -ftree-vectorize -ffp-contract=fast -mno-avx512f -fopenmp -std=c++17 -o CMakeFiles/sample_mv_cpp.dir/sample_mv_cpp.cpp.o -c /data/lsl/SpGEMM/aocl-sparse-5.2.2/tests/examples/sample_mv_cpp.cpp",
+  "file": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/tests/examples/sample_mv_cpp.cpp"
+},
+{
+  "directory": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/tests/examples",
+  "command": "/usr/bin/c++ -DUSE_AVX512 -I/data/lsl/Software/amd-libflame/include/LP64 -I/data/lsl/Software/amd-blis/include/LP64 -I/data/lsl/Software/amd-utils/include/alci/.. -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/include -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/include -march=znver2 -DNDEBUG -O3 -ftree-vectorize -ffp-contract=fast -mno-avx512f -fopenmp -std=c++17 -o CMakeFiles/sample_roti.dir/sample_roti.cpp.o -c /data/lsl/SpGEMM/aocl-sparse-5.2.2/tests/examples/sample_roti.cpp",
+  "file": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/tests/examples/sample_roti.cpp"
+},
+{
+  "directory": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/tests/examples",
+  "command": "/usr/bin/c++ -DUSE_AVX512 -I/data/lsl/Software/amd-libflame/include/LP64 -I/data/lsl/Software/amd-blis/include/LP64 -I/data/lsl/Software/amd-utils/include/alci/.. -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/include -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/include -march=znver2 -DNDEBUG -O3 -ftree-vectorize -ffp-contract=fast -mno-avx512f -fopenmp -std=c++17 -o CMakeFiles/sample_sctr.dir/sample_sctr.cpp.o -c /data/lsl/SpGEMM/aocl-sparse-5.2.2/tests/examples/sample_sctr.cpp",
+  "file": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/tests/examples/sample_sctr.cpp"
+},
+{
+  "directory": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/tests/examples",
+  "command": "/usr/bin/c++ -DUSE_AVX512 -I/data/lsl/Software/amd-libflame/include/LP64 -I/data/lsl/Software/amd-blis/include/LP64 -I/data/lsl/Software/amd-utils/include/alci/.. -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/include -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/include -march=znver2 -DNDEBUG -O3 -ftree-vectorize -ffp-contract=fast -mno-avx512f -fopenmp -std=c++17 -o CMakeFiles/sample_sp2md.dir/sample_sp2md.cpp.o -c /data/lsl/SpGEMM/aocl-sparse-5.2.2/tests/examples/sample_sp2md.cpp",
+  "file": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/tests/examples/sample_sp2md.cpp"
+},
+{
+  "directory": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/tests/examples",
+  "command": "/usr/bin/c++ -DUSE_AVX512 -I/data/lsl/Software/amd-libflame/include/LP64 -I/data/lsl/Software/amd-blis/include/LP64 -I/data/lsl/Software/amd-utils/include/alci/.. -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/include -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/include -march=znver2 -DNDEBUG -O3 -ftree-vectorize -ffp-contract=fast -mno-avx512f -fopenmp -std=c++17 -o CMakeFiles/sample_spgemm_bench.dir/sample_spgemm_bench.cpp.o -c /data/lsl/SpGEMM/aocl-sparse-5.2.2/tests/examples/sample_spgemm_bench.cpp",
+  "file": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/tests/examples/sample_spgemm_bench.cpp"
+},
+{
+  "directory": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/tests/examples",
+  "command": "/usr/bin/c++ -DUSE_AVX512 -I/data/lsl/Software/amd-libflame/include/LP64 -I/data/lsl/Software/amd-blis/include/LP64 -I/data/lsl/Software/amd-utils/include/alci/.. -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/include -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/include -march=znver2 -DNDEBUG -O3 -ftree-vectorize -ffp-contract=fast -mno-avx512f -fopenmp -std=c++17 -o CMakeFiles/sample_spmmd.dir/sample_spmmd.cpp.o -c /data/lsl/SpGEMM/aocl-sparse-5.2.2/tests/examples/sample_spmmd.cpp",
+  "file": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/tests/examples/sample_spmmd.cpp"
+},
+{
+  "directory": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/tests/examples",
+  "command": "/usr/bin/c++ -DUSE_AVX512 -I/data/lsl/Software/amd-libflame/include/LP64 -I/data/lsl/Software/amd-blis/include/LP64 -I/data/lsl/Software/amd-utils/include/alci/.. -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/include -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/include -march=znver2 -DNDEBUG -O3 -ftree-vectorize -ffp-contract=fast -mno-avx512f -fopenmp -std=c++17 -o CMakeFiles/sample_syprd.dir/sample_syprd.cpp.o -c /data/lsl/SpGEMM/aocl-sparse-5.2.2/tests/examples/sample_syprd.cpp",
+  "file": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/tests/examples/sample_syprd.cpp"
+},
+{
+  "directory": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/tests/examples",
+  "command": "/usr/bin/c++ -DUSE_AVX512 -I/data/lsl/Software/amd-libflame/include/LP64 -I/data/lsl/Software/amd-blis/include/LP64 -I/data/lsl/Software/amd-utils/include/alci/.. -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/include -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/include -march=znver2 -DNDEBUG -O3 -ftree-vectorize -ffp-contract=fast -mno-avx512f -fopenmp -std=c++17 -o CMakeFiles/sample_tcsr_dspmv.dir/sample_tcsr_dspmv.cpp.o -c /data/lsl/SpGEMM/aocl-sparse-5.2.2/tests/examples/sample_tcsr_dspmv.cpp",
+  "file": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/tests/examples/sample_tcsr_dspmv.cpp"
+},
+{
+  "directory": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/tests/examples",
+  "command": "/usr/bin/c++ -DUSE_AVX512 -I/data/lsl/Software/amd-libflame/include/LP64 -I/data/lsl/Software/amd-blis/include/LP64 -I/data/lsl/Software/amd-utils/include/alci/.. -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/include -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/include -march=znver2 -DNDEBUG -O3 -ftree-vectorize -ffp-contract=fast -mno-avx512f -fopenmp -std=c++17 -o CMakeFiles/sample_tcsr_dtrsv.dir/sample_tcsr_dtrsv.cpp.o -c /data/lsl/SpGEMM/aocl-sparse-5.2.2/tests/examples/sample_tcsr_dtrsv.cpp",
+  "file": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/tests/examples/sample_tcsr_dtrsv.cpp"
+},
+{
+  "directory": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/tests/examples",
+  "command": "/usr/bin/c++ -DUSE_AVX512 -I/data/lsl/Software/amd-libflame/include/LP64 -I/data/lsl/Software/amd-blis/include/LP64 -I/data/lsl/Software/amd-utils/include/alci/.. -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/include -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/include -march=znver2 -DNDEBUG -O3 -ftree-vectorize -ffp-contract=fast -mno-avx512f -fopenmp -std=c++17 -o CMakeFiles/sample_tcsr_ztrsv.dir/sample_tcsr_ztrsv.cpp.o -c /data/lsl/SpGEMM/aocl-sparse-5.2.2/tests/examples/sample_tcsr_ztrsv.cpp",
+  "file": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/tests/examples/sample_tcsr_ztrsv.cpp"
+},
+{
+  "directory": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/tests/examples",
+  "command": "/usr/bin/c++ -DUSE_AVX512 -I/data/lsl/Software/amd-libflame/include/LP64 -I/data/lsl/Software/amd-blis/include/LP64 -I/data/lsl/Software/amd-utils/include/alci/.. -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/include -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/include -march=znver2 -DNDEBUG -O3 -ftree-vectorize -ffp-contract=fast -mno-avx512f -fopenmp -std=c++17 -o CMakeFiles/sample_trsv_cpp.dir/sample_trsv_cpp.cpp.o -c /data/lsl/SpGEMM/aocl-sparse-5.2.2/tests/examples/sample_trsv_cpp.cpp",
+  "file": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/tests/examples/sample_trsv_cpp.cpp"
+},
+{
+  "directory": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/tests/examples",
+  "command": "/usr/bin/c++ -DUSE_AVX512 -I/data/lsl/Software/amd-libflame/include/LP64 -I/data/lsl/Software/amd-blis/include/LP64 -I/data/lsl/Software/amd-utils/include/alci/.. -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/include -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/include -march=znver2 -DNDEBUG -O3 -ftree-vectorize -ffp-contract=fast -mno-avx512f -fopenmp -std=c++17 -o CMakeFiles/sample_zgthr.dir/sample_zgthr.cpp.o -c /data/lsl/SpGEMM/aocl-sparse-5.2.2/tests/examples/sample_zgthr.cpp",
+  "file": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/tests/examples/sample_zgthr.cpp"
+},
+{
+  "directory": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/tests/examples",
+  "command": "/usr/bin/c++ -DUSE_AVX512 -I/data/lsl/Software/amd-libflame/include/LP64 -I/data/lsl/Software/amd-blis/include/LP64 -I/data/lsl/Software/amd-utils/include/alci/.. -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/include -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/include -march=znver2 -DNDEBUG -O3 -ftree-vectorize -ffp-contract=fast -mno-avx512f -fopenmp -std=c++17 -o CMakeFiles/sample_zsp2m.dir/sample_zsp2m.cpp.o -c /data/lsl/SpGEMM/aocl-sparse-5.2.2/tests/examples/sample_zsp2m.cpp",
+  "file": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/tests/examples/sample_zsp2m.cpp"
+},
+{
+  "directory": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/tests/examples",
+  "command": "/usr/bin/c++ -DUSE_AVX512 -I/data/lsl/Software/amd-libflame/include/LP64 -I/data/lsl/Software/amd-blis/include/LP64 -I/data/lsl/Software/amd-utils/include/alci/.. -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/include -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/include -march=znver2 -DNDEBUG -O3 -ftree-vectorize -ffp-contract=fast -mno-avx512f -fopenmp -std=c++17 -o CMakeFiles/sample_zsymgs.dir/sample_zsymgs.cpp.o -c /data/lsl/SpGEMM/aocl-sparse-5.2.2/tests/examples/sample_zsymgs.cpp",
+  "file": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/tests/examples/sample_zsymgs.cpp"
+},
+{
+  "directory": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/tests/examples",
+  "command": "/usr/bin/c++ -DUSE_AVX512 -I/data/lsl/Software/amd-libflame/include/LP64 -I/data/lsl/Software/amd-blis/include/LP64 -I/data/lsl/Software/amd-utils/include/alci/.. -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/include -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/include -march=znver2 -DNDEBUG -O3 -ftree-vectorize -ffp-contract=fast -mno-avx512f -fopenmp -std=c++17 -o CMakeFiles/sample_zsymgs_mv.dir/sample_zsymgs_mv.cpp.o -c /data/lsl/SpGEMM/aocl-sparse-5.2.2/tests/examples/sample_zsymgs_mv.cpp",
+  "file": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/tests/examples/sample_zsymgs_mv.cpp"
+},
+{
+  "directory": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/tests/examples",
+  "command": "/usr/bin/c++ -DUSE_AVX512 -I/data/lsl/Software/amd-libflame/include/LP64 -I/data/lsl/Software/amd-blis/include/LP64 -I/data/lsl/Software/amd-utils/include/alci/.. -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/include -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/include -march=znver2 -DNDEBUG -O3 -ftree-vectorize -ffp-contract=fast -mno-avx512f -fopenmp -std=c++17 -o CMakeFiles/sample_zsypr.dir/sample_zsypr.cpp.o -c /data/lsl/SpGEMM/aocl-sparse-5.2.2/tests/examples/sample_zsypr.cpp",
+  "file": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/tests/examples/sample_zsypr.cpp"
+},
+{
+  "directory": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/tests/examples",
+  "command": "/usr/bin/c++ -DUSE_AVX512 -I/data/lsl/Software/amd-libflame/include/LP64 -I/data/lsl/Software/amd-blis/include/LP64 -I/data/lsl/Software/amd-utils/include/alci/.. -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/include -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/include -march=znver2 -DNDEBUG -O3 -ftree-vectorize -ffp-contract=fast -mno-avx512f -fopenmp -std=c++17 -o CMakeFiles/sample_ztrsm.dir/sample_ztrsm.cpp.o -c /data/lsl/SpGEMM/aocl-sparse-5.2.2/tests/examples/sample_ztrsm.cpp",
+  "file": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/tests/examples/sample_ztrsm.cpp"
+},
+{
+  "directory": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/tests/examples",
+  "command": "/usr/bin/cc -DUSE_AVX512 -I/data/lsl/Software/amd-libflame/include/LP64 -I/data/lsl/Software/amd-blis/include/LP64 -I/data/lsl/Software/amd-utils/include/alci/.. -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/include -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/include -x c -O2 -DNDEBUG -march=znver2 -mno-avx512f -fopenmp -o CMakeFiles/sample_spmv_c.dir/sample_spmv_c.c.o -c /data/lsl/SpGEMM/aocl-sparse-5.2.2/tests/examples/sample_spmv_c.c",
+  "file": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/tests/examples/sample_spmv_c.c"
+},
+{
+  "directory": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/tests/examples",
+  "command": "/usr/bin/cc -DUSE_AVX512 -I/data/lsl/Software/amd-libflame/include/LP64 -I/data/lsl/Software/amd-blis/include/LP64 -I/data/lsl/Software/amd-utils/include/alci/.. -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/library/include -I/data/lsl/SpGEMM/aocl-sparse-5.2.2/build-amd-gcc/include -x c -O2 -DNDEBUG -march=znver2 -mno-avx512f -fopenmp -o CMakeFiles/sample_spmv_multi_instance.dir/sample_spmv_multi_instance.c.o -c /data/lsl/SpGEMM/aocl-sparse-5.2.2/tests/examples/sample_spmv_multi_instance.c",
+  "file": "/data/lsl/SpGEMM/aocl-sparse-5.2.2/tests/examples/sample_spmv_multi_instance.c"
+}
+]
