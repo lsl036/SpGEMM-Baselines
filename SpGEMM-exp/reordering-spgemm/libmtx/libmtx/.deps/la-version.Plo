@@ -1,8 +1,0 @@
-libmtx/la-version.lo: libmtx/version.c /usr/include/stdc-predef.h \
- libmtx/version.h libmtx/libmtx-config.h
-
-/usr/include/stdc-predef.h:
-
-libmtx/version.h:
-
-libmtx/libmtx-config.h:

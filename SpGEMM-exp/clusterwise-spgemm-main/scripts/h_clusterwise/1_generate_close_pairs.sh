@@ -35,9 +35,9 @@ new_datasets=(
   "TSOPF_RS_b2383_c1"
 )
 
-mypaper_dataset=(
-  "cant" "pwtk" "offshore" "cage12" "scircuit" "wiki-Vote" "patents_main" "poisson3Da" "pdb1HYS" "rma10" "shipsec1" "consph" "filter3D" "mac_econ_fwd500" "asia_osm" "af_shell10" "hood" "case39" "gupta3" "TSOPF_FS_b300_c2" "delaunay_n24" "webbase-1M" "AS365" "com-LiveJournal" "europe_osm" "GAP-road" "kkt_power" "M6" "NLR" "wikipedia-20070206"
-)
+mypaper_dataset=("cant" "pwtk" "offshore" "cage12" "scircuit" "wiki-Vote" "poisson3Da"
+"pdb1HYS" "rma10" "shipsec1" "consph" "filter3D" "mac_econ_fwd500" "af_shell10"
+"hood" "case39" "gupta3" "TSOPF_FS_b300_c2" "com-LiveJournal" "wikipedia-20070206")
 
 # Common path prefixes
 CLUSTERWISE_ROOT="/data/lsl/SpGEMM/SpGEMM-exp/clusterwise-spgemm-main"

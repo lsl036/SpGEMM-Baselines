@@ -1,9 +1,9 @@
-This is libmtx.info, produced by makeinfo version 6.7 from libmtx.texi.
+This is libmtx.info, produced by makeinfo version 6.8 from libmtx.texi.
 
-This manual describes how to install and use Libmtx, version 0.5.0, 25
-December 2025, a C library and collection of utility programs for
-working with objects in the Matrix Market file format, including
-vectors, dense matrices and sparse matrices.
+This manual describes how to install and use Libmtx, version 0.5.0, 16
+April 2026, a C library and collection of utility programs for working
+with objects in the Matrix Market file format, including vectors, dense
+matrices and sparse matrices.
 
    Copyright (C) 2022 James D. Trotter
 
@@ -24,10 +24,10 @@ File: libmtx.info,  Node: Top,  Next: Copying,  Up: (dir)
 Libmtx
 ******
 
-This manual describes how to install and use Libmtx, version 0.5.0, 25
-December 2025, a C library and collection of utility programs for
-working with objects in the Matrix Market file format, including
-vectors, dense matrices and sparse matrices.
+This manual describes how to install and use Libmtx, version 0.5.0, 16
+April 2026, a C library and collection of utility programs for working
+with objects in the Matrix Market file format, including vectors, dense
+matrices and sparse matrices.
 
    Copyright (C) 2022 James D. Trotter
 
@@ -1683,6 +1683,7 @@ group in the SuiteSparse Matrix Collection (*note T. Davis, Y. Hu and S.
 Kolodziej (2021)::).
 
  [image src="image/webbase-1M.png" ]      [image src="image/webbase-1M_rcm.png" ]
+
 
 Figure 4.1: Sparsity pattern of the matrix "webbase-1M" with original
 ordering (left) and RCM ordering (right).
@@ -4995,95 +4996,95 @@ Program index
 
 
 Tag Table:
-Node: Top937
-Node: Copying2500
-Node: Introduction to Libmtx3230
-Node: Installing Libmtx6382
-Node: Optional dependencies7084
-Node: Reporting bugs7863
-Node: Matrix Market format8914
-Node: Header line10044
-Node: Comment lines14427
-Node: Size line14870
-Node: Data lines17091
-Node: Matrix Market files20548
-Node: Error handling21887
-Node: Data structures for Matrix Market files23185
-Node: Header24937
-Node: Comments26456
-Node: Size27094
-Node: Precision29129
-Node: Data29916
-Node: Reading and writing Matrix Market files36716
-Node: Reading Matrix Market files37379
-Node: Writing Matrix Market files39714
-Node: Creating Matrix Market files42082
-Node: Creating Matrix Market files in array format44651
-Node: Creating Matrix Market files in coordinate format46680
-Node: Setting matrix and vector values49240
-Node: Other operations on Matrix Market files50159
-Node: Transpose50735
-Node: Sort compact and assemble51056
-Ref: mtxfile_assemble55103
-Node: Partition55524
-Node: Reorder65556
-Node: Reverse Cuthill-McKee (RCM)68925
-Ref: fig:webbase-1M69533
-Node: Nested Dissection71307
-Node: Communicating Matrix Market files71764
-Node: Distributed Matrix Market files75908
-Node: Error handling for distributed Matrix Market files77002
-Node: Distributed error handling79321
-Node: Data structures for distributed Matrix Market files82630
-Node: Creating distributed Matrix Market files84714
-Node: Creating distributed Matrix Market files in array format87085
-Node: Creating distributed Matrix Market files in coordinate format90002
-Node: Setting matrix or vector values for distributed Matrix Market files93593
-Node: Converting to and from Matrix Market files95073
-Node: Reading and writing distributed Matrix Market files97173
-Node: Reading distributed Matrix Market files99271
-Node: Writing distributed Matrix Market files102825
-Node: Matrices and vectors104026
-Node: Vectors105365
-Node: Creating vectors106383
-Node: Modifying vector values109036
-Node: Converting vectors to and from Matrix Market format110224
-Node: Reading and writing vectors112015
-Node: Level 1 BLAS for vectors114458
-Node: Matrices119975
-Node: Creating matrices121041
-Node: Creating row and column vectors123699
-Node: Converting matrices to and from Matrix Market format124906
-Node: Reading and writing matrices126594
-Node: Level 1 BLAS for matrices128912
-Node: Level 2 BLAS134710
-Node: Commands137291
-Node: mtxaxpy138662
-Node: mtxdot141143
-Node: mtxgemv142402
-Node: mtxinfo144329
-Node: mtxnrm2144785
-Node: mtxpartition145892
-Node: mtxreorder147915
-Node: mtxscal149325
-Node: mtxsort150687
-Node: mtxspy151680
-Node: References153064
-Ref: R.F. Boisvert, R. Pozo and K. Remington (1996)153198
-Ref: W. Gropp, E. Lusk and R. Thakur (1999)153445
-Ref: HDF5153616
-Ref: National Institute of Standards and Technology [NIST] (2007)153724
-Ref: National Institute of Standards and Technology [NIST] (2000)153971
-Ref: T. Davis, Y. Hu and S. Kolodziej (2021)154241
-Ref: E. Cuthill and J. McKee (1969)154430
-Ref: J.A. George and J. W-H. Liu (1981)154581
-Ref: OpenBLAS154706
-Ref: J.D. McCalpin (2013)154767
-Node: GNU Free Documentation License155053
-Node: General index180205
-Node: Function index196571
-Node: Data type index214854
-Node: Program index217366
+Node: Top934
+Node: Copying2494
+Node: Introduction to Libmtx3224
+Node: Installing Libmtx6376
+Node: Optional dependencies7078
+Node: Reporting bugs7857
+Node: Matrix Market format8908
+Node: Header line10038
+Node: Comment lines14421
+Node: Size line14864
+Node: Data lines17085
+Node: Matrix Market files20542
+Node: Error handling21881
+Node: Data structures for Matrix Market files23179
+Node: Header24931
+Node: Comments26450
+Node: Size27088
+Node: Precision29123
+Node: Data29910
+Node: Reading and writing Matrix Market files36710
+Node: Reading Matrix Market files37373
+Node: Writing Matrix Market files39708
+Node: Creating Matrix Market files42076
+Node: Creating Matrix Market files in array format44645
+Node: Creating Matrix Market files in coordinate format46674
+Node: Setting matrix and vector values49234
+Node: Other operations on Matrix Market files50153
+Node: Transpose50729
+Node: Sort compact and assemble51050
+Ref: mtxfile_assemble55097
+Node: Partition55518
+Node: Reorder65550
+Node: Reverse Cuthill-McKee (RCM)68919
+Ref: fig:webbase-1M69527
+Node: Nested Dissection71302
+Node: Communicating Matrix Market files71759
+Node: Distributed Matrix Market files75903
+Node: Error handling for distributed Matrix Market files76997
+Node: Distributed error handling79316
+Node: Data structures for distributed Matrix Market files82625
+Node: Creating distributed Matrix Market files84709
+Node: Creating distributed Matrix Market files in array format87080
+Node: Creating distributed Matrix Market files in coordinate format89997
+Node: Setting matrix or vector values for distributed Matrix Market files93588
+Node: Converting to and from Matrix Market files95068
+Node: Reading and writing distributed Matrix Market files97168
+Node: Reading distributed Matrix Market files99266
+Node: Writing distributed Matrix Market files102820
+Node: Matrices and vectors104021
+Node: Vectors105360
+Node: Creating vectors106378
+Node: Modifying vector values109031
+Node: Converting vectors to and from Matrix Market format110219
+Node: Reading and writing vectors112010
+Node: Level 1 BLAS for vectors114453
+Node: Matrices119970
+Node: Creating matrices121036
+Node: Creating row and column vectors123694
+Node: Converting matrices to and from Matrix Market format124901
+Node: Reading and writing matrices126589
+Node: Level 1 BLAS for matrices128907
+Node: Level 2 BLAS134705
+Node: Commands137286
+Node: mtxaxpy138657
+Node: mtxdot141138
+Node: mtxgemv142397
+Node: mtxinfo144324
+Node: mtxnrm2144780
+Node: mtxpartition145887
+Node: mtxreorder147910
+Node: mtxscal149320
+Node: mtxsort150682
+Node: mtxspy151675
+Node: References153059
+Ref: R.F. Boisvert, R. Pozo and K. Remington (1996)153193
+Ref: W. Gropp, E. Lusk and R. Thakur (1999)153440
+Ref: HDF5153611
+Ref: National Institute of Standards and Technology [NIST] (2007)153719
+Ref: National Institute of Standards and Technology [NIST] (2000)153966
+Ref: T. Davis, Y. Hu and S. Kolodziej (2021)154236
+Ref: E. Cuthill and J. McKee (1969)154425
+Ref: J.A. George and J. W-H. Liu (1981)154576
+Ref: OpenBLAS154701
+Ref: J.D. McCalpin (2013)154762
+Node: GNU Free Documentation License155048
+Node: General index180200
+Node: Function index196566
+Node: Data type index214849
+Node: Program index217361
 
 End Tag Table
 

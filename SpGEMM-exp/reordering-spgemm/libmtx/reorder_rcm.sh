@@ -38,7 +38,50 @@ new_datasets=(
 #   "TSOPF_RS_b2383_c1"
 # )
 
+fig10_datasesets=("cant" "pwtk" "offshore" "cage12" "scircuit" "wiki-Vote" "poisson3Da" 
+"pdb1HYS" "rma10" "shipsec1" "consph" "filter3D" "mac_econ_fwd500" "af_shell10" 
+"hood" "case39" "gupta3" "TSOPF_FS_b300_c2" "com-LiveJournal" "wikipedia-20070206")
+
 BIN="mtxreorder --verbose"
+RESULTS_FILE="${RCM_DATA_PATH}/rcm_timing.log"
+
+extract_time() {
+  local label="$1"
+  local output="$2"
+  echo "$output" | awk -v label="$label" '
+    $1 == label ":" { print $2; exit }
+  '
+}
+
+extract_max_rss_kb() {
+  local output="$1"
+  printf '%s\n' "$output" | awk -F': *' '
+    /Maximum resident set size \(kbytes\)/ { print $2; exit }
+  '
+}
+
+record_timing() {
+  local dataset="$1"
+  local output="$2"
+  local read_time reorder_time fwrite_time write_time max_rss_kb
+  local line
+
+  read_time=$(extract_time "mtxfile_read" "$output")
+  reorder_time=$(extract_time "mtxfile_reorder" "$output")
+  fwrite_time=$(extract_time "mtxfile_fwrite" "$output")
+  write_time=$(extract_time "mtxfile_write" "$output")
+  max_rss_kb=$(extract_max_rss_kb "$output")
+
+  read_time=${read_time:-NA}
+  reorder_time=${reorder_time:-NA}
+  fwrite_time=${fwrite_time:-NA}
+  write_time=${write_time:-NA}
+  max_rss_kb=${max_rss_kb:-NA}
+
+  line=$(printf '%s %s %s %s %s %s' \
+    "$dataset" "$read_time" "$reorder_time" "$fwrite_time" "$write_time" "$max_rss_kb")
+  echo "$line" | tee -a "$RESULTS_FILE"
+}
 
 # Run RCM reordering following the requested pattern:
 # echo "~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: <name>-RCM>~~~~~~~~~~~~~~~~~~~~~~~~~"
@@ -48,19 +91,31 @@ BIN="mtxreorder --verbose"
 run_rcm_on_datasets() {
   local data_path="$1"; shift
   local datasets=("$@")
+  local output
+
+  mkdir -p "${RCM_DATA_PATH}"
+  if [[ ! -f "$RESULTS_FILE" ]]; then
+    printf '%s %s %s %s %s %s\n' \
+      "dataset" "read" "reorder" "fwrite" "write" "MaxRSS(kB)" > "$RESULTS_FILE"
+  fi
 
   for dataset in "${datasets[@]}"; do
     echo "~~~~~~~~~~~~~~~~~~~~~~~~~<DATASET: ${dataset}-RCM>~~~~~~~~~~~~~~~~~~~~~~~~~"
-    ${BIN} "${data_path}/${dataset}/${dataset}.mtx" \
-      --ordering=rcm \
-      --rowperm-path="${RCM_DATA_PATH}/${dataset}.rcmorder" \
-      > "${RCM_DATA_PATH}/${dataset}_rcm.mtx"
+    output=$(
+      /usr/bin/time -v ${BIN} "${data_path}/${dataset}/${dataset}.mtx" \
+        --ordering=rcm \
+        --rowperm-path="${RCM_DATA_PATH}/${dataset}.rcmorder" \
+        2>&1 1> "${RCM_DATA_PATH}/${dataset}_rcm.mtx"
+    )
+    printf '%s\n' "$output"
+    record_timing "$dataset" "$output"
     echo ""
   done
 }
 
 echo "RCM reordering ..."
-run_rcm_on_datasets "${DATA_PATH}" "${initial_datasets[@]}"
-run_rcm_on_datasets "${DATA_PATH}" "${ispass_datasets[@]}"
-run_rcm_on_datasets "${DATA_PATH}" "${new_datasets[@]}"
-# run_rcm_on_datasets "${DATA_PATH}" "${res_datasets[@]}"
+echo "Timing results will be appended to: ${RESULTS_FILE}"
+# run_rcm_on_datasets "${DATA_PATH}" "${initial_datasets[@]}"
+# run_rcm_on_datasets "${DATA_PATH}" "${ispass_datasets[@]}"
+# run_rcm_on_datasets "${DATA_PATH}" "${new_datasets[@]}"
+run_rcm_on_datasets "${DATA_PATH}" "${fig10_datasesets[@]}"

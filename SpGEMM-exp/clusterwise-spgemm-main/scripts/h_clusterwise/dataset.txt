@@ -579,7 +579,6 @@ raefsky3
 net75
 lhr71
 web-NotreDame
-boyd2
 nemeth24
 nemeth23
 nemeth25
@@ -594,7 +593,6 @@ coAuthorsCiteseer
 nv1
 d_pretok
 Zd_Jac2
-lp1
 2cubes_sphere
 mo2010
 qa8fm
@@ -627,7 +625,6 @@ power9
 loc-Gowalla
 Zd_Jac3
 opt1
-ASIC_320k
 trdheim
 rajat24
 coAuthorsDBLP
