@@ -19,3 +19,4 @@ compile_commands.json
 
 #Documentation build
 docs/generated_docs/
+build/

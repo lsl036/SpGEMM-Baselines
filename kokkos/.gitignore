@@ -16,6 +16,7 @@ CMakeUserPresets.json
 
 # build directories in source tree
 /build*
+install/
 
 # IDE-specific files/folders
 ## VSCode
