@@ -39,3 +39,6 @@
 
 # debug information files
 *.dwo
+
+# testing results
+CSeg_spgemm_runtime_results.txt

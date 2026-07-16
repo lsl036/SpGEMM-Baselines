@@ -2,9 +2,9 @@
 # Run SpGEMM benchmark on all datasets in dataset.txt, average 5 runs, save [mtx_name runtime] to result file.
 
 DATA_PATH="${DATA_PATH:-/data/suitesparse_collection}"
-# DATASET_FILE="$(dirname "$0")/casedataset.txt"
-DATASET_FILE="$(dirname "$0")/600dataset.txt"
-RESULT_FILE="$(dirname "$0")/spgemm_runtime_results0401.txt"
+DATASET_FILE="$(dirname "$0")/casedataset.txt"
+# DATASET_FILE="$(dirname "$0")/600dataset.txt"
+RESULT_FILE="$(dirname "$0")/CSeg_spgemm_runtime_results.txt"
 MAIN_BIN="$(dirname "$0")/main"
 
 if [ ! -f "$DATASET_FILE" ]; then
