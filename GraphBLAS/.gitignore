@@ -67,6 +67,7 @@ desktop.ini
 
 .idea/
 cmake-build-debug/
+build/
 
 # Do not ignore this file
 !.gitignore
