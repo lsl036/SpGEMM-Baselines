@@ -5,7 +5,7 @@ export OMP_PROC_BIND=spread
 export OMP_PLACES=cores
 
 # Common path prefixes (与 2_hierarchical_spgemm.sh 一致)
-CLUSTERWISE_ROOT="/data/lsl/SpGEMM/SpGEMM-exp/clusterwise-spgemm-main"
+# CLUSTERWISE_ROOT="/data/lsl/SpGEMM/SpGEMM-exp/clusterwise-spgemm-main"
 BIN_PATH="${CLUSTERWISE_ROOT}/bin/HierarchicalClusterSpGEMM_hw"
 
 # 矩阵数据根目录、close_pairs 输出目录，可在外部 export 覆盖
