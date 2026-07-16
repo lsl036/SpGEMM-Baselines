@@ -3,8 +3,8 @@
 
 DATA_PATH="${DATA_PATH:-/data/suitesparse_collection}"
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
-DATASET_FILE="${SCRIPT_DIR}/dataset.txt"
-# DATASET_FILE="${SCRIPT_DIR}/20data.txt"
+# DATASET_FILE="${SCRIPT_DIR}/dataset.txt"
+DATASET_FILE="${SCRIPT_DIR}/20data.txt"
 RESULT_FILE="${SCRIPT_DIR}/haspgemm_results0402.txt"
 BIN="${SCRIPT_DIR}/haspgemm12"
 
