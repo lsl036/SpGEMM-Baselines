@@ -4,7 +4,7 @@
 DATA_PATH="${DATA_PATH:-/data/suitesparse_collection}"
 DATASET_FILE="$(dirname "$0")/casedataset.txt"
 # DATASET_FILE="$(dirname "$0")/600dataset.txt"
-RESULT_FILE="$(dirname "$0")/CSeg_spgemm_runtime_results.txt"
+RESULT_FILE="$(dirname "$0")/CSeg_results.txt"
 MAIN_BIN="$(dirname "$0")/main"
 
 if [ ! -f "$DATASET_FILE" ]; then

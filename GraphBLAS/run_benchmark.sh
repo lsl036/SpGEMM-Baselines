@@ -9,7 +9,7 @@ NTRIALS="${NTRIALS:-5}"
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 # DATASET_FILE="${SCRIPT_DIR}/600dataset.txt"
 DATASET_FILE="${SCRIPT_DIR}/casedataset.txt"
-RESULT_FILE="${RESULT_FILE:-${SCRIPT_DIR}/GraphBLAS_spgemm_results.txt}"
+RESULT_FILE="${RESULT_FILE:-${SCRIPT_DIR}/GraphBLAS_results.txt}"
 BIN="${BIN:-${SCRIPT_DIR}/build/spgemm_demo}"
 
 if [ ! -f "$DATASET_FILE" ]; then
