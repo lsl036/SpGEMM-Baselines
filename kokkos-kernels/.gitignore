@@ -20,3 +20,14 @@ compile_commands.json
 #Documentation build
 docs/generated_docs/
 build/
+
+# CMake in-source build artifacts (should never be committed)
+/Makefile
+/CMakeCache.txt
+/CMakeFiles/
+/cmake_install.cmake
+/CTestTestfile.cmake
+/CTestConfiguration.ini
+/CTestCustom.cmake
+/install_manifest.txt
+/*.args
